@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>窝夫小子-WAFFLEBOY唯一官方网站,24小时蛋糕网上订购,法国主厨品质,365天免费送货！</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="themes/default/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="themes/default/css/lrtk.css">
+	<link type="text/css" rel="stylesheet" href="themes/default/css/stylenew.css"/>
+	<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕,窝夫小子月饼,waffleboy,窝夫,慕斯蛋糕,奶油蛋糕,巧克力蛋糕,芝士蛋糕,商务蛋糕,冰淇淋蛋糕,无糖蛋糕,高品质蛋糕,网上蛋糕订购,定制蛋糕">
+	<meta name="description" content="窝夫小子蛋糕官网,24小时蛋糕网上订购,365天免费送货!订购热线:4008567567.订蛋糕首选窝夫小子,法国主厨品质,精选世界顶级食材,尊享星级蛋糕,专业定制,良心品质,20年专注!">
+	<meta name="baidu-site-verification" content="dNSPmYGPDt" />
+	<script type="text/javascript"  src="themes/default/js/jQuery-1.7.1.js"></script>
+	<!--百度防恶意攻击-->
+	<script type="text/javascript" src="http://www.cubead.cn:7070/recv/visit.do?tenantid=70101&site=www.wfboy.com"></script>
+	<script type="text/javascript" language="javascript" src="http://ca.cubead.com/cubead_ca.js"></script>
+	<script type="text/javascript"> if (retvalue=="true"){  while (true){   alert("禁止访问!");  } } _traker._init('www.wfboy.com','70101');
+	</script>
+	<!--百度防恶意攻击结束-->
+</head>
+<body>
+<div class="box">
+	<div class="box-head">
+		<div class="head-page">
+			<div class="head-left fl">
+				<a href="/"><img src="themes/default/imagesnew/logo.jpg" alt="窝夫小子"></a>
+			</div>
+			<div class="head-right fr">
+				<div class="top">
+					<div class="top-left fl">
+					<!--{if $current_user_name eq false}-->
+						<a href="/user.php?act=login">登录</a>
+						<span style="color: #e9dee3;">/</span>
+						<a href="/user.php?act=register" style="color: #dcc095;">注册</a>
+						<!--{else}-->
+                        <a href="/profile.php" target="_blank">个人中心</a>
+                        <a href="/user.php?act=logout">退出</a>
+                        <a href="/profile.php" target="_blank">{$current_user_name|truncate:50}...</a> 
+                        <!--{/if}-->
+					</div>
+					
+					<div class="top-right fr">
+						<form id="top_search_form" name="top_serach" action="/selecthelp.php" method="get">
+                    	<input type="hidden" name="act" value="by">
+                        <input type="hidden" name="type" value="500">
+                        <input type="hidden" name="page" value="1">
+                        <input type="hidden" name="festival" id="top_festival" />
+                        <input type="hidden" name="country" id="top_country" />
+                        <input type="hidden" name="taste" id="top_taste" />
+                        <input type="hidden" name="price" id="top_price" />
+						<input type="text" name="festiva" id="keyword" autocomplete="off"/>
+						<a id="gomysearch" href="javascript:void(0);"></a>
+                        </form>
+					</div>
+					<script type="text/javascript">
+                    		$("#gomysearch").click(function(){
+								$("#top_search_form").submit();
+							})
+                    </script>
+					<div class="clearfix"></div>
+				</div>
+				<div class="bottom">
+					<div class="bottom-dinggou fl">
+						<img src="themes/default/imagesnew/dinggou.jpg" alt="认购热线"/>
+					</div>
+					<div class="bottom-gouche fl">
+						<img src="themes/default/imagesnew/che.jpg" alt="购物车"/>
+						<div class="goucheshuzi fr">
+							<a href="/flow.php">0</a>
+						</div>
+					</div>
+					<div class="bottom-city fr">
+						<a href="http://www.wfboy.com">北京</a>
+							<span style="color: #e9dee3;">/</span>
+						<a href="http://shanghai.waffleboy.com.cn" style="color: #dcc095;">上海</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="box-banner">
+		<div class="boxbannerhr">
+					
+		</div>
+		<div class="box-bannerli">
+			<ul>
+				<li class="boxbhover" ><a href="">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+				<li><a href="/about.php" target="_blank">公司介绍</a></li>
+				<li><a href="/helpInfo.php?id=55" target="_blank">配送范围</a></li>
+				<li><a href="/helpInfo.php?id=50" target="_blank">常见问题</a></li>
+				<li><a href="/enterprise.php" target="_blank">企业专区</a></li>
+				<li><a href="/profile.php" target="_blank">个人中心</a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+	<div class="container-fluid text-center">
+	    <div class="header">
+	        <img class="headerImg" src="themes/default/imagesnew/bxglunbo.jpg" data-slideshow='themes/default/imagesnew/yshylunbo.jpg|themes/default/imagesnew/ymyalunbo.jpg|themes/default/imagesnew/lunbo.jpg'>
+	    </div>
+	</div>
+	<script src="themes/default/js/jquery.min.js"></script>
+	<script src="themes/default/js/jquery.hammer-full.min.js"></script>
+	<script src="themes/default/js/plugin.js"> </script>
+	<script src="themes/default/js/lrtk.js"></script>
+	<script type="text/javascript">
+	var links = ["/cake.php?cakeid=33873&catid=ZD", "/cake.php?cakeid=33849&catid=ZD", "/cake.php?cakeid=33835&catid=ZD", "/cake.php?cakeid=29366&catid=ZD"];
+	$(".slide").click(function(){
+	    var index = $(this).attr('index');
+		if(index === undefined) {
+			window.open(links[0]);
+		} else {
+			window.open(links[(parseInt(index)+1)]);
+		}
+
+	});
+	</script>
+	<div class="goodscate">
+		<ul>
+			<li><a href="/"><img class="cateda" src="themes/default/imagesnew/goodscate01.jpg" alt="生日蛋糕"></a></li>
+			<li><a href="/cakes.php?catid=AT" target="_blank"><img class="cateda2" src="themes/default/imagesnew/goodscate02.jpg" alt="窝家甜品"></a></li>
+			<li><a href="/cakes.php?catid=AW" target="_blank"><img class="cateda3" src="themes/default/imagesnew/goodscate03.jpg" alt="窝家面包"></a></li>
+			<li><a href="/cakes.php?catid=ZAAD" target="_blank"><img class="cateda4" src="themes/default/imagesnew/goodscate04.jpg" alt="储值卡"></a></li>
+		</ul>
+	</div>
+	<script type="text/javascript">
+		$(function(){
+			$(".cateda").hover(
+			function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate0101.jpg");
+			},function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate01.jpg");	
+			}
+			);
+			$(".cateda2").hover(
+			function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate0202.jpg");
+			},function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate02.jpg");	
+			}
+			);
+			$(".cateda3").hover(
+			function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate0303.jpg");
+			},function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate03.jpg");	
+			}
+			);
+			$(".cateda4").hover(
+			function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate0404.jpg");
+			},function(e){
+				$(this).attr("src","themes/default/imagesnew/goodscate04.jpg");	
+			}
+			);
+		})
+
+	</script>
+	<div class="clearfix"></div>
+	<div class="goods_list">
+		<div class="newgoodshr">
+		<img src="themes/default/imagesnew/newgoodshr.jpg" alt="新品推荐">
+		</div>
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xhz.jpg" alt="熊孩子蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607lmtbjl.jpg" alt="流氓兔冰激淋蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33873&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607bxg.jpg" alt="百香蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33835&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ymya.jpg" alt="有木有爱"/></a>
+			<div class="goods_pridiv"><span>239</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33819&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xxhm.jpg" alt="小熊很芒"/></a>
+			<div class="goods_pridiv"><span>159</span></div>
+		</div>
+		<div class="newgoodshr">
+		<img src="themes/default/imagesnew/hotmaihr.jpg" alt="热卖推荐">
+		</div>
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29366&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ywnn.jpg" alt="原味乳酪"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29540&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607dghss.jpg" alt="德国黑森林"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29486&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ydltlms.jpg" alt="意大利提拉米苏蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29431&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607bqklsl.jpg" alt="白巧克力松露"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33736&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607mlhk.jpg" alt="茉莉花开蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33688&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607dbl.jpg" alt="大白裸蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33657&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607lldzs.jpg" alt="榴莲冻芝士"/></a>
+			<div class="goods_pridiv"><span>269</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33178&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hsr.jpg" alt="红丝绒蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29375&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607dsqklsl.jpg" alt="德式巧克力松露"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29420&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607lmdrn.jpg" alt="草莓双层冻乳酪"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+
+		<div class="newgoodshr">
+		<img src="themes/default/imagesnew/jingdianhr.jpg" alt="经典推荐">
+		</div>
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29399&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ssddg.jpg" alt="沙河大蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29460&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607zdy.jpg" alt="占督亚蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33562&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607npls.jpg" alt="拿破仑酥"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29477&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hjqkldg.jpg" alt="皇家巧克力蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29669&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hpj.jpg" alt="黑啤酒蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29462&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hbqkl.jpg" alt="黑白巧克力蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29442&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607mcrl.jpg" alt="抹茶乳酪"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29505&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607bhdhd.jpg" alt="北海道红豆"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33301&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607chdg.jpg" alt="彩虹蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29397&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ydlkbjl.jpg" alt="意大利卡布基诺蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+
+		<div class="newgoodshr">
+		<img src="themes/default/imagesnew/xianxhr.jpg" alt="">
+		</div>
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29607&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hcsgbjl.jpg" alt="幻彩水果冰激淋蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29708&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607mxtxcbjl.jpg" alt="马戏团小丑冰激凌蛋糕"/></a>
+			<div class="goods_pridiv"><span>349</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29529&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xnsg.jpg" alt="鲜奶水果蛋糕"/></a>
+			<div class="goods_pridiv"><span>159</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=32637&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607lmtx.jpg" alt="蓝莓甜心"/></a>
+			<div class="goods_pridiv"><span>159</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=30648&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ggx.jpg" alt="乖乖熊"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+
+		<div class="goodspre first">
+			<a class="goodspicmouse" href=""><img src="themes/default/imagesnew/goods_list_01_01.jpg" alt="淘淘猴"/></a>
+			<div class="goods_pridiv"><span>159</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29474&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hbysl.jpg" alt="汉布耶森林蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29502&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607bflyzz.jpg" alt="巴伐利亚榛子蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29371&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607fpzlmzs.jpg" alt="覆盆子蓝莓芝士"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29571&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607jdbjl.jpg" alt="君度冰激凌蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29586&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607nzbjl.jpg" alt="牛轧冰激凌蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29658&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607tlmsbjl.jpg" alt="提拉米苏冰激凌蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29673&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607syk.jpg" alt="睡衣裤蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33237&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607fssn.jpg" alt="法式酸奶"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29675&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607rsdlmj.jpg" alt="燃烧的朗姆酒蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29480&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607qklyz.jpg" alt="巧克力椰子蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29661&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607mjbl.jpg" alt="曼加白朗蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29449&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607yslz.jpg" alt="意式粟子"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29458&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607qcglp.jpg" alt="千层葛雷普蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=32645&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607lxmkl.jpg" alt="恋心马卡龙"/></a>
+			<div class="goods_pridiv"><span>159</span></div>
+		</div>
+
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33271&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xldg.jpg" alt="雪鹿蛋糕奶油水果蛋糕"/></a>
+			<div class="goods_pridiv"><span>159</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=30649&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607znhq.jpg" alt="周年欢庆奶油水果蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29508&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ngny.jpg" alt="南瓜奶油蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+		<div class="goodspre">
+			<a class="goodspicmouse" href="/cake.php?cakeid=29421&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607qklng.jpg" alt="巧克力南瓜蛋糕"/></a>
+			<div class="goods_pridiv"><span>179</span></div>
+		</div>
+		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=30650&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607sbns.jpg" alt="寿比南山奶油水果蛋糕"/></a>
+			<div class="goods_pridiv"><span>199</span></div>
+		</div>
+
+
+		<div class="newgoodshr">
+		<img src="themes/default/imagesnew/xianshr.jpg" alt="">
+		</div>
+		<script type="text/javascript">
+		$(function(){
+			$(".goodspicmouse").hover(function(event){
+    			$(this).next().show();    
+			}, function(event){
+    			$(this).next().hide();
+			});
+		})
+		</script>
+		<div class="datu">
+			<div>
+				<a href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/datu02.jpg" alt=""/></a>
+			</div>
+			<div class="datusec">
+				<a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/datu01.jpg" alt=""/></a>
+			</div>
+		</div>
+		<div class="newgoodshr">
+		<img src="themes/default/imagesnew/xianxhr.jpg" alt="">
+		</div>
+
+		<div class="index_footer">
+			<div class="footer-cont">
+				<div class="footer-cont-lr">
+					<div class="footer-cont-left-tw">
+					<a href="https://api.weibo.com/oauth2/authorize?client_id=2248222975&response_type=code&redirect_uri=http://www.wfboy.com/API/weibo/callback.php" target="_blank"><img src="themes/default/imagesnew/weibo.jpg" alt=""></a>
+					<a href=""><img src="themes/default/imagesnew/weixin.jpg" alt=""></a>
+					</div>
+					<div class="footer-cont-left-tw footerlwz">
+					<p>免费订购热线4008567567</p>
+					<p>www.wfboy.com &copy;2016 ALL right reserved by waffleboy </p>
+					<p>京ICP12044486  京公网安备11010102000509号</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-cont-lr footerright">
+					<img src="themes/default/imagesnew/erweima.jpg" alt="二维码">
+					<p>立扫二维码  活动早知道</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+</body>
+</html>
