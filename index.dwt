@@ -19,6 +19,7 @@
 </head>
 <body>
 <div class="box">
+	<a name="top"></a>
 	<div class="box-head">
 		<div class="head-page">
 			<div class="head-left fl">
@@ -482,27 +483,27 @@
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatzhishi.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAB" target="_blank"><img src="images/youcecatzhishi.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatmusi.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAK" target="_blank"><img src="images/youcecatmusi.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatrunao.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAA" target="_blank"><img src="images/youcecatrunao.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatqiaokeli.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAC" target="_blank"><img src="images/youcecatqiaokeli.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatbqili.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAF" target="_blank"><img src="images/youcecatbqili.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatjianguodangao.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAD" target="_blank"><img src="images/youcecatjianguodangao.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
@@ -510,35 +511,21 @@
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatertongdangao.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAG" target="_blank"><img src="images/youcecatertongdangao.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatshangwudangao.jpg" width="151" height="26" alt=""></a></td>
+					<a href="/cakes.php?catid=ZDAH" target="_blank"><img src="images/youcecatshangwudangao.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
 			<tr>
 				<td>
-					<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecathuidaodingbu.jpg" width="151" height="46" alt=""></a></td>
+					<a href="#top"><img src="images/youcecathuidaodingbu.jpg" width="151" height="46" alt=""></a></td>
 			</tr>
 		</table>
 	</div>
 	<style>
 		#rg_fd { position:fixed; right:0px; top:260px; z-index:1000px;}
 	</style>
-
-	<script>
-		var rgfd = document.getElementById("rg_fd");
-		var x_weix = document.getElementById("xie_show_weix");
-
-		rgfd.onmousemove = function(){
-			rgfd.style.right = '0px';
-			x_weix.style.display = 'block';
-		}
-		rgfd.onmouseout = function(){
-			rgfd.style.right = '0px';
-			//x_weix.style.display = 'none';
-		}
-	</script>
 </div>
 <!--cnzz-->
 	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259650169'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259650169%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
