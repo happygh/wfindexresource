@@ -1,0 +1,234 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>窝夫小子-WAFFLEBOY唯一官方网站,24小时蛋糕网上订购,法国主厨品质,365天免费送货！</title>
+<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕,窝夫小子月饼,waffleboy,窝夫,慕斯蛋糕,奶油蛋糕,巧克力蛋糕,芝士蛋糕,商务蛋糕,冰淇淋蛋糕,无糖蛋糕,高品质蛋糕,网上蛋糕订购,定制蛋糕">
+<meta name="description" content="窝夫小子蛋糕官网,24小时蛋糕网上订购,365天免费送货!订购热线:4008567567.订蛋糕首选窝夫小子,法国主厨品质,精选世界顶级食材,尊享星级蛋糕,专业定制,良心品质,20年专注!">
+<link href="css2/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js2/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+<meta name="baidu-site-verification" content="dNSPmYGPDt" />
+<script type="text/javascript" src="js/ucheck.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="/themes/default/js/wf-dev.js"></script>
+<script type="text/javascript" src="/themes/default/js/jquery-migrate-1.1.0.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/themes/default/css/jquery.jslides03.css" media="screen" />
+<script type="text/javascript" src="/themes/default/js/jquery.jslides.js"></script>
+<script type="text/javascript" src="js2/jquery.SuperSlide.2.1.1.js" ></script>
+<!--百度防恶意攻击-->
+<script type="text/javascript" src="http://www.cubead.cn:7070/recv/visit.do?tenantid=70101&site=www.wfboy.com"></script>
+<script type="text/javascript" language="javascript" src="http://ca.cubead.com/cubead_ca.js"></script>
+<script type="text/javascript"> if (retvalue=="true"){  while (true){   alert("禁止访问!");  } } _traker._init('www.wfboy.com','70101'); 
+</script>
+<!--百度防恶意攻击结束-->
+</head>
+
+<body>
+<div class="boox">
+    <!-- #BeginLibraryItem "/library/inc_cake_header.lbi" --><!-- #EndLibraryItem -->
+
+ <!--广告位-->
+    <!--<div class="wxz_ggw">-->
+       <!--<a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="images2/1607lmt.jpg" /></a>-->
+    <!--</div>-->
+    <!--广告位结束-->
+
+<!--内容--> 
+    <div class="wxz_neirong" style="border-top: 0;">
+       <div class="wxz_jh"><img src="images2/wxz_jh.png" /></div>
+
+       <style tyle="text/csss">
+       .wxz_wright1{float:right;margin-right:0;}
+       </style>
+       <!--{foreach from=$cakes item=cake name=cakes}-->
+            <!--{if $cake}-->
+            <!--{if $cake.goods_id != '33352' && $cake.goods_id != '33400' && $cake.goods_id != '33401' && $cake.goods_id != '33402' && $cake.goods_id != '33403'}-->
+            <div class="wxz_h355">
+              <div class="wxz_w717" style="width: 800px;">
+                 <div {if (($smarty.foreach.cakes.index+1)%2) eq 0}class="wxz_wleft" style="width: 386px;" {else}class="wxz_wright1" style="width: 386px;"{/if}>
+                   <ul>
+                       <li class="wxz_yw" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis; width:415px; height:34px;"><a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank" style="color:#C70044; width:415px;">{$cake.e_name}</a></li>
+                       <li class="wxz_zw"><a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank">{$cake.cake_name|truncate:20}</a></li>
+                       <li class="wxz_zwjj">{$cake.goods_brief|truncate:80}</li>
+                       <li class="wxz_ywjj">{$cake.goods_brief_english|truncate:160}...</li>
+                       <!--{if $cake.goods_id == '1111' }-->
+                       <li class="wxz_yj">原价<span>¥{$cake.dazhe_shop_price}</span></li>
+                       <!--{/if}-->
+                       <li class="wxz_xjs"><img src="images2/wxz_xianjia.png" /><span>¥<!--{if $cake.goods_price==''}-->0<!--{else}-->{$cake.goods_price}<!--{/if}--></span><img src="images2/wxz_xianjia.png" /></li>
+                       <li class="wxz_de">
+                        <!--<a href="#"><img src="images2/01.png" /></a>
+                        <a href="#"><img src="images2/02.png" /></a>
+                        <a href="#"><img src="images2/03.png" /></a>
+                        <a href="#"><img src="images2/04.png" /></a>
+                        <a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank"><img src="images2/05.png" /></a>-->
+                      </li>
+                   </ul>
+                 
+                 </div>
+                 <div {if (($smarty.foreach.cakes.index+1)%2) eq 0}class="wxz_wright"{else}class="wxz_wleft" style="width: 386px;"{/if}>
+                     <div><img src="images2/wxz_xtop.png" /></div>
+                     <div class="left_tu_left"><a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank"><img src="{$cake.goods_my_list_img}" alt="{$cake.cake_name}" width="300" height="300"  /></a></div>
+                     <div><img src="images2/wxz_xbottom.png" /></div>
+                 </div>
+                
+              </div>
+           </div>
+           <!-- {if !$smarty.foreach.cakes.last} --><div class="xsx"><img src="images2/xiati.gif" /></div><!-- {/if} -->
+   
+             <!--{/if}-->
+            <!--{/if}-->
+       <!--{/foreach}-->      
+       
+     
+    </div>
+    
+    <!--    页码      -->
+    <div class="wxz_fanye">
+       <ul id="xpage">
+       		
+       </ul>
+       <div style="position:absolute;overflow:hidden;z-index:999;left:-9999px;" id="page-wrap"><a href="/cakes.php?catid=ZD"><img src="/themes/default/imagesxie/fanhuitubiao02.png" alt="返回首页"/></a>{$page_foot}</div>
+<script>
+jQuery('#page-wrap >').wrap('<li></li>');
+jQuery('#xpage').html(jQuery('#page-wrap').html());
+</script>
+       <!--<ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a class="das" href="#">5</a></li>
+          <li><a href="#">6</a></li>
+          <li><a href="#">7</a></li>
+          <li><a href="#">8</a></li>
+          <li><a href="#">9</a></li>
+         
+       </ul>-->
+    </div>
+    
+    <!--    boomer      -->
+    
+    <div class="beiji">
+    
+ 
+<style type="text/css">
+.wxz_dfs ul li a{padding-left:7px;padding-left:7px !important;}
+</style>
+    <div class="wxz_sdw">
+     <div class="wxz_dfs">
+         <ul>
+             <li>种类：
+                <a href="/cakes.php?catid=ACAB">巧克力</a>
+                <a href="/cakes.php?catid=ACAA">草莓</a>
+                <a href="/cakes.php?catid=ACAC">冰激凌</a>
+                <a href="/cakes.php?catid=ACAH">咖啡</a>
+                <a href="/cakes.php?catid=ACAG">坚果</a>
+                <a href="/cakes.php?catid=ACAK">奶油水果</a>
+                <a href="/cakes.php?catid=ACAD">芝士奶酪</a>
+                <a href="/cakes.php?catid=ACAJ">马卡龙</a>
+             &nbsp;&nbsp;
+             价位：
+                <a href="/selecthelp.php?act=by&type=500&price=59">59-199</a>
+                <a href="/selecthelp.php?act=by&type=500&price=299">200-299</a>
+                <a href="/selecthelp.php?act=by&type=500&price=399">300以上</a>
+             
+             </li>
+             <li>
+             用途：
+                 <a href="/cakes.php?catid=ABAB">生日</a>
+                 <a href="/cakes.php?catid=ABAA">聚会</a>
+                 <a href="/cakes.php?catid=ABAF">下午茶</a>
+                 <a href="/cakes.php?catid=ABAC">婚礼</a>
+                 <a href="/cakes.php?catid=ABAD" style="margin-right:25px;">宴会庆典</a>
+             &nbsp;&nbsp; 
+             对象：
+                <a href="/cakes.php?catid=AEAD">客户</a>
+                <a href="/cakes.php?catid=AEAA">恋人</a>
+                <a href="/cakes.php?catid=AEAE">亲友</a>
+                <a href="/cakes.php?catid=AEAC">儿童</a>
+                <a href="/cakes.php?catid=AEAB">长辈</a>
+                <!--<a href="/selecthelp.php?act=by&type=500&price=399">300-399</a>
+                <a href="/selecthelp.php?act=by&type=500&price=499">400-499</a>
+                <a href="/selecthelp.php?act=by&type=500&price=500">500以上</a>-->
+             </li>
+         </ul>
+     </div>
+    
+     <div class="wxz_ksh">
+        <form name="top_serach" action="/selecthelp.php?act=by&type=50" method="get">
+            <input type="hidden" name="act" value="by">
+            <span><input  name="festiva" autocomplete="off" class="wxz_s" type="text" /><input style="cursor:pointer;" name=""  class="wxz_s1"  value=" "  type="submit" /></span>
+        </form>
+     </div>
+     </div>
+     <div class="guangde" style="position:relative;">
+        <!--<img src="images2/guau1.png" />-->
+        <ul id="slides">
+          <li style="background:url('/themes/default/imagesxie/16/201604lmt.jpg') no-repeat center top"><a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"></a></li>
+          <li style="background:url('/themes/default/imagesxie/201603baixiang.jpg') no-repeat center top"><a href="/cake.php?cakeid=33873&catid=ZD" target="_blank"></a></li>
+          <li style="background:url('/themes/default/imagesxie/yshymkl.jpg') no-repeat center top"><a href="/cake.php?cakeid=33849&catid=ZD" target="_blank"></a></li>
+          <li style="background:url('/themes/default/imagesxie/youmuyoua.jpg') no-repeat center top"><a href="/cake.php?cakeid=33835&catid=ZD" target="_blank"></a></li>
+          <li style="background:url('/themes/default/imagesxie/banner02.jpg') no-repeat center top"><a href="/cake.php?cakeid=29366&catid=ZD" target="_blank"></a></li>
+        </ul>
+     </div>
+     <div class="guangde1"><img src="images2/guanfa.png" /></div>
+     <div class="btsw">
+     <span  class="wxz_wz1">Hot Cake<br />超热买</span> <span class="wxz_sdv2"><a href="/cakes.php?catid=ZA" target="_blank">Show All</a></span>
+     </div>
+     
+
+<style type="text/css">
+.tempWrap{margin:0 auto;}
+.wxz_sjd .prev{position:absolute;left:0;top:50px;cursor:pointer;}
+.wxz_sjd .next{position:absolute;right:0;top:50px;cursor:pointer;}
+</style>     
+     <div class="fahe">
+     <div class="wxz_sjd">
+           
+           <div class="bd" style="margin:0 auto;overflow:hidden;position:relative;">
+           <a class="prev"><img src="images2/zuo.png" /></a>
+           <ul>
+              <!--<span class="wxz_sdwg"><a href="#"><img src="images2/zuo.png" /></a></span>
+              <span class="wxz_sdwg1"><a href="#"><img src="images2/you.png" /></a></span>-->
+            
+            <!--原来的-->
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=33178" target="_blank"><img class="wxz_dda" src="images2/1.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">红丝绒</span></a></li>
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=29366" target="_blank"><img class="wxz_dda" src="images2/2.jpg" /> <span class="sd_de"><img src="images2/as_da.png" /></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">原味乳酪</span></a></li>
+              <li><a href="/cake.php?cakeid=29442&catid=" target="_blank"><img class="wxz_dda" src="images2/5.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">抹茶乳酪</span></a></li>
+              <li><a href="/cake.php?cakeid=29486&catid=" target="_blank"><img class="wxz_dda" src="images2/6.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">提拉米苏</span></a></li>
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=29480" target="_blank"><img class="wxz_dda" src="images2/3.jpg" /> <span class="sd_de"><img src="images2/as_da.png" /></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">椰子无糖</span></a></li> 
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=33114" target="_blank"><img class="wxz_dda" src="images2/4.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">彩心马卡龙</span></a></li>
+
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=33178" target="_blank"><img class="wxz_dda" src="images2/1.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">红丝绒</span></a></li>
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=29366" target="_blank"><img class="wxz_dda" src="images2/2.jpg" /> <span class="sd_de"><img src="images2/as_da.png" /></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">原味乳酪</span></a></li>
+              <li><a href="/cake.php?cakeid=29442&catid=" target="_blank"><img class="wxz_dda" src="images2/5.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">抹茶乳酪</span></a></li>
+              <li><a href="/cake.php?cakeid=29486&catid=" target="_blank"><img class="wxz_dda" src="images2/6.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">提拉米苏</span></a></li>
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=29480" target="_blank"><img class="wxz_dda" src="images2/3.jpg" /> <span class="sd_de"><img src="images2/as_da.png" /></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">椰子无糖</span></a></li> 
+              <li><a href="http://www.wfboy.com/cake.php?cakeid=33114" target="_blank"><img class="wxz_dda" src="images2/4.jpg" /> <span class="sd_de"><img src="images2/as_da.png"/></span><span class="wxz_sdl"></span> <span class="wxz_dwfd"><img src="images2/sd_da.png" /></span> <span  class="wxz_dwwz">彩心马卡龙</span></a></li>
+              <!--原来的结束-->
+              
+           </ul>
+           <a class="next"><img src="images2/you.png" /></a>
+           </div>
+     </div>
+     </div>
+<script type="text/javascript">
+jQuery(".wxz_sjd").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,trigger:"click"});
+</script>     
+     
+   </div>
+   
+    <!-- #BeginLibraryItem "/library/inc_footer.lbi" --><!-- #EndLibraryItem -->
+    
+</div>
+
+
+</body>
+</html>

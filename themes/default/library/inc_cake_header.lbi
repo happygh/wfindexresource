@@ -1,0 +1,88 @@
+<link href="themes/default/css/csscake.css" rel="stylesheet" type="text/css" />
+<div class="box">
+<div class="box-head">
+		<div class="head-page">
+			<div class="head-left fl">
+				<a href="/"><img src="themes/default/imagesnew/logo.jpg" alt="窝夫小子"></a>
+			</div>
+			<div class="head-right fr">
+				<div class="top">
+					<div class="top-left fl">
+					<!--{if $current_user_name eq false}-->
+						<a href="/user.php?act=login">登录</a>
+						<span style="color: #e9dee3;">/</span>
+						<a href="/user.php?act=register" style="color: #dcc095;">注册</a>
+						<!--{else}-->
+                        <a href="/profile.php" target="_blank">个人中心</a>
+                        <a href="/user.php?act=logout">退出</a>
+                        <a href="/profile.php" target="_blank">{$current_user_name|truncate:50}...</a> 
+                        <!--{/if}-->
+					</div>
+					
+					<div class="top-right fr">
+						<form id="top_search_form" name="top_serach" action="/selecthelp.php" method="get">
+                    	<input type="hidden" name="act" value="by">
+                        <input type="hidden" name="type" value="500">
+                        <input type="hidden" name="page" value="1">
+                        <input type="hidden" name="festival" id="top_festival" />
+                        <input type="hidden" name="country" id="top_country" />
+                        <input type="hidden" name="taste" id="top_taste" />
+                        <input type="hidden" name="price" id="top_price" />
+						<input type="text" style="width:165px;height:17px;" name="festiva" id="keyword" autocomplete="off"/>
+						<a id="gomysearch" href="javascript:void(0);"></a>
+                        </form>
+					</div>
+					<script type="text/javascript">
+                    		$("#gomysearch").click(function(){
+								$("#top_search_form").submit();
+							})
+                    </script>
+					<div class="clearfix"></div>
+				</div>
+				<div class="bottom">
+					<div class="bottom-dinggou fl">
+						<img src="themes/default/imagesnew/dinggou.jpg" alt="认购热线"/>
+					</div>
+					<div class="bottom-gouche fl">
+						<img src="themes/default/imagesnew/che.jpg" alt="购物车"/>
+						<div class="goucheshuzi fr">
+							<a href="/flow.php">0</a>
+						</div>
+					</div>
+					<div class="bottom-city fr">
+						<a href="http://www.wfboy.com">北京</a>
+							<span style="color: #e9dee3;">/</span>
+						<a href="http://shanghai.waffleboy.com.cn" style="color: #dcc095;">上海</a>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+
+	<div class="box-banner">
+		<div class="boxbannerhr">
+					
+		</div>
+		<div class="box-bannerli">
+			<ul>
+				<li class="boxbhover" ><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+				<li><a href="/about.php" target="_blank">公&nbsp;司&nbsp;介&nbsp;绍</a></li>
+				<li><a href="/helpInfo.php?id=55" target="_blank">配&nbsp;送&nbsp;范&nbsp;围</a></li>
+				<li><a href="/helpInfo.php?id=50" target="_blank">常&nbsp;见&nbsp;问&nbsp;题</a></li>
+				<li><a href="/enterprise.php" target="_blank">企&nbsp;业&nbsp;专&nbsp;区</a></li>
+				<li><a href="/profile.php" target="_blank">个&nbsp;人&nbsp;中&nbsp;心</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	<div class="goodscate">
+		<ul>
+			<li><a href="/"><img class="cateda" src="themes/default/imagesnew/goodscate0101.jpg" alt="生日蛋糕"></a></li>
+			<li><a href="/cakes.php?catid=AT" target="_blank"><img class="cateda2" src="themes/default/imagesnew/goodscate0202.jpg" alt="窝家甜品"></a></li>
+			<li><a href="/cakes.php?catid=AW" target="_blank"><img class="cateda3" src="themes/default/imagesnew/goodscate0303.jpg" alt="窝家面包"></a></li>
+			<li><a href="/cakes.php?catid=ZAAD" target="_blank"><img class="cateda4" src="themes/default/imagesnew/goodscate0404.jpg" alt="储值卡"></a></li>
+		</ul>
+	</div>
+</div>
