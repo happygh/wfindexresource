@@ -74,7 +74,7 @@ h1,h2,h3,h4{
 .box .boxbannerhr{height: 2px; background: #ed8eb5;}
 .box .box-banner .box-bannerli{width: 1000px; margin:0 auto; height: 35px; line-height: 35px;}
 .box .box-banner .box-bannerli li{float: left; margin-left: 56px;}
-.box .box-banner .box-bannerli li a{color: #fff; font-size: 16px;}
+.box .box-banner .box-bannerli li a{color: #fff; font-size: 14px;}
 .box .box-banner .box-bannerli .boxbhover{background:url("../imagesnew/nav-hover.png") repeat-x;}
 
 .box .goodscate{width: 1000px; margin: 0 auto; margin-top: 38px;}
@@ -85,6 +85,8 @@ h1,h2,h3,h4{
 .box .goods_list .first{margin-left: 0;}
 .box .goods_list .goods_pridiv{display:none; position: absolute; width: 172px; height: 39px; background: url('../imagesnew/goodspridiv.jpg'); top:126px;}
 .box .goods_list .goods_pridiv span{color: #fff; font-size: 18px; display: block; width: 35px;margin-left: 38px;margin-top: 11px;}
+.box .goods_list .goods_pridivsan{display:none; position: absolute; width: 172px; height: 39px; background: url('../imagesnew/goodspridivsan.jpg'); top:126px;}
+.box .goods_list .goods_pridivsan span{color: #fff; font-size: 18px; display: block; width: 35px;margin-left: 38px;margin-top: 11px;}
 .box .datu div{display: inline-block; width: 490px; height: 226px;}
 .box .datu .datusec{margin-left: 14px;}
 

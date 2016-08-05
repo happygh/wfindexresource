@@ -54,8 +54,8 @@
               <div class="wxz_w717" style="width: 800px;">
                  <div {if (($smarty.foreach.cakes.index+1)%2) eq 0}class="wxz_wleft" style="width: 386px;" {else}class="wxz_wright1" style="width: 386px;"{/if}>
                    <ul>
-                       <li class="wxz_yw" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis; width:415px; height:34px;"><a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank" style="color:#C70044; width:415px;">{$cake.e_name}</a></li>
-                       <li class="wxz_zw"><a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank">{$cake.cake_name|truncate:20}</a></li>
+                       <li class="wxz_yw" style="overflow:hidden;white-space:nowrap;text-overflow:ellipsis; width:415px; height:34px;"><a title="{$cake.cake_name}" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank" style="color:#C70044;font-size: 20px; width:415px;">{$cake.e_name}</a></li>
+                       <li class="wxz_zw"><a title="{$cake.cake_name}" style="font-size: 18px;" href="/cake.php?cakeid={$cake.cake_id}&catid={$smarty.get.catid}" target="_blank">{$cake.cake_name|truncate:20}</a></li>
                        <li class="wxz_zwjj">{$cake.goods_brief|truncate:80}</li>
                        <li class="wxz_ywjj">{$cake.goods_brief_english|truncate:160}...</li>
                        <!--{if $cake.goods_id == '1111' }-->
@@ -226,7 +226,7 @@ jQuery(".wxz_sjd").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay
    </div>
    
     <!-- #BeginLibraryItem "/library/inc_footer.lbi" --><!-- #EndLibraryItem -->
-    
+<!-- #BeginLibraryItem "/library/inc_youcecat.lbi" --><!-- #EndLibraryItem -->
 </div>
 
 

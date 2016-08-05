@@ -1,0 +1,51 @@
+<div id="rg_fd">
+		<table id="__01"  border="0" cellpadding="0" cellspacing="0">
+			<tr>
+				<td>
+					<img src="images/youcecat01.jpg" width="151" height="43" alt=""></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAB" target="_blank"><img src="images/youcecatzhishi.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAK" target="_blank"><img src="images/youcecatmusi.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAA" target="_blank"><img src="images/youcecatrunao.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAC" target="_blank"><img src="images/youcecatqiaokeli.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAF" target="_blank"><img src="images/youcecatbqili.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAD" target="_blank"><img src="images/youcecatjianguodangao.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<!--<tr>-->
+				<!--<td>-->
+					<!--<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatmutangchun.jpg" width="151" height="26" alt=""></a></td>-->
+			<!--</tr>-->
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAG" target="_blank"><img src="images/youcecatertongdangao.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ZDAH" target="_blank"><img src="images/youcecatshangwudangao.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
+			<tr>
+				<td>
+					<a href="#top"><img src="images/youcecathuidaodingbu.jpg" width="151" height="46" alt=""></a></td>
+			</tr>
+		</table>
+	</div>
+	<style>
+		#rg_fd { position:fixed; right:0px; top:260px; z-index:1000px;}
+	</style>
