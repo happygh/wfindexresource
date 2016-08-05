@@ -279,6 +279,10 @@
 		<img src="themes/default/imagesnew/xianxhr.jpg" alt="">
 		</div>
 		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=33825&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1608qiaohe.jpg" alt="巧盒"/></a>
+			<div class="goods_pridivsan"><span>369</span></div>
+		</div>
+		<div class="goodspre">
 			<a class="goodspicmouse" href="/cake.php?cakeid=29607&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607hcsgbjl.jpg" alt="幻彩水果冰激淋蛋糕"/></a>
 			<div class="goods_pridiv"><span>199</span></div>
 		</div>
@@ -332,6 +336,10 @@
 			<a class="goodspicmouse" href="/cake.php?cakeid=29673&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607syk.jpg" alt="睡衣裤蛋糕"/></a>
 			<div class="goods_pridiv"><span>179</span></div>
 		</div>
+        <div class="goodspre">
+            <a class="goodspicmouse" href="/cake.php?cakeid=33446&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1608llll.jpg" alt="留恋榴莲"/></a>
+            <div class="goods_pridiv"><span>199</span></div>
+        </div>
 		<div class="goodspre">
 			<a class="goodspicmouse" href="/cake.php?cakeid=33237&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607fssn.jpg" alt="法式酸奶"/></a>
 			<div class="goods_pridiv"><span>199</span></div>
@@ -393,9 +401,13 @@
 			<div class="goods_pridiv"><span>159</span></div>
 		</div>
 		<div class="goodspre">
-			<a class="goodspicmouse" href="/cake.php?cakeid=28198&catid=AT" target="_blank"><img src="themes/default/imagesnew/16/1607hymkl.jpg" alt="马卡龙"/></a>
-			<div class="goods_pridiv"><span>59</span></div>
+			<a class="goodspicmouse" href="/cake.php?cakeid=33105&catid=AT" target="_blank"><img src="themes/default/imagesnew/16/1608tpgb.jpg" alt="甜品干杯"/></a>
+			<div class="goods_pridiv"><span>269</span></div>
 		</div>
+        <!--<div class="goodspre">-->
+            <!--<a class="goodspicmouse" href="/cake.php?cakeid=33844&catid=AT" target="_blank"><img src="themes/default/imagesnew/16/1607hymkl.jpg" alt="马卡龙"/></a>-->
+            <!--<div class="goods_pridiv"><span>59</span></div>-->
+        <!--</div>-->
 		<div class="goodspre">
 			<a class="goodspicmouse" href="/cake.php?cakeid=7426&catid=AT" target="_blank"><img src="themes/default/imagesnew/16/1607lcfpz.jpg" alt="林茨覆盆子派"/></a>
 			<div class="goods_pridiv"><span>149</span></div>
