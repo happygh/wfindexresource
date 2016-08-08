@@ -121,7 +121,7 @@
 	</script>
 	<div class="goodscate">
 		<ul>
-			<li><a href="/"><img class="cateda" src="themes/default/imagesnew/goodscate01.jpg" alt="生日蛋糕"></a></li>
+			<li><a href="#srdg"><img class="cateda" src="themes/default/imagesnew/goodscate01.jpg" alt="生日蛋糕"></a></li>
 			<li><a href="/cakes.php?catid=AT" target="_blank"><img class="cateda2" src="themes/default/imagesnew/goodscate02.jpg" alt="窝家甜品"></a></li>
 			<li><a href="/cakes.php?catid=AW" target="_blank"><img class="cateda3" src="themes/default/imagesnew/goodscate03.jpg" alt="窝家面包"></a></li>
 			<li><a href="/cakes.php?catid=ZAAD" target="_blank"><img class="cateda4" src="themes/default/imagesnew/goodscate04.jpg" alt="储值卡"></a></li>
@@ -165,6 +165,7 @@
 		<div class="newgoodshr">
 		<img src="themes/default/imagesnew/newgoodshr.jpg" alt="新品推荐">
 		</div>
+		<a name="srdg"></a>
 		<div class="goodspre first">
 			<a class="goodspicmouse" href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xhz.jpg" alt="熊孩子蛋糕"/></a>
 			<div class="goods_pridiv"><span>199</span></div>
@@ -188,6 +189,7 @@
 		<div class="newgoodshr">
 		<img src="themes/default/imagesnew/hotmaihr.jpg" alt="热卖推荐">
 		</div>
+
 		<div class="goodspre first">
 			<a class="goodspicmouse" href="/cake.php?cakeid=29366&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ywnn.jpg" alt="原味乳酪"/></a>
 			<div class="goods_pridiv"><span>179</span></div>
