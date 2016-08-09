@@ -100,7 +100,7 @@
 
 	<div class="container-fluid text-center">
 	    <div class="header">
-	        <img class="headerImg" src="themes/default/imagesnew/16/1607qixibaner.jpg" data-slideshow='themes/default/imagesnew/201605ly.jpg|themes/default/imagesnew/201604lmt.jpg|themes/default/imagesnew/bxglunbo.jpg|themes/default/imagesnew/ymyalunbo.jpg|themes/default/imagesnew/201608xiaoxiong.jpg|themes/default/imagesnew/lunbo.jpg'>
+	        <img class="headerImg" src="themes/default/imagesnew/201605ly.jpg" data-slideshow='themes/default/imagesnew/201604lmt.jpg|themes/default/imagesnew/bxglunbo.jpg|themes/default/imagesnew/ymyalunbo.jpg|themes/default/imagesnew/201608xiaoxiong.jpg|themes/default/imagesnew/lunbo.jpg'>
 	    </div>
 	</div>
 	<script src="themes/default/js/jquery.min.js"></script>
@@ -108,7 +108,7 @@
 	<script src="themes/default/js/plugin.js"> </script>
 	<script src="themes/default/js/lrtk.js"></script>
 	<script type="text/javascript">
-	var links = ["/qixi.php","/cake.php?cakeid=33944&catid=ZD","/cake.php?cakeid=33928&catid=ZD","/cake.php?cakeid=33873&catid=ZD",  "/cake.php?cakeid=33835&catid=ZD", "/cake.php?cakeid=33819&catid=ZD","/cake.php?cakeid=29366&catid=ZD"];
+	var links = ["/cake.php?cakeid=33944&catid=ZD","/cake.php?cakeid=33928&catid=ZD","/cake.php?cakeid=33873&catid=ZD",  "/cake.php?cakeid=33835&catid=ZD", "/cake.php?cakeid=33819&catid=ZD","/cake.php?cakeid=29366&catid=ZD"];
 	$(".slide").click(function(){
 	    var index = $(this).attr('index');
 		if(index === undefined) {
