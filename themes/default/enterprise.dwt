@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>窝夫小子-WAFFLEBOY唯一官方网站,24小时蛋糕网上订购,法国主厨品质,365天免费送货！</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="themes/default/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="themes/default/css/lrtk.css">
+  <link type="text/css" rel="stylesheet" href="themes/default/css/stylenew.css"/>
+  <meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕,窝夫小子月饼,waffleboy,窝夫,慕斯蛋糕,奶油蛋糕,巧克力蛋糕,芝士蛋糕,商务蛋糕,冰淇淋蛋糕,无糖蛋糕,高品质蛋糕,网上蛋糕订购,定制蛋糕">
+  <meta name="description" content="窝夫小子蛋糕官网,24小时蛋糕网上订购,365天免费送货!订购热线:4008567567.订蛋糕首选窝夫小子,法国主厨品质,精选世界顶级食材,尊享星级蛋糕,专业定制,良心品质,20年专注!">
+  <meta name="baidu-site-verification" content="dNSPmYGPDt" />
+  <script type="text/javascript"  src="themes/default/js/jQuery-1.7.1.js"></script>
+  <!--百度防恶意攻击-->
+  <script type="text/javascript" src="http://www.cubead.cn:7070/recv/visit.do?tenantid=70101&site=www.wfboy.com"></script>
+  <script type="text/javascript" language="javascript" src="http://ca.cubead.com/cubead_ca.js"></script>
+  <script type="text/javascript"> if (retvalue=="true"){  while (true){   alert("禁止访问!");  } } _traker._init('www.wfboy.com','70101');
+  </script>
+  <!--百度防恶意攻击结束-->
+</head>
+<body>
+<div class="box">
+  <div class="box-head">
+    <div class="head-page">
+      <div class="head-left fl">
+        <a href="/"><img src="themes/default/imagesnew/logo.jpg" alt="窝夫小子"></a>
+      </div>
+      <div class="head-right fr">
+        <div class="top">
+          <div class="top-left fl">
+          <!--{if $current_user_name eq false}-->
+            <a href="/user.php?act=login">登录</a>
+            <span style="color: #e9dee3;">/</span>
+            <a href="/user.php?act=register" style="color: #dcc095;">注册</a>
+            <!--{else}-->
+                        <a href="/profile.php" target="_blank">个人中心</a>
+                        <a href="/user.php?act=logout">退出</a>
+                        <a href="/profile.php" target="_blank">{$current_user_name|truncate:50}...</a> 
+                        <!--{/if}-->
+          </div>
+          
+          <div class="top-right fr">
+            <form id="top_search_form" name="top_serach" action="/selecthelp.php" method="get">
+                      <input type="hidden" name="act" value="by">
+                        <input type="hidden" name="type" value="500">
+                        <input type="hidden" name="page" value="1">
+                        <input type="hidden" name="festival" id="top_festival" />
+                        <input type="hidden" name="country" id="top_country" />
+                        <input type="hidden" name="taste" id="top_taste" />
+                        <input type="hidden" name="price" id="top_price" />
+            <input type="text" name="festiva" id="keyword" autocomplete="off"/>
+            <a id="gomysearch" href="javascript:void(0);"></a>
+                        </form>
+          </div>
+          <script type="text/javascript">
+                        $("#gomysearch").click(function(){
+                $("#top_search_form").submit();
+              })
+                    </script>
+          <div class="clearfix"></div>
+        </div>
+        <div class="bottom">
+          <div class="bottom-dinggou fl">
+            <img src="themes/default/imagesnew/dinggou.jpg" alt="认购热线"/>
+          </div>
+          <div class="bottom-gouche fl">
+            <img src="themes/default/imagesnew/che.jpg" alt="购物车"/>
+            <div class="goucheshuzi fr">
+              <a href="/flow.php">0</a>
+            </div>
+          </div>
+          <div class="bottom-city fr">
+            <a href="http://www.wfboy.com">北京</a>
+              <span style="color: #e9dee3;">/</span>
+            <a href="http://shanghai.waffleboy.com.cn" style="color: #dcc095;">上海</a>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+    </div>
+  </div>
+
+  <div class="box-banner">
+    <div class="boxbannerhr">
+          
+    </div>
+    <div class="box-bannerli">
+      <ul>
+        <li class="boxbhover" ><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="/#srdg" target="_blank">全&nbsp;部&nbsp;产&nbsp;品</a></li>
+        <li><a href="/cakes.php?catid=AX" target="_blank">主&nbsp;厨&nbsp;推&nbsp;荐</a></li>
+        <li><a href="/profile.php" target="_blank">个&nbsp;人&nbsp;中&nbsp;心</a></li>
+        <li><a href="/enterprise.php" target="_blank">企&nbsp;业&nbsp;专&nbsp;区</a></li>
+        <li><a href="/helpInfo.php?id=55" target="_blank">配&nbsp;送&nbsp;范&nbsp;围</a></li>
+      </ul>
+    </div>
+  </div>
+  <div style="text-align: center;">
+<img src="/themes/default/imagesxie/enterprise.jpg" alt="企业专区" border="0" usemap="#Map"/>
+    <map name="Map" id="Map">
+      <area shape="rect" coords="565,180,709,319" href="/xianfengzhifu.php" />
+      <area shape="rect" coords="281,459,424,604" href="/guohang.php" />
+    </map>
+</div>
+    <div class="index_footer">
+      <div class="footer-cont">
+        <div class="footer-cont-lr">
+          <div class="footer-cont-left-tw">
+          <a href="https://api.weibo.com/oauth2/authorize?client_id=2248222975&response_type=code&redirect_uri=http://www.wfboy.com/API/weibo/callback.php" target="_blank"><img src="themes/default/imagesnew/weibo.jpg" alt=""></a>
+          <a href=""><img src="themes/default/imagesnew/weixin.jpg" alt=""></a>
+          </div>
+          <div class="footer-cont-left-tw footerlwz">
+          <p>免费订购热线4008567567</p>
+          <p>www.wfboy.com &copy;2016 ALL right reserved by waffleboy </p>
+          <p>京ICP12044486  京公网安备11010102000509号</p>
+          </div>
+          <div class="clearfix"></div>
+        </div>
+        <div class="footer-cont-lr footerright">
+          <img src="themes/default/imagesnew/erweima.jpg" alt="二维码">
+          <p>立扫二维码  活动早知道</p>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+<!--cnzz-->
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1259650169'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1259650169%26show%3Dpic2' type='text/javascript'%3E%3C/script%3E"));</script>
+  <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1258981593'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s11.cnzz.com/z_stat.php%3Fid%3D1258981593%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
+  <!--百度推广管理转化跟踪-->
+  <script type="text/javascript">
+    var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+    document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4074ecfca2b6e01f86e88aa06fac5bf1'                      type='text/javascript'%3E%3C/script%3E"));
+  </script>
+</body>
+</html>
