@@ -88,19 +88,18 @@
 		<div class="box-bannerli">
 			<ul>
 				<li class="boxbhover" ><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
-				<li><a href="/about.php" target="_blank">公&nbsp;司&nbsp;介&nbsp;绍</a></li>
-				<li><a href="/helpInfo.php?id=55" target="_blank">配&nbsp;送&nbsp;范&nbsp;围</a></li>
-				<li><a href="/helpInfo.php?id=50" target="_blank">常&nbsp;见&nbsp;问&nbsp;题</a></li>
-				<li><a href="/enterprise.php" target="_blank">企&nbsp;业&nbsp;专&nbsp;区</a></li>
+				<li><a href="#srdg">全&nbsp;部&nbsp;产&nbsp;品</a></li>
+				<li><a href="/cakes.php?catid=AX" target="_blank">主&nbsp;厨&nbsp;推&nbsp;荐</a></li>
 				<li><a href="/profile.php" target="_blank">个&nbsp;人&nbsp;中&nbsp;心</a></li>
-				
+				<li><a href="/enterprise.php" target="_blank">企&nbsp;业&nbsp;专&nbsp;区</a></li>
+				<li><a href="/helpInfo.php?id=55" target="_blank">配&nbsp;送&nbsp;范&nbsp;围</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="container-fluid text-center">
 	    <div class="header">
-	        <img class="headerImg" src="themes/default/imagesnew/201605ly.jpg" data-slideshow='themes/default/imagesnew/201604lmt.jpg|themes/default/imagesnew/bxglunbo.jpg|themes/default/imagesnew/ymyalunbo.jpg|themes/default/imagesnew/201608xiaoxiong.jpg|themes/default/imagesnew/lunbo.jpg'>
+	        <img class="headerImg" src="themes/default/imagesnew/201608mctlms.jpg" data-slideshow='themes/default/imagesnew/201605ly.jpg|themes/default/imagesnew/201604lmt.jpg|themes/default/imagesnew/bxglunbo.jpg|themes/default/imagesnew/ymyalunbo.jpg|themes/default/imagesnew/201608xiaoxiong.jpg|themes/default/imagesnew/lunbo.jpg'>
 	    </div>
 	</div>
 	<script src="themes/default/js/jquery.min.js"></script>
@@ -108,7 +107,7 @@
 	<script src="themes/default/js/plugin.js"> </script>
 	<script src="themes/default/js/lrtk.js"></script>
 	<script type="text/javascript">
-	var links = ["/cake.php?cakeid=33944&catid=ZD","/cake.php?cakeid=33928&catid=ZD","/cake.php?cakeid=33873&catid=ZD",  "/cake.php?cakeid=33835&catid=ZD", "/cake.php?cakeid=33819&catid=ZD","/cake.php?cakeid=29366&catid=ZD"];
+	var links = ["/cake.php?cakeid=34051&catid=ZD","/cake.php?cakeid=33944&catid=ZD","/cake.php?cakeid=33928&catid=ZD","/cake.php?cakeid=33873&catid=ZD",  "/cake.php?cakeid=33835&catid=ZD", "/cake.php?cakeid=33819&catid=ZD","/cake.php?cakeid=29366&catid=ZD"];
 	$(".slide").click(function(){
 	    var index = $(this).attr('index');
 		if(index === undefined) {
@@ -167,6 +166,10 @@
 		</div>
 		<a name="srdg"></a>
 		<div class="goodspre first">
+			<a class="goodspicmouse" href="/cake.php?cakeid=34051&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1608mctlms.jpg" alt="抹茶提拉米苏"/></a>
+			<div class="goods_pridiv"><span>239</span></div>
+		</div>
+		<div class="goodspre">
 			<a class="goodspicmouse" href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xhz.jpg" alt="熊孩子蛋糕"/></a>
 			<div class="goods_pridiv"><span>199</span></div>
 		</div>
@@ -182,10 +185,10 @@
 			<a class="goodspicmouse" href="/cake.php?cakeid=33835&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607ymya.jpg" alt="有木有爱"/></a>
 			<div class="goods_pridiv"><span>239</span></div>
 		</div>
-		<div class="goodspre">
-			<a class="goodspicmouse" href="/cake.php?cakeid=33819&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xxhm.jpg" alt="小熊很芒"/></a>
-			<div class="goods_pridiv"><span>159</span></div>
-		</div>
+		<!--<div class="goodspre">-->
+			<!--<a class="goodspicmouse" href="/cake.php?cakeid=33819&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607xxhm.jpg" alt="小熊很芒"/></a>-->
+			<!--<div class="goods_pridiv"><span>159</span></div>-->
+		<!--</div>-->
 		<div class="newgoodshr">
 		<img src="themes/default/imagesnew/hotmaihr.jpg" alt="热卖推荐">
 		</div>
@@ -460,7 +463,7 @@
 				<a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/datu01.jpg" alt=""/></a>
 			</div>
 			<div class="datusec">
-				<a href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/datu02.jpg" alt=""/></a>
+				<a href="/cake.php?cakeid=34051&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1608datumctlms.jpg" alt=""/></a>
 			</div>
 		</div>
 		<div class="newgoodshr">
