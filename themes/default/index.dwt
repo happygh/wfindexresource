@@ -4,8 +4,8 @@
 	<title>窝夫小子-WAFFLEBOY唯一官方网站,24小时蛋糕网上订购,法国主厨品质,365天免费送货！</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="themes/default/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="themes/default/css/lrtk.css">
 	<link type="text/css" rel="stylesheet" href="themes/default/css/stylenew.css"/>
+	<link type="text/css" rel="stylesheet" href="themes/default/css/lanrenzhijia.css"/>
 	<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕,窝夫小子月饼,waffleboy,窝夫,慕斯蛋糕,奶油蛋糕,巧克力蛋糕,芝士蛋糕,商务蛋糕,冰淇淋蛋糕,无糖蛋糕,高品质蛋糕,网上蛋糕订购,定制蛋糕">
 	<meta name="description" content="窝夫小子蛋糕官网,24小时蛋糕网上订购,365天免费送货!订购热线:4008567567.订蛋糕首选窝夫小子,法国主厨品质,精选世界顶级食材,尊享星级蛋糕,专业定制,良心品质,20年专注!">
 	<meta name="baidu-site-verification" content="dNSPmYGPDt" />
@@ -97,25 +97,35 @@
 		</div>
 	</div>
 
-	<div class="container-fluid text-center">
-	    <div class="header">
-	        <img class="headerImg" src="themes/default/imagesnew/201608mctlms.jpg" data-slideshow='themes/default/imagesnew/201605ly.jpg|themes/default/imagesnew/201604lmt.jpg|themes/default/imagesnew/bxglunbo.jpg|themes/default/imagesnew/ymyalunbo.jpg|themes/default/imagesnew/201608xiaoxiong.jpg|themes/default/imagesnew/lunbo.jpg'>
-	    </div>
+	<div class="flexslider">
+	<ul class="slides">
+		<li href="/cake.php?cakeid=34051&catid=ZD" style="background:url('themes/default/imagesnew/201608mctlms.jpg') 50% 0 no-repeat;"></li>
+		<li href="/cake.php?cakeid=33944&catid=ZD" style="background:url('themes/default/imagesnew/201608newxhz.jpg') 50% 0 no-repeat;"></li>
+		<li href="/cake.php?cakeid=33928&catid=ZD" style="background:url('themes/default/imagesnew/201608newlmtb.jpg') 50% 0 no-repeat;"></li>
+		<li href="/cake.php?cakeid=33873&catid=ZD" style="background:url('themes/default/imagesnew/201608newbxdg.jpg') 50% 0 no-repeat;"></li>
+		<li href="/cake.php?cakeid=33835&catid=ZD" style="background:url('themes/default/imagesnew/201608newymya.jpg') 50% 0 no-repeat;"></li>
+		<li href="/cake.php?cakeid=33819&catid=ZD" style="background:url('themes/default/imagesnew/201608newxxhm.jpg') 50% 0 no-repeat;"></li>
+	</ul>
 	</div>
-	<script src="themes/default/js/jquery.min.js"></script>
-	<script src="themes/default/js/jquery.hammer-full.min.js"></script>
-	<script src="themes/default/js/plugin.js"> </script>
-	<script src="themes/default/js/lrtk.js"></script>
+	<script src="themes/default/js/jquery.flexslider-min.js"></script>
 	<script type="text/javascript">
-	var links = ["/cake.php?cakeid=34051&catid=ZD","/cake.php?cakeid=33944&catid=ZD","/cake.php?cakeid=33928&catid=ZD","/cake.php?cakeid=33873&catid=ZD",  "/cake.php?cakeid=33835&catid=ZD", "/cake.php?cakeid=33819&catid=ZD","/cake.php?cakeid=29366&catid=ZD"];
-	$(".slide").click(function(){
-	    var index = $(this).attr('index');
-		if(index === undefined) {
-			window.open(links[0]);
-		} else {
-			window.open(links[(parseInt(index)+1)]);
-		}
-
+		$(".slides li").hover(function(){
+			$(this).css("cursor","pointer");
+		})
+		$(".slides li").click(function(){
+			var url = $(this).attr("href");
+			if (typeof(url) != 'undefined')
+			{
+				window.open(url);
+			}
+		})
+	</script>
+	<script>
+	$(function(){
+		$('.flexslider').flexslider({
+			directionNav: true,
+			pauseOnAction: false
+		});
 	});
 	</script>
 	<div class="goodscate">
