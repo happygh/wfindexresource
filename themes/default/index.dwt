@@ -5,7 +5,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="themes/default/css/bootstrap.min.css">
 	<link type="text/css" rel="stylesheet" href="themes/default/css/stylenew.css"/>
-	<link type="text/css" rel="stylesheet" href="themes/default/css/lanrenzhijia.css"/>
+	<link type="text/css" rel="stylesheet" href="themes/default/css/lrtk.css"/>
 	<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕,窝夫小子月饼,waffleboy,窝夫,慕斯蛋糕,奶油蛋糕,巧克力蛋糕,芝士蛋糕,商务蛋糕,冰淇淋蛋糕,无糖蛋糕,高品质蛋糕,网上蛋糕订购,定制蛋糕">
 	<meta name="description" content="窝夫小子蛋糕官网,24小时蛋糕网上订购,365天免费送货!订购热线:4008567567.订蛋糕首选窝夫小子,法国主厨品质,精选世界顶级食材,尊享星级蛋糕,专业定制,良心品质,20年专注!">
 	<meta name="baidu-site-verification" content="dNSPmYGPDt" />
@@ -96,38 +96,31 @@
 			</ul>
 		</div>
 	</div>
-
-	<div class="flexslider">
-	<ul class="slides">
-		<li href="/cake.php?cakeid=34051&catid=ZD" style="background:url('themes/default/imagesnew/201608mctlms.jpg')   no-repeat;"></li>
-		<li href="/cake.php?cakeid=33944&catid=ZD" style="background:url('themes/default/imagesnew/201608newxhz.jpg')   no-repeat;"></li>
-		<li href="/cake.php?cakeid=33928&catid=ZD" style="background:url('themes/default/imagesnew/201608newlmtb.jpg')  no-repeat;"></li>
-		<li href="/cake.php?cakeid=33873&catid=ZD" style="background:url('themes/default/imagesnew/201608newbxdg.jpg')  no-repeat;"></li>
-		<li href="/cake.php?cakeid=33835&catid=ZD" style="background:url('themes/default/imagesnew/201608newymya.jpg')  no-repeat;"></li>
-		<li href="/cake.php?cakeid=33819&catid=ZD" style="background:url('themes/default/imagesnew/201608newxxhm.jpg')  no-repeat;"></li>
-	</ul>
+	<script type="text/javascript"  src="themes/default/js/responsiveslides.min.js"></script>
+	<script type="text/javascript"  src="themes/default/js/slide.js"></script>
+	<div class="slide_container">
+		<ul class="rslides" id="slider">
+			<li>
+				<a href="/cake.php?cakeid=34051&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608mctlms.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newxhz.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newlmtb.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="/cake.php?cakeid=33873&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newbxdg.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="/cake.php?cakeid=33835&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newymya.jpg" alt=""></a>
+			</li>
+			<li>
+				<a href="/cake.php?cakeid=33819&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newxxhm.jpg" alt=""></a>
+			</li>
+		</ul>
 	</div>
-	<script src="themes/default/js/jquery.flexslider-min.js"></script>
-	<script type="text/javascript">
-		$(".slides li").hover(function(){
-			$(this).css("cursor","pointer");
-		})
-		$(".slides li").click(function(){
-			var url = $(this).attr("href");
-			if (typeof(url) != 'undefined')
-			{
-				window.open(url);
-			}
-		})
-	</script>
-	<script>
-	$(function(){
-		$('.flexslider').flexslider({
-			directionNav: true,
-			pauseOnAction: false
-		});
-	});
-	</script>
+
 	<div class="goodscate">
 		<ul>
 			<li><a href="#srdg"><img class="cateda" src="themes/default/imagesnew/goodscate01.jpg" alt="生日蛋糕"></a></li>
