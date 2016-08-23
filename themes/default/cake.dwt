@@ -630,7 +630,7 @@
           <li class="gsb_sw sd_ded">请致电客服热线:4008567567</li>
           <!--活动打折显示原价-->
           <!--{if $cake.goods_id == '29399' || $cake.goods_id == '29502' || $cake.goods_id == '29669' || $cake.goods_id == '33255' || $cake.goods_id == '29607' || $cake.goods_id == '29708' || $cake.goods_id == '29658' || $cake.goods_id == '29622' || $cake.goods_id == '29571' || $cake.goods_id == '29586' || $cake.goods_id == '33342' || $cake.goods_id == '33351' || $cake.goods_id == '33352' || $cake.goods_id == '33353' || $cake.goods_id == '33354' || $cake.goods_id == '29366' || $cake.goods_id == '33178' || $cake.goods_id == '29486' || $cake.goods_id == '33105' || $cake.goods_id == '33301' || $cake.goods_id == '33301' || $cake.goods_id == '31954' || $cake.goods_id == '32746' || $cake.goods_id == '29460'}-->
-       	<li class="es_des_1"> &nbsp;&nbsp;原价：<span>{$cake.dazhe_shop_price|truncate:3}</span>&nbsp;&nbsp;</li>
+       	<!--<li class="es_des_1"> &nbsp;&nbsp;原价：<span>{$cake.dazhe_shop_price|truncate:3}</span>&nbsp;&nbsp;</li>-->
         <!--{/if}-->
         <!--{if $huodongjia == ''}-->
         <li class="es_des"> <img src="images2/jsa.png" /><font id="zongjine">...</font><img src="images2/jsa.png" /></li>
