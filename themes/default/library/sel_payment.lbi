@@ -1,0 +1,162 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="login_reg_box">
+     <div class="login_reg_top"></div>
+     <div class="login_reg_con" style="padding-top:10px;">
+     	<div class="cbh_box">
+        	<div  style="height:1px; overflow:hidden;"><input id="czkpwd1231323" name="czkpwd1231323" type="text" value=""/><input id="czkpwd123132" name="czkpwd123132" type="password" value=""/></div>
+        	<input type="hidden" name="zhekoujiage" id="zhekoujiage" value="{$format_all_total}" />
+        	<input type="hidden" name="order_shichangjia" id="order_shichangjia" value="{$shichangjia}" />
+        	<input type="hidden" name="goods_all_total" id="goods_all_total" value="{$total.all_total}" />
+     		<input type="hidden" name="zongjine" id="goods_all_total_shichang" value="{$zongjine}" />
+            <!--{if $CanUserWb == 1}-->
+        	<div class="cbh_tit">如选择使用W币、储值卡、优惠券支付,将以原价计算即不再享受会员等级折扣等其他优惠。</div>
+            <div class="cbh_rad_box">
+            	<span><input type="radio" name="other_pay" id="other_pay3" value="2"/>&nbsp;使用蛋糕储值卡</span>
+                <span><input type="radio" name="other_pay" id="other_pay4" value="0"/>&nbsp;使用W币</span>
+                <span><input type="radio" name="other_pay" id="other_pay2" value="1"/>&nbsp;使用优惠券(代金卡)</span>
+                <input type="hidden" name="is_bouns" id="is_bouns" value="0" />
+            </div>
+            <!--判断是否是全国送的商品，不能使用代金卡支付xie--> 
+           
+            <!--储值卡-->
+            <div class="cbh_line" id="czkzhifu">
+            	<span>储值卡余额:<font id="chkzje">{$account}</font></span>
+                <span style="margin-right:5px;">储值卡使用金额:</span>
+                <span><input type="text" style="width:50px;" id="srchkje" name="srchkje" onblur="checkczk()" value="0"/></span>
+                <span style="margin-right:5px;">储值卡密码:</span>
+                <span id="czkpwdbox">
+                	<input id="czkpwd" name="czkpwd" type="text" value="" style="height:18px; width:160px;"/>
+                </span>
+                <script>
+					$("#czkpwd").click(
+						function(){
+							var strinp = '<input id="czkpwd" name="czkpwd" type="password" value="" style="height:18px; width:160px;"/>';
+							$("#czkpwdbox").html(strinp);
+						}
+					);
+                </script>
+                <span style="color:#900" id="czkzhifuResult"></span>
+            </div>
+            <!--W币-->
+            <div class="cbh_line" id="wbizhifu" style="display:none;">
+            	<span style="margin-right:3px;">您现在有&nbsp;:&nbsp;<font id="wbzje">{$point}</font>W币,我要使用</span>
+                <span style="margin-right:3px;"><input style="width:50px;" type="text" name="points" id="wbinum" onBlur="checkwb()" value="0"/></span>
+                <span style="margin-right:3px;">W币(每1W币要可抵1元使用)</span>
+                <span style="margin-right:3px;"><a href="/zhuanti/wbi/wbi.html" target="_blank" style="color:#970077;">如何获得W币?</a></span>
+            </div>
+            <!--优惠券-->
+            <div class="cbh_line" id="youhuiquan" style="display:none;">
+            	<span style="margin-right:3px;">您可以输入优惠券编号</span>
+                <span><input style="width:120px;" type="text" name="input_sn" id="input_sn" value="0"/></span>
+                <span><a id="checkxiebouns" href="javascript:checkbonus()">验证优惠券</a>&nbsp;&nbsp;<span style="color:#900" id="checkResult"></span></span>
+                <input type="hidden" name="hi_result" id="hi_result" value="0"/>
+                <input type="hidden" name="input_sn_VoucherAmount" id="input_sn_VoucherAmount" value="0" />
+                <input type="hidden" name="input_sn_VoucherType" id="input_sn_VoucherType" value="" />
+                <input type="hidden" name="input_sn_bonus_id" id="input_sn_bonus_id" value="" />
+                <input type="hidden" name="req_oid" value="{$oid}" />
+            </div>
+            <!--end-->
+        </div>
+        <!--{else}-->
+        <div class="cbh_tit">订单中含活动促销产品，不能与储值卡，优惠券、W币、代金券等任何优惠同时使用。</div>
+        <!--{/if}-->
+        <!--支付方式-->
+        <div class="pay_box">
+        	<div class="pay_b_tit">请选择支付方式</div>
+            <div class="pay_b_rad">
+                <!--{if $showwxzx != 'hahahhieheiehi' }-->
+            	<span><input type="radio" name="fangshi" id="male3" value="3" checked="checked"/>&nbsp;网上支付</span>
+            	<!--{/if}-->
+                <!--{if $pdhdfk == 12212}-->
+                <span id="huodao_11"><input type="radio" name="fangshi" id="male1" value="1" />&nbsp;<span style="color:#A6007C; font-size:20px;">货到付款&nbsp;&nbsp;&nbsp;(建议您使用方便快捷的货到付款方式)</span></span>
+                <!--{/if}-->
+            </div>
+            <!--线上-->
+            <!--{if $showwxzx != 'hahahhieheiehi' }-->
+            <div class="pay_sel" id="wszfbox">
+            	<span class="py_sel_radio"><input type="radio" name="zhifu" id="male6" value="6" checked="checked"/></span>
+                <span class="py_sel_img"><img src="images/wangyinzaixian_ico.png" height="51" width="132" alt="网银在线" /></span>
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male5" value="5"/></span>
+                <span class="py_sel_img"><img src="images/zhifubao_ico.png" height="51" width="132" alt="支付宝" /></span>
+				<span class="py_sel_radio"><input type="radio" name="zhifu" id="male4" value="4"/></span>
+                <span class="py_sel_img"><img src="images/yyt.png" height="51" width="132" alt="盈赢通" /></span>
+                <!--<span class="py_sel_radio"><input type="radio" name="zhifu" id="male9" value="9"/></span>
+                <span class="py_sel_img"><img src="images/xfzf_ico.png" height="51" width="132" alt="先锋支付乐卡" /><img src="images/xfzf_ico9zhe.png" alt="先锋支付乐卡"  style="margin-bottom: 20px;"/></span>-->
+                
+                
+				<!--{if $showcft == '905460'}-->
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="7"/></span>
+                <span class="py_sel_img"><img src="images/caifutong_ico.png" height="51" width="132" alt="财付通" /></span>
+                <!--{/if}-->
+                <!--资和信支付栋材-->
+                <!--<span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="7"/></span>
+                <span class="py_sel_img"><img src="images/zihexin.jpg" height="51" width="132" alt="财付通" /></span>-->
+                <!--资和信支付栋材-->
+                <!--<span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="8"/></span>
+                <span class="py_sel_img"><img src="images/pufa_ico.png" height="51" width="132" alt="浦发银行" /></span>-->
+            </div>
+            <!--{/if}-->
+            <!--货到付款-->
+            <div class="pay_hdfk" id="hdfkbox" style="display:none;">
+            	<div><input type="radio" name="paym" id="paym" value="0" checked="checked"/>&nbsp;现金支付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paym" id="paym2" value="1" />&nbsp;刷卡付款</div>
+                <div id="cardlist" style="display:none;">
+                	<table>
+                    	<tr>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="银联卡" checked="checked"/></td><td><img src="../images/pay_ylk.jpg" height="35" width="52" alt="银联卡" title="银联卡"></td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td>&nbsp;</td>
+                          <td style="font-size:14px;">1、为保证您的权益，交易后请留存购物凭证，在退货时须出具，刷卡金额不得退现。<br/>
+					2、如由于银联卡公司系统问题、POS机具问题等造成无法正常受理的，请采用其他方式付款。</td>
+                          <!--<td valign="middle"><input type="radio" name="cardname" class="cardname" value="奥斯卡" />&nbsp;<img src="../images/pay_ask.jpg" height="35" width="52" alt="奥斯卡" title="奥斯卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="高通卡" />&nbsp;<img src="../images/pay_ght.jpg" height="35" width="52" alt="高通卡" title="高通卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="华夏瑞祥卡" />&nbsp;<img src="../images/pay_hxrx.jpg" height="35" width="52" alt="华夏瑞祥卡" title="华夏瑞祥卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="汇金卡" />&nbsp;<img src="../images/pay_hjk.jpg" height="35" width="52" alt="汇金卡" title="汇金卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="日月卡" />&nbsp;<img src="../images/pay_ryk.jpg" height="35" width="52" alt="日月卡" title="日月卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="润京银通卡" />&nbsp;<img src="../images/pay_rjytk.jpg" height="35" width="52" alt="润京银通卡" title="润京银通卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="商联通" />&nbsp;<img src="../images/pay_slk.jpg" height="35" width="52" alt="商联通" title="商联通"></td>
+                        </tr>
+                        <tr>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="世通卡" />&nbsp;<img src="../images/pay_stk.jpg" height="35" width="52" alt="世通卡" title="世通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="顺通卡" />&nbsp;<img src="../images/pay_sstk.jpg" height="35" width="52" alt="顺通卡" title="顺通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="万商通" />&nbsp;<img src="../images/pay_wst.jpg" height="35" width="52" alt="万商通" title="万商通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="易事通" />&nbsp;<img src="../images/pay_yst.jpg" height="35" width="52" alt="易事通" title="易事通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="银通卡" />&nbsp;<img src="../images/pay_ytk.jpg" height="35" width="52" alt="银通卡" title="银通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="智惠卡" />&nbsp;<img src="../images/pay_zhk.jpg" height="35" width="52" alt="智惠卡" title="智惠卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="中欣银宝通" />&nbsp;<img src="../images/pay_zxybt.jpg" height="35" width="52" alt="中欣银宝通" title="中欣银宝通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="连心卡" />&nbsp;<img src="../images/pay_lxk.jpg" height="35" width="52" alt="连心卡" title="连心卡"></td>-->
+                        </tr>
+                        <tr>
+                        	<td valign="middle"><input type="radio" name="cardname" class="cardname" value="资和信商通卡" /></td><td><img src="../images/zihexin.jpg" height="35" width="52" alt="资和信商通卡" title="资和信商通卡"></td>
+                            <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td style="font-size:14px;">1、为保证您的权益，交易后请留存购物凭证，在退货时须出具，刷卡金额不得退现。<br/>
+                        2、如由于资和信公司系统问题、POS机具问题等造成无法正常受理的，请采用其他方式付款。</td>
+                        </tr>
+                        <tr>
+                        	<td valign="middle"><input type="radio" name="cardname" class="cardname" value="北京银行卡" /></td><td><img src="../images/bjbankjpg.jpg" height="35" width="52" alt="北京银行卡" title="北京银行卡"></td>
+                            <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td>&nbsp;</td>
+                              <td style="font-size:14px;">1、货到付款时使用北京银行卡刷卡支付可享8折优惠。<br/>
+                        2、如果不是使用北京银行卡刷卡支付的则按原价收费。</td>
+                        </tr>
+                    </table>
+                    <div style="margin-top:5px; color:#333;">
+                	
+                	</div>
+                </div>
+          </div>
+        </div>
+        <!--支付方式结束-->
+        <div style="text-align:center; padding:10px;">
+         	<a href="javascript:frm_submit()"><img src="images/py_btn_submit.jpg" alt="生成订单" height="49" width="168" /></a>
+        </div>
+     </div>
+     <div class="login_reg_ft"></div>
+  </div>
+  <!--支付方式选择-->

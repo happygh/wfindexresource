@@ -1,0 +1,115 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--基本信息-->
+	<div class="info">
+    	<div class="imgBox">
+        	<div class="bigimg"><img src="{$cake.goods_img}" height="560" width="458" alt="{$cake.goods_name}" /></div>
+            <div class="minwrapper">
+                <div class="mingodown" id="mingotop">&nbsp;</div>
+                <div class="minimgbox">
+                    <div class="minimgList">
+                        <ul>
+                        <!--{if $cake.img_list}-->
+                            <li><img src="{$cake.goods_img}" height="88" width="75" alt="{$cake.goods_name}" /></li>
+                            <!--{foreach from =$cake.img_list item=img name=minimg}-->
+                            <li><img src="{$img.img_url}" height="88" width="75" alt="{$img.img_desc}" /></li>
+                            <!--{/foreach}-->
+                        <!--{else}-->
+                        	<li><img src="{$cake.goods_img}" height="88" width="75" alt="{$cake.goods_name}" /></li>
+                        <!--{/if}--> 
+                        </ul>
+                    </div>
+                </div>
+                <div class="mingotop" id="mingodown">&nbsp;</div>
+            </div>
+        </div>
+        <div class="infobox">
+        	<h3>{$cake.e_name}{if $cake.e_name !=''}/{/if}{$cake.goods_name}</h3>
+            <!--{if $favour}-->
+            <div class="huodong"><a>{$favour.fav_name}</a></div>
+            <!--{/if}-->
+            <div class="huodong" style="margin-left:35px;">
+            	<div class="box3" id="marqueebox2">
+                   <ul style="margin:0px; margin:0px;">
+                   	 
+                     <!--<li><span>老友记</span>&nbsp;<a href="/find_old_friend.php" style="color:#ae609d" target="_blank">【寻找老友记】晒照片 传心语 礼品免费领！</a></li>-->
+                     <li><span>新上架</span>&nbsp;<a href="http://www.wfboy.com/cake.php?cakeid=32591&catid=AJ" style="color:#ae609d" target="_blank">手工曲奇全国发售 精致铁盒5味装包邮</a></li>
+                     <li><span>超有爱</span>&nbsp;<a href="www.wfboy.com/cake.php?cakeid=29521" style="color:#ae609d" target="_blank">迷人的干邑香味与玫瑰柔美的粉色完美融合</a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="line"><span class="arrtit">产品形状：</span><span class="arrbody">{$cake.cake_xz}</span></div>
+            <div class="line"><span class="arrtit">产品口味：</span><span title="{$cake.taste}" class="arrbody">{$cake.taste|truncate:14}</span></div>
+            <div class="line"><span class="arrtit">{if $cake.zhishu_name!=''}{$cake.zhishu_name}{else}甜度指数{/if}：</span><span class="arrbody">{if $cake.sweet eq "咸甜" or $cake.sweet eq '咸' or $cake.sweet eq '咸鲜' or $cake.sweet eq '一星' or $cake.sweet eq '1星'}
+              	<img src="images/tian1.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+              {elseif $cake.sweet eq "微甜" or $cake.sweet eq '蛋糕-适中' or $cake.sweet eq '蛋糕-微甜' or $cake.sweet eq '微甜不腻' or $cake.sweet eq '两星' or $cake.sweet eq '2星'}
+              	<img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+              {elseif $cake.sweet eq "适中" or $cake.sweet eq '特款' or $cake.sweet eq 'NULL' or $cake.sweet eq '微甜不腻' or $cake.sweet eq '3星'}
+              	<img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+              {elseif $cake.sweet eq "较甜" or $cake.sweet eq ' 较甜' or $cake.sweet eq '4星'}
+              	<img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian.png" />
+              {elseif $cake.sweet eq "偏甜" or $cake.sweet eq '甜+' or $cake.sweet eq '5星'}
+              	<img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+              {else}
+              	<img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian1.png" />
+                <img src="images/tian.png" />
+                <img src="images/tian.png" />
+              {/if}</span></div>
+            <div class="line"><span class="arrtit">主要原料：</span><span title="{$cake.TopMateriel}" class="arrbody">{$cake.TopMateriel|truncate:16}</span></div>
+            <div class="line"><span class="arrtit">制作时间：</span><span class="arrbody">{$cake.Work_Time|truncate:14}</span></div>
+            <div class="line"><span class="arrtit">存放条件：</span><span title="{$cake.temperature}" class="arrbody">{$cake.temperature|truncate:14}</span></div>
+            <div class="line"><span class="arrtit">最佳食温：</span><span class="arrbody">{$cake.best_temp|truncate:14}</span></div>
+            <div class="fenxiang">
+            	<div class="fenxiang-box">分&nbsp;享&nbsp;到：</div>
+                <div class="fenxiang-code">
+                	<!-- JiaThis Button BEGIN -->
+                    <div class="jiathis_style">
+                        <a class="jiathis_button_qzone"></a>
+                        <a class="jiathis_button_tsina"></a>
+                        <a class="jiathis_button_tqq"></a>
+                        <a class="jiathis_button_renren"></a>
+                        <a class="jiathis_button_kaixin001"></a>
+                        <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+                        <a class="jiathis_counter_style"></a>
+                    </div>
+                    <script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1357357621274432" charset="utf-8"></script>
+                    <!-- JiaThis Button END -->
+                </div>
+            </div>
+            <div class="gbt">
+            	<!--<a href="/article.php?id=37" target="_blank">· 如何成为贵宾会员</a>-->
+            </div>
+        </div>
+        <div style="clear:both;"></div>
+    </div>
+    <!--基本信息结束-->
+<style>
+.box3 {overflow:hidden; height:26px;line-height:26px; margin-top:10px}
+.box3 ul{margin:0px; padding:0px;} 
+.box3 li{height:26px; line-height:26px;list-style-type:none;} 
+.box3 li a { color:#036; font-weight:normal;}
+</style>
+<script>
+startmarquee(26,30,3000,2);  
+</script>

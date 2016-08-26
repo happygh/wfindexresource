@@ -1,4 +1,5 @@
 <link href="themes/default/css/csscake.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <div class="box">
 <div class="box-head">
 		<div class="head-page">
@@ -78,10 +79,10 @@
 	</div>
 	<div class="goodscate">
 		<ul>
-			<li><a href="/"><img class="cateda" src="themes/default/imagesnew/goodscate0101.jpg" alt="生日蛋糕"></a></li>
-			<li><a href="/cakes.php?catid=AT" target="_blank"><img class="cateda2" src="themes/default/imagesnew/goodscate0202.jpg" alt="窝家甜品"></a></li>
-			<li><a href="/cakes.php?catid=AW" target="_blank"><img class="cateda3" src="themes/default/imagesnew/goodscate0303.jpg" alt="窝家面包"></a></li>
-			<li><a href="/cakes.php?catid=ZAAD" target="_blank"><img class="cateda4" src="themes/default/imagesnew/goodscate0404.jpg" alt="储值卡"></a></li>
+			<li><a href="/"><img class="cateda" src="themes/default/imagesnew/goodscate0101cate.jpg" alt="生日蛋糕"></a></li>
+			<li><a href="/cakes.php?catid=AT" target="_blank"><img class="cateda2" src="themes/default/imagesnew/goodscate0202cate.jpg" alt="窝家甜品"></a></li>
+			<li><a href="/cakes.php?catid=AW" target="_blank"><img class="cateda3" src="themes/default/imagesnew/goodscate0303cate.jpg" alt="窝家面包"></a></li>
+			<li><a href="/cakes.php?catid=ZAAD" target="_blank"><img class="cateda4" src="themes/default/imagesnew/goodscate0404cate.jpg" alt="储值卡"></a></li>
 		</ul>
 	</div>
 </div>

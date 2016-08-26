@@ -1,0 +1,64 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--首页圆形左右滚动商品显示-->
+<div class="o_box_1">
+    	<div class="o_b_lf" id="ob_lf"></div>
+        <div class="o_b_box_outer">
+            <div id="o_b_box">
+                <div class="o_b_inner">
+                   <div class="o_b_li">
+                     <a class="img" target="_blank" href="/cake.php?cakeid=32591&catid=AJ" ><img src="/themes/default/images/o_b_1.png" alt="饼干礼盒（铁盒）" width="186" height="186" /></a>
+                     <a class="tit" target="_blank" href="/cake.php?cakeid=32591&catid=AJ" >饼干礼盒</a>
+                   </div>
+		   <div class="o_b_li">
+                     <a class="img" target="_blank" href="/cake.php?cakeid=29371"><img src="/themes/default/images/jd.png" alt="覆盆子蓝莓芝士蛋糕" width="186" height="186" /></a>
+                     <a class="tit" target="_blank" href="/cake.php?cakeid=29371">覆盆子蓝莓芝士蛋糕</a>
+                   </div>
+                   <div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=29486" target="_blank"><img src="/themes/default/images/o_b_2.png" alt="意大利提拉米苏蛋糕" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=29486" target="_blank">意大利提拉米苏蛋糕</a>
+                   </div>
+                   
+                   <div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=29607&catid=ACAC" target="_blank"><img src="/themes/default/images/o_b_4.png" alt="幻彩低脂水果冰激凌蛋糕" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=29607&catid=ACAC" target="_blank">幻彩低脂水果冰激凌蛋糕</a>
+                   </div>
+
+		
+		<div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=32423" target="_blank"><img src="/themes/default/images/6.8-3.png" alt="熔岩巧克力蛋糕" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=32423" target="_blank">熔岩巧克力蛋糕</a>
+                   </div>
+		
+		<div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=29540" target="_blank"><img src="/themes/default/images/10.8-1.png" alt="德国黑森林蛋糕" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=29540" target="_blank">德国黑森林蛋糕</a>
+                   </div>		
+		<div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=29471" target="_blank"><img src="/themes/default/images/6.8-5.png" alt="缤纷水果木柴蛋糕" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=29471" target="_blank">缤纷水果木柴蛋糕</a>
+                   </div>
+
+                 
+                   <div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=29508" target="_blank"><img src="/themes/default/images/o_b_5.png" width="186" height="186" alt="南瓜无糖" /></a>
+                     <a class="tit" href="/cake.php?cakeid=29508" target="_blank">南瓜无糖蛋糕</a>
+                   </div>
+                   
+                   <div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=30656" target="_blank"><img src="/themes/default/images/o_b_8.png" alt="淘淘猴" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=30656" target="_blank">淘淘猴蛋糕</a>
+                   </div>
+                   
+                   <div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=29397" target="_blank"><img src="/themes/default/images/o_b_10.png" alt="意大利卡布基诺" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=29397" target="_blank">意大利卡布基诺蛋糕</a>
+                   </div>
+                   <div class="o_b_li">
+                     <a class="img" href="/cake.php?cakeid=30649"><img src="/themes/default/images/o_b_11.png" alt="周年欢庆" width="186" height="186" /></a>
+                     <a class="tit" href="/cake.php?cakeid=30649">周年欢庆</a>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <div class="o_b_rg" id="ob_rg"></div>
+    </div>

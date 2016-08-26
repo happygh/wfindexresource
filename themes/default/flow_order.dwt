@@ -1,0 +1,1040 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>窝夫小子-WAFFLEBOY唯一官方网站，最好的生日礼物，生日蛋糕，聚会礼品</title>
+<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕，窝夫小子月饼">
+<meta name="description" content="窝夫小子蛋糕官网,北京窝夫小子蛋糕预定配送-法国德国英国意大利西班牙等欧式蛋糕,北京上海送货上门生日蛋糕,全国配送曲奇饼干_马卡龙,不含植脂奶油,24小时热线4008567567">
+<script type="text/javascript" src="js/ucheck.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="/themes/default/js/wf-dev.js"></script>
+<!--百度防恶意攻击-->
+<script type="text/javascript" src="http://www.cubead.cn:7070/recv/visit.do?tenantid=70101&site=www.wfboy.com"></script>
+<script type="text/javascript" language="javascript" src="http://ca.cubead.com/cubead_ca.js"></script>
+<script type="text/javascript"> if (retvalue=="true"){  while (true){   alert("禁止访问!");  } } _traker._init('www.wfboy.com','70101'); 
+</script>
+<!--百度防恶意攻击结束-->
+</head>
+<script type="text/javascript" charset="utf-8">
+var process_request = "{$lang.process_request}";
+function checkMobile( s ){ 
+var re =/^0{0,1}(13[0-9]|15[0-9]|14[0-9]|18[0-9]|180)[0-9]{8}$/; 
+//var re = new RegExp(regu); 
+if (re.test(s)) { 
+return true; 
+}else{ 
+return false; 
+} 
+}
+var is_submit =0;
+function frm_submit()
+{
+	if(is_submit==1)
+	{
+		alert("订单已提交,请耐心等待服务器响应。");
+		return false;
+	}
+	if(submitcheck(document.form_order))
+	{
+		//alert('11111');
+		var alljine=document.getElementById("alljine").innerHTML;
+	    //alert(alljine);
+		var s_time = document.getElementById("s_time").value;
+		
+		s_time_arr = s_time.split(".");
+		
+		var startTimeInput = document.getElementById("startTimeInput").value = s_time_arr[0]+":00:00";
+		var endTimeInput = document.getElementById("endTimeInput").value = s_time_arr[1]+":00:00";
+		//alert(startTimeInput);
+		//return false;
+		if(startTimeInput =='' || endTimeInput=='')
+		{
+			var fuyanlan = document.getElementById('fuyanlan');
+			fuyanlan.value = fuyanlan.value + "顾客未选择配送时间，请联系顾客修改配送时间";
+		}
+	   if(alljine == "￥0.00")
+	   {
+	   		if(confirm("{$lang.commodity_go?}"))
+			{
+				//if($("#fuyanlan").val()==deftext)
+				//{
+				//	$("#fuyanlan").val("");
+				//}
+				document.form_order.submit();
+				is_submit =1;
+			}
+	   }else
+	   {
+		    //if($("#fuyanlan").val()==deftext)
+		    //{
+		//			$("#fuyanlan").val("");
+		//	}
+			document.form_order.submit();
+			is_submit =1;
+	   }
+	}
+}
+
+function submitcheck(frm)
+{
+  var msg = new Array();
+  var err = false;
+
+  if (frm.elements['dh_name'] && frm.elements['dh_name'].value == '')
+  {
+    msg.push("{$lang.plase_inputsubscriber_name}");
+    err = true;
+  }
+  if(frm.elements['hk_fuyanlan'] && frm.elements['hk_fuyanlan'].value.length > 150) 
+  {
+	msg.push("贺卡内容不能超过150个字符");
+    err = true;
+  }
+  if (frm.elements['dhr_nomarch'] && frm.elements['dhr_nomarch'].value == ''&&frm.elements['dhr_area'] && frm.elements['dhr_area'].value == '')
+  {
+    msg.push("请选择订货人省市");
+    err = true;
+  }
+  if((frm.elements['rd_self'].item(0).checked)==false){
+  if(frm.elements['ps_address'].value==0 || frm.elements['ps_address'].value==''){
+	  if (frm.elements['shr_nomarch'] && frm.elements['shr_nomarch'].value == ''&&frm.elements['shr_area'] && frm.elements['shr_area'].value == '')
+	  {
+		msg.push("请选择收货人省市");
+		err = true;
+	  }
+  }
+  }
+  if (frm.elements['dxxaddress'] && frm.elements['dxxaddress'].value == '')
+  {
+    err = true;
+    msg.push("{$lang.plase_inputsubscriber_address}");
+  }else if(frm.elements['dxxaddress'] && frm.elements['dxxaddress'].value.length<6)
+  {
+  	err = true;
+    msg.push("{$lang.subscriber_address_no}");
+  }
+
+  if (frm.elements['dmobile'] && frm.elements['dmobile'].value =='')
+  {
+      err = true;
+      msg.push("{$lang.plase_inputsubscriber_phone}");
+  }else
+  {
+  	if(!checkMobile(frm.elements['dmobile'].value))
+	{
+		err = true;
+      	msg.push("{$lang.subscriber_mobilephone_no}");
+	}
+  }
+  
+  if(frm.elements['rd_self'] && frm.elements['rd_self'].length>1)
+  {
+  	if(frm.elements['rd_self'].item(0).checked && frm.elements['rd_self'].item(0).value=='1')
+	{
+		if(frm.elements['self_dizhi'] && frm.elements['self_dizhi'].length>1)
+		{
+			var ress=false;
+			for(var j=0;j<frm.elements['self_dizhi'].length;j++)
+			{
+				if(!frm.elements['self_dizhi'].item(j).checked)
+				{
+					ress=true;
+				}else
+				{
+					ress=false;
+					break;
+				}
+			}
+			if(ress)
+			{
+				err=true;
+				msg.push("{$lang.plase_chosemyselfaddress}");
+			}
+		}
+	}else if(frm.elements['rd_self'].item(1).checked && frm.elements['rd_self'].item(1).value=='0')
+	{
+		if(frm.elements['ps_address'] && frm.elements['ps_address'].length==undefined)
+		{
+			if(frm.elements['ps_address'].checked && frm.elements['ps_address'].value=='0')
+			{
+				if(frm.elements['sh_name'] && frm.elements['sh_name'].value=='')
+						{
+							err=true;
+							msg.push("{$lang.plase_inputccinfo_name}");
+						}
+						
+						if(frm.elements['sxxaddress'] && frm.elements['sxxaddress'].value=='')
+						{
+							err=true;
+							msg.push("{$lang.plase_inputccinfo_address}");
+						}else if(frm.elements['sxxaddress'].value.length<6)
+						{
+							err=true;
+							msg.push("{$lang.ccinfo_address_length_no}");
+						}
+						
+						if(frm.elements['smobile'] &&　frm.elements['smobile'].value=='')
+						{
+							err=true;
+							msg.push("{$lang.plase_inputccinfo_phone}");
+						}else if(!checkMobile(frm.elements['smobile'].value))
+						{
+							err=true;
+							msg.push("{$lang.ccinfo_phone_no}");
+						}
+			}else
+			{
+				err=true;
+				msg.push("{$lang.plase_chose_other_address}");
+			}
+
+		}else if(frm.elements['ps_address'] && frm.elements['ps_address'].length>1)
+		{
+			var res=false;
+			for(var i=0;i<frm.elements['ps_address'].length;i++)
+			{
+				if(frm.elements['ps_address'].item(i).checked)
+				{
+					res=true;
+					if(frm.elements['ps_address'].item(i).value=='0')
+					{
+						if(frm.elements['sh_name'] && frm.elements['sh_name'].value=='')
+						{
+							err=true;
+							msg.push("{$lang.plase_inputccinfo_name}");
+						}
+						
+						if(frm.elements['sxxaddress'] && frm.elements['sxxaddress'].value=='')
+						{
+							err=true;
+							msg.push("{$lang.plase_inputccinfo_address}");
+						}else if(frm.elements['sxxaddress'].value.length<6)
+						{
+							err=true;
+							msg.push("{$lang.ccinfo_address_length_no}");
+						}
+						
+						if(frm.elements['smobile'] &&　frm.elements['smobile'].value=='')
+						{
+							err=true;
+							msg.push("{$lang.plase_inputccinfo_phone}");
+						}else if(!checkMobile(frm.elements['smobile'].value))
+						{
+							err=true;
+							msg.push("{$lang.ccinfo_phone_no}");
+						}
+					}
+					break;
+				}else
+				{
+					res=false;
+				}
+			}
+			if(!res)
+			{
+				err=true;
+				msg.push("{$lang.plase_chose_default_or_other_address}");
+			}
+		}
+	}else
+	{
+		err=true;
+		msg.push("{$lang.plase_chose_peisong_type}");
+	}
+  }
+    
+  if(frm.elements['needfapiao'] && frm.elements['needfapiao'].checked)
+  {
+  	if(frm.elements['gs_name'] && frm.elements['gs_name'].value=='')
+	{
+		err=true;
+		msg.push("{$lang.plase_inputcompany_name}");
+	}
+	if(frm.elements['fp_name'].item(0).checked==false && frm.elements['fp_name'].item(1).checked==false && frm.elements['fp_name'].item(2).checked==false && frm.elements['fp_name'].item(3).checked==false)
+	{
+		err=true;
+		msg.push("{$lang.plase_chose_fapiao_name}");
+	}
+  }
+  
+  if(frm.elements['sh_time'] && frm.elements['sh_time'].value=='')
+  {
+		err=true;
+		msg.push("{$lang.plase_input_songhuo_tiem}");
+  }
+  if (err)
+  {
+    message = msg.join("\n");
+    alert(message);
+  }
+  return ! err;
+
+}
+</script> 
+<body>
+<!--头部内容--><!-- #BeginLibraryItem "/library/inc_header2.lbi" -->
+<script type="text/javascript">
+  var _adwq = _adwq || [];
+  _adwq.push(['_setAccount', 'fbda2']);
+  _adwq.push(['_setDomainName', '.wfboy.com']);
+  _adwq.push(['_trackPageview']);
+  (function() {
+    var adw = document.createElement('script');
+    adw.type = 'text/javascript';
+    adw.async = true;
+    adw.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://s') + '.emarbox.com/js/adw.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(adw, s);
+  })();
+  <!--{if $current_user_name eq false}-->
+  <!--{else}--> 
+  _adwq.push(['_setAction', 
+			'1v1qe8',
+			'{$current_user_name}',
+			'10' // 事件价值 (可选)
+		   ]);
+ <!--{/if}-->
+</script>
+<!--头部内容-->
+<div id="i_hd">
+	<div class="tbox">
+        <div class="w985">
+        <!--{if $current_user_name eq false}--> 
+            <div class="welcome"><span>欢迎光临窝夫小子!</span><span>【<a href="/user.php?act=register" target="_blank">注册</a>】</span><span>【<a href="/user.php?act=login" target="_blank">登录</a>】</span>
+            <!--<span><a href="/company_user_active.php?act=login" target="_blank">企业用户登录</a></span>--></div>
+        <!--{else}--> 
+        	<div class="welcome"><a href="/profile.php" style="color:#B02393" title="{$current_user_name}">{$current_user_name|truncate:50}...</a>,欢迎光临窝夫小子！ | <a href="/user.php?act=logout">退出</a></div>
+    	<!--{/if}-->
+       <div class="toptags"><a href="/order.php">我的订单</a><span>|</span><a style="cursor:pointer" onClick="addCookie();">收藏网站</a><span>|</span><a href="/helpInfo.php?id=47">帮助中心</a><!--{if $isCity }--><a class="on_city">上海站</a><a class="off_city">北京站</a><a href="http://www{$domain}">【切换】</a><!--{else}--><a class="on_city">北京站</a><a class="off_city">上海站</a><a href="http://shanghai{$domain}">【切换】</a><!--{/if}--></div>
+        </div>
+    </div>
+    <div class="navbox">
+    	<div class="w985">
+        	<h1><a href="/">窝夫小子蛋糕</a></h1>
+            <div class="s_n_box">
+            	<!--搜索框-->
+            	<div class="searchBox">
+                    <div class="search">
+                    	<form id="top_search_form" name="top_serach" action="/selecthelp.php?act=by&type=500" method="post">
+                        <input type="hidden" name="page" value="1">
+                        <input type="hidden" name="festival" id="top_festival" />
+                        <input type="hidden" name="country" id="top_country" />
+                        <input type="hidden" name="taste" id="top_taste" />
+                        <input type="hidden" name="price" id="top_price" />
+                    	<div class="sinp_lf"></div>
+                        <div class="sinp_m">
+                        	<span class="s_s_tags" id="s_l_price"></span>
+                            <span class="s_s_tags" id="s_l_kw"></span>
+                            <span class="s_s_tags" id="s_l_dx"></span>
+                            <span class="s_s_tags" id="s_l_yt"></span>
+                            <input type="text" name="festiva" id="keyword" autocomplete="off"/>
+                        </div>
+                        <div class="sinp_rg"></div>
+                         </form>
+                        <div id="selectbox" style="display:none;">
+                        	<!--搜索历史-->
+                        	<div class="s_l_h">
+                                <span><a>生日蛋糕</a><a>马卡龙</a><a>熔岩蛋糕</a><a>儿童蛋糕</a><a>无糖蛋糕</a></span>
+                            </div>
+                            <!--筛选条件-->
+                        	<div class="s_l">
+                            	<span class="s_l_tit">价格:</span>
+                                <span><a name="s_l_price" value='59'>59-199</a><a name="s_l_price" value='299'>200-299</a><a name="s_l_price" value='399'>300-399</a><a name="s_l_price" value='499'>400-499</a><a name="s_l_price" value='500'>500以上</a></span>
+                            </div>
+                            <div class="s_l">
+                            	<span class="s_l_tit">口味:</span>
+                                <span><a name="s_l_kw" value='ACAB'>巧克力</a><a name="s_l_kw" value="ACAC">冰激凌</a><a name="s_l_kw" value='ACAD'>芝士奶酪</a><a name="s_l_kw" value='ACAE'>酒味</a><a name="s_l_kw" value='ACAG'>坚果</a><a name="s_l_kw" value='ACAH'>咖啡</a><a name="s_l_kw" value='ACAI'>无糖</a><a name="s_l_kw" value='ACAJ'>低脂</a><a name="s_l_kw" value='ACAK'>奶油水果</a></span>
+                            </div>
+                            <div class="s_l">
+                            	<span class="s_l_tit">对象:</span>
+                                <span><a name="s_l_dx" value='AFAB'>长辈</a><a name="s_l_dx" value='AEAD'>客户</a><a name="s_l_dx" value='AEAC'>儿童</a><a name="s_l_dx" value='AEAE'>亲友</a><a name="s_l_dx" value='AEAA'>恋人</a></span>
+                            </div>
+                            <div class="s_l">
+                            	<span class="s_l_tit">用途:</span>
+                                <span><a name="s_l_yt" value='ABAA'>聚会</a><a name="s_l_yt" value='ABAB'>生日</a><a name="s_l_yt" value='ABAC'>婚礼</a><a name="s_l_yt" value='ABAD'>庆典</a><a name="s_l_yt" value='ABAE'>下午茶</a><a name="s_l_yt" value='ABAF'>送礼</a></span>
+                            </div>
+                            <div class="s_l_close">
+                                <span id="sqingkong">清空条件</span><span id="sclose">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hottags">
+                    	<div class="box2" id="marqueebox1">
+                            <ul style="margin:0px; margin:0px;">
+                                <li><a href="/zhuanti/20130601/index.html">欢度61 买小丑冰激凌蛋糕送玩具</a></li>
+                                <li><a href="/cakes.php?catid=ZAAD">储值1000送111 储值5000送666</a></li>
+                                <li><a href="/user.php?act=register">新会员注册 即获10元优惠券</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--搜索结束-->
+                <!--导航栏-->
+                <div class="nav">
+                	<ul>
+                    	<li class="navtag_lf"><span class="navtag_lf"></span><a href="/">首页</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="/cakes.php?catid=ZD">产品名录</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="/cakes.php?catid=ZA">超热卖</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="/cakes.php?catid=AJ">全国送</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="/shengridangao/index.html" target="_blank">生日蛋糕</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="/cakes.php?catid=ABAC">婚礼蛋糕</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="/cakes.php?catid=AEAC">儿童蛋糕</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="http://waffleboysp.tmall.com" target="_blank">天猫商城</a><span class="navtag_rg"></span></li>
+                    </ul>
+                </div>
+                <!--导航结束-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部内容结束-->
+<style>
+.box2 {overflow:hidden; height:22px;line-height:22px; margin-top:10px}
+.box2 ul{margin:0px; padding:0px;} 
+.box2 li{height:22px; line-height:22px;list-style-type:none;} 
+.box2 li a { color:#036; font-weight:normal;}
+</style>
+<script>
+startmarquee(22,30,3000,1);  
+</script><!-- #EndLibraryItem --><!--头部内容结束-->
+<div id="flowcartbox">
+  <div class="f_t_hot"><!-- #BeginLibraryItem "/library/top_tags_hot222.lbi" -->
+<div class="f_t_left"><span>热卖:</span><a href="/cake.php?cakeid=32505&catid=ZD" target="_blank">熔岩巧克力蛋糕</a><a href="/cake.php?cakeid=29431" target="_blank">白巧克力松露蛋糕</a><a href="/cake.php?cakeid=29442" target="_blank">抹茶乳酪蛋糕</a></div>
+    <div class="f_t_right"><span>热门搜索:</span><a href="/cakes.php?catid=ABAB" target="_blank">生日蛋糕</a><a href="/cakes.php?catid=ABAF" target="_blank">下午茶</a><a href="/cakes.php?catid=ACAJ" target="_blank">马卡隆</a></div><!-- #EndLibraryItem --></div>
+  <div class="f_t_lc">&nbsp;</div>
+  <!--购物车内容--><!-- #BeginLibraryItem "/library/payment_cart.lbi" -->
+<!--购物车内容-->
+  <div class="cartbox">
+    <table width="983" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr style="height:36px; color:#FFF; border-radius:5px;">
+          <th style="border-left:1px solid #CCC;" width="70">商品编号</th>
+          <th width="192" >商品名称</th>
+          <th width="137">商品图片</th>
+          <th width="146">规格</th>
+          <th width="146">会员价格</th>
+          <th width="146">数量</th>
+          <th style="border-right:1px solid #CCC;" width="146">小计</th>
+        </tr>
+ 	<!--商品信息-->
+        <script>
+          	var mianyunfei = 0;
+        </script>
+        <!-- {foreach from=$goods_list item=goods} --> 
+         <!--{if $goods}-->
+         <!--{if $goods.goods_id=='32423' || $goods.goods_id=='32528'}-->
+         <script>
+          	var mianyunfei = 1;
+         </script>
+        <!--{/if}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>{$goods.goods_id}</span></td>
+          <td align="center"><a href="/cake.php?cakeid={$goods.goods_id}" target="_blank">{$goods.goods_name}</a></td>
+          <td align="center">
+          	<img src="{$goods.goods_img}" width="79" height="77" alt="{$goods.goods_name}">
+          </td>
+          <td align="center"><!--{if $goods.Unitname == '个'}-->{$goods.Cake_Pound}{$lang.wofu_cart_num}<!--{else}-->{$goods.Unitname}<!--{/if}--></td>
+          <td align="center">{$goods.format_goods_price}</td>
+          <td align="center"><span>{$goods.goods_number}</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">{$goods.format_total}</td>
+        </tr>
+        <!--{/if}--> 
+        <!-- {/foreach} --> 
+        <!-- {foreach from=$append_list item=append} --> 
+        <!--{if $append.goods_number>0}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>{$append.parent_id}</span></td>
+          <td align="center"><span>{$append.goods_name}</span></td>
+          <td align="center">
+          	<img src="{$append.goods_img}" width="79" height="77" alt="{$append.goods_name}">
+          </td>
+          <td align="center">{$append.Unit}</td>
+          <td align="center">{$append.goods_price}</td>
+          <td align="center"><span>{$append.goods_number}</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">{$append.format_total}</td>
+        </tr>     
+        <!--{/if}--> 
+        <!-- {/foreach} --> 
+        <!--{if $zp.goods_number>0}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>{$append.parent_id}</span></td>
+          <td align="center"><span>{$append.goods_name}</span></td>
+          <td align="center">
+          	<img src="{$append.goods_thumb}" width="79" height="77" alt="{$goods.goods_name}">
+          </td>
+          <td align="center">{$append.Unit}</td>
+          <td align="center">{$append.goods_price}</td>
+          <td align="center"><span>{$append.goods_number}</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">{$append.format_total}</td>
+        </tr>
+        <!--{/if}--> 
+      </tbody>
+    </table>
+    <div style="text-align:right; line-height:28px;"><a style="color:#333; background:url(images/go_back.jpg) 0px 2px no-repeat; padding-left:18px;" href="/flow.php">返回修改购物车</a></div>
+  </div>
+<!--购物车内容结束--><!-- #EndLibraryItem --><!--购物车内容结束-->
+  <!--用户信息内容--><!-- #BeginLibraryItem "/library/payment_info.lbi" -->
+<!--用户信息内容-->
+<script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
+<form method="post" id="form_order" name="form_order" action="flow_cart.php?step=save_order">
+  <div class="login_reg_box">
+     <div class="login_reg_top"></div>
+     <div class="login_reg_con" style="padding-top:10px;">
+     	 <div class="sh_t_line" ><span class="inptags">蛋糕用途:</span><span><input type="radio" name="dgyt" value="生日" />&nbsp;生日</span><span><input type="radio" name="dgyt" value="其他" checked="checked"/>&nbsp;其他</span></div>
+     	 <!--配送方式-->
+         <div class="psfs_tags">
+         	<div class="psfs_tit">配送方式</div>
+            <div class="psft_inp_b"><span><input type="radio" name="rd_self" id="rd_self" value="1" /></span><span>到窝夫自取</span></div>
+            <div class="psft_inp_b"><span><input type="radio" name="rd_self" id="ps_waff" value="0" checked="checked"/></span><span>窝夫配送</span></div>
+         </div>
+         <!--配送方式结束-->
+         <!--自取地址-->
+         <div class="psfs_zq" id="div_self" style="display:none;">
+         	<ul>
+                <li class="content-write7">
+                  <input type="radio" name="self_dizhi" id="male" value="010" checked="checked">
+                  北京 &nbsp;北京市东城区朝阳门北大街8号富华大厦A座B1</li>
+                <li class="content-write7">
+                  <input type="radio" name="self_dizhi" id="male0" value="021">
+                  上海 &nbsp;上海市普陀区泸定路730号（近怒江北路）</li>
+              </ul>
+         </div>
+         <!--自取地址结束-->
+         <script>
+        	    <!--{if $AddresslistCount >0}--> 
+				is_defalut_add = 1;
+				<!--{else}-->
+				is_defalut_add = 0;
+				<!--{/if}-->
+         </script>
+         <!--配送地址-->
+         <div id="waff_ps">
+            <!--已有收货人信息--> 
+              <div id="div_peisong" {if $AddresslistCount <=0}style='display:none;'{/if}> 
+              <!--{if $AddresslistCount >0}-->
+              <ul>
+                <!--{foreach from=$AddressList item=address name=loop}-->
+                <li class="content-write7">
+                  <input type="radio" {if $smarty.foreach.loop.iteration==1}checked="checked"{/if} onclick="javascript:isFreeAdd()" name="ps_address" id="radio" value="{$address.address_id}" title="{$address.address}"/>
+                  {$address.address}</li>
+                <!--{/foreach}-->
+                <li class="content-write7">
+                  <input type="radio" name="ps_address" id="female" value="0" />
+                  <font color="#9F2B85">{$lang.wofu_cart_o_other_addr}</font> </li>
+              </ul>
+              <!--{else}-->
+              <input type="radio" name="ps_address" id="female" value="0" checked="checked" />
+              <!--{/if}--> 
+            </div>
+            <!--已有收货人结束-->
+            <div class="shrxx" id="add_peisong_add" {if $AddresslistCount > 0}style='display:none;'{/if}>
+                <div class="tit_sh_r">输入新信息(收货人信息)</div>
+                <div class="sh_r_line"><span class="inptags">收&nbsp;货&nbsp;人:</span><span><input type="text" name="sh_name" id="sh_name"/></span></div>
+                <div class="sh_r_line"><span class="inptags">手机号码:</span><span><input type="text" name="smobile" id="smobile" /></span></div>
+                <div class="sh_r_line"><span class="inptags">备用电话:</span><span><input type="text" name="sfamily_dh" id="sfamily_dh" /></span></div>
+                <div class="sh_r_line">
+                    <span class="inptags">所在省市:</span>
+                    <span style="padding-top:13px;"><select name="shr_nomarch" id='shr_nomarch' onchange="region_change_jq(this.value,'shr_area')">
+                        <option value="" selected="selected">请选择</option>
+                        <!-- {foreach from=$TopAddList item=topadd} -->
+                        <option value="{$topadd.region_id}">{$topadd.region_name}</option>
+                        <!-- {/foreach} -->
+                      </select></span>
+                      <span style="padding-top:13px;"><select name="shr_area" id="shr_area">
+                        <option value="" selected="selected">请选择</option>
+                        <!-- {foreach from=$NextAddList item=nextadd} -->
+                        <option value="{$nextadd.region_id}">{$nextadd.region_name}</option>
+                        <!-- {/foreach} -->
+                      </select></span>
+                </div>
+                <div class="sh_r_line"><span class="inptags">详细地址:</span><span><input style="width:360px;" type="text"  name="sxxaddress" id="sxxaddress" onchange="isFreeAdd()" onblur="isFreeAdd()" /></span></div>
+                <!--收费提示开始-->
+                <div id="psqy_bz" style="display:none; line-height:24px; padding-left:26px; padding-top:10px;">
+                  <p>
+                  <span class="content-write7">
+                    <input type="hidden" value="0" name="wuhuan" id="wuhuan_bz"/>
+                    </span> <span class="content-write7"><font color="#930683">请选择具体区域：</font></span> </p>
+                  <span class="content-write7">
+                  <input type="radio" value="0" name="wuhuan_bz" id="wuhuannei" onclick="showpeisongtishi(this)" />
+                  </span> <span class="content-write7">北京五环内</span> <span class="content-write7">
+                  <input type="radio" value="1" name="wuhuan_bz" id="wuhuan" onclick="showpeisongtishi(this)" checked="checked"/>
+                  </span> <span class="content-write7">{$lang.wofu_my_cart_wai}</span> <span class="content-write7">
+                  <input type="radio" value="2" name="wuhuan_bz" id="shanghaisanshi" onclick="showpeisongtishi(this)"/>
+                  </span><span class="content-write7">上海浦东新区</span>
+                  <input type="radio" value="2" name="wuhuan_bz" id="qitadiqu_w" onclick="showpeisongtishi(this)"/>
+                  </span><span class="content-write7">其它地区</span>
+                  <div id="peisongtishi" name="peisongtishi" style="display:none;"> <span><font style="font-size:12px; color:#930683;">{$lang.wofu_peisong_fuwufei}</font></span> </div>
+                  <div id="peisongshtishi" name="peisongshtishi" style="display:none;"> <span><font style="font-size:12px; color:#930683;">*中环以外至外环线以内区域订购7个或7号规格（含）以上蛋糕提供配送，加收30元配送费</font></span> </div>
+                </div>
+                <!--收费提示结束-->
+            </div>
+         </div>
+         <!--配送地址结束-->
+         <div class="shrxx">
+         	<div class="tit_sh_r">请填写信息(订货人信息)</div>
+         	<div class="sh_r_line"><span class="inptags">订&nbsp;货&nbsp;人:</span><span><input type="text" name="dh_name" id="dh_name" value="{$current_user_info.real_name}"/></span></div>
+            <div class="sh_r_line"><span class="inptags">手机号码:</span><span><input type="text"  name="dmobile" id="dmobile"value="{$current_user_info.mobile_phone}" /></span></div>
+            <div class="sh_r_line"><span class="inptags">备用电话:</span><span><input type="text" name="dfamily_dh" id="dfamily_dh" value="{$current_user_info.phone}" /></span></div>
+         </div>
+         <!--发票-->
+         <div class="psfs_tags" style="height:auto;">
+         	<div class="fp_tit"><input type="checkbox" name="needfapiao" id="needfapiao" value="1" />需要发票</div>
+            <div class="psft_inp_b"><span>机打发票,个人情填写具体姓名,写姓名的发票类只可开"餐费",公司请填写准确名称.</span></div>
+            <div style="clear:both; display:none;" id="fapiaoCon" >
+            	<div class="fptt"><span>发票抬头:</span><span><input type="text" name="gs_name" id="gs_name"/></span></div>
+            	<div class="fptt"><span>发票名称:</span><span><input type="radio"  name="fp_name" id="fp_name" value="0" />&nbsp;餐费[仅限北京]</span><span><input type="radio" name="fp_name" id="fp_name" value="1" />&nbsp;食品</span></div>
+            </div>
+            <div style="clear:both"></div>
+         </div>
+         <!--发票结束-->
+         <!--配送时间-->
+         <div class="f_c_other">
+         	<div class="s_Time_b">
+            	<div class="s_time_tags">送货时间:&nbsp;</div>
+                <div class="s_time_date">
+                	<input type="text" name="sh_time" id="sh_time" onclick="WdatePicker({minDate:'%y-%M-%d',onpicked:selectTim})"/>
+                	<input type="hidden" name="dqsj" id="dqsj" readonly='readonly' style="text-align:left;width:80px;" value=""/>
+                    <input type="hidden" name="phpsj" id="phpsj" readonly='readonly' style="text-align:left;width:80px;" value="{$getDateandtime}"/>
+                    <SCRIPT LANGUAGE="JavaScript">
+						var d=new Date();
+						document.getElementById('dqsj').value=d.getHours()+':'+d.getMinutes();
+				  	</SCRIPT>
+                </div>
+                <div class="s_time_times">
+                	<select id="s_time" name="sh_time_a">
+                    	<option value="08.11" selected='true'>请选择时间</option>
+                    </select>
+                    <input type="hidden" name="statimehour" id="startTimeInput"/>
+                    <input type="hidden" name="endtiemhour" id="endTimeInput"/>
+                </div>
+            </div>
+            <script type="text/javascript" src="/themes/default/js/selectTime.js"></script>
+            <div class="u_fy_box">
+            	<div class="u_fy_tags">用户附言:&nbsp;</div>
+                <div class="u_fy_area">
+                	<textarea name="fuyanlan" id="fuyanlan"></textarea>
+              	</div>
+                <div style="clear:both"></div>
+            </div>
+            <div class="gwsm_box">
+            	<div class="gwsm_tit"></div>
+                <div class="gwsm_con">
+                	<p>购物说明:</p>
+                    <p>1、由于蛋糕造型设计,适宜写字的蛋糕有:104蛋糕,寿比南山,214蛋糕,501蛋糕,823蛋糕,702蛋糕。除以上几款其它均不能写字。</p>
+                    <p>2、免费配送:北京五环内免费配送/上海普陀区,长宁区,黄埔区,静安区,虹口区,闸北区免费配送。</p>
+                </div>
+                <div class="gwsm_ft"></div>
+            </div>
+         </div>
+         <!--配送时间结束-->
+         <!--总价格-->
+         <div class="total">
+         	以上商品价格合计：<span id='alljine'>{$format_all_total}</span>元(含0元附件费用+<span id="zongyunfeiwf">0元</span>运费)
+            <input type="hidden" name="shichangjias" id="shichangjia" value="{$all_total}" />
+         </div>
+         <!--总价格结束-->
+     </div>
+     <div class="login_reg_ft"></div>
+  </div>
+  
+  <!--用户信息内容结束--><!-- #EndLibraryItem --><!--用户信息内容结束--><!-- #BeginLibraryItem "/library/sel_payment.lbi" -->
+<div class="login_reg_box">
+     <div class="login_reg_top"></div>
+     <div class="login_reg_con" style="padding-top:10px;">
+     	<div class="cbh_box">
+        	<div  style="height:1px; overflow:hidden;"><input id="czkpwd1231323" name="czkpwd1231323" type="text" value=""/><input id="czkpwd123132" name="czkpwd123132" type="password" value=""/></div>
+        	<input type="hidden" name="zhekoujiage" id="zhekoujiage" value="{$format_all_total}" />
+        	<input type="hidden" name="order_shichangjia" id="order_shichangjia" value="{$shichangjia}" />
+        	<input type="hidden" name="goods_all_total" id="goods_all_total" value="{$total.all_total}" />
+     		<input type="hidden" name="zongjine" id="goods_all_total_shichang" value="{$zongjine}" />
+        	<div class="cbh_tit">如选择使用W币、储值卡、优惠券支付,将以原价计算即不再享受会员等级折扣等其他优惠。</div>
+            <div class="cbh_rad_box">
+            	<span><input type="radio" name="other_pay" id="other_pay3" value="2"/>&nbsp;使用储值卡</span>
+                <span><input type="radio" name="other_pay" id="other_pay4" value="0"/>&nbsp;使用W币</span>
+                <span><input type="radio" name="other_pay" id="other_pay2" value="1"/>&nbsp;使用优惠券</span>
+                <input type="hidden" name="is_bouns" id="is_bouns" value="0" />
+            </div>
+            <!--储值卡-->
+            <div class="cbh_line" id="czkzhifu">
+            	<span>储值卡余额:<font id="chkzje">{$account}</font></span>
+                <span style="margin-right:5px;">储值卡使用金额:</span>
+                <span><input type="text" style="width:50px;" id="srchkje" name="srchkje" onblur="checkczk()" value="0"/></span>
+                <span style="margin-right:5px;">储值卡密码:</span>
+                <span id="czkpwdbox">
+                	<input id="czkpwd" name="czkpwd" type="text" value="" style="height:18px; width:160px;"/>
+                </span>
+                <script>
+					$("#czkpwd").click(
+						function(){
+							var strinp = '<input id="czkpwd" name="czkpwd" type="password" value="" style="height:18px; width:160px;"/>';
+							$("#czkpwdbox").html(strinp);
+						}
+					);
+                </script>
+                <span style="color:#900" id="czkzhifuResult"></span>
+            </div>
+            <!--W币-->
+            <div class="cbh_line" id="wbizhifu" style="display:none;">
+            	<span style="margin-right:3px;">您现在有&nbsp;:&nbsp;<font id="wbzje">{$point}</font>W币,我要使用</span>
+                <span style="margin-right:3px;"><input style="width:50px;" type="text" name="points" id="wbinum" onBlur="checkwb()" value="0"/></span>
+                <span style="margin-right:3px;">W币(每1W币要可抵1元使用)</span>
+                <span style="margin-right:3px;"><a href="/zhuanti/wbi/wbi.html" target="_blank" style="color:#970077;">如何获得W币?</a></span>
+            </div>
+            <!--优惠券-->
+            <div class="cbh_line" id="youhuiquan" style="display:none;">
+            	<span style="margin-right:3px;">您可以输入优惠券编号</span>
+                <span><input style="width:120px;" type="text" name="input_sn" id="input_sn" value="0"/></span>
+                <span><a href="javascript:checkbonus()">验证优惠券</a>&nbsp;&nbsp;<span style="color:#900" id="checkResult"></span></span>
+                <input type="hidden" name="hi_result" id="hi_result" value="0"/>
+                <input type="hidden" name="input_sn_VoucherAmount" id="input_sn_VoucherAmount" value="0" />
+                <input type="hidden" name="input_sn_VoucherType" id="input_sn_VoucherType" value="" />
+                <input type="hidden" name="input_sn_bonus_id" id="input_sn_bonus_id" value="" />
+                <input type="hidden" name="req_oid" value="{$oid}" />
+            </div>
+            <!--end-->
+        </div>
+        <!--支付方式-->
+        <div class="pay_box">
+        	<div class="pay_b_tit">请选择支付方式</div>
+            <div class="pay_b_rad">
+            	<span><input type="radio" name="fangshi" id="male3" value="3" checked="checked"/>&nbsp;网上支付</span>
+                <span id="huodao_11"><input type="radio" name="fangshi" id="male1" value="1" />&nbsp;货到付款</span>
+                <script>
+              	if(mianyunfei==1)
+				{
+					document.getElementById("huodao_11").style.display='none';
+				}
+                </script>
+            </div>
+            <!--线上-->
+            <div class="pay_sel" id="wszfbox">
+            	<span class="py_sel_radio"><input type="radio" name="zhifu" id="male6" value="6" checked="checked"/></span>
+                <span class="py_sel_img"><img src="library/images/wangyinzaixian_ico.png" height="51" width="132" alt="网银在线" /></span>
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male5" value="5"/></span>
+                <span class="py_sel_img"><img src="library/images/zhifubao_ico.png" height="51" width="132" alt="支付宝" /></span>
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="7"/></span>
+                <span class="py_sel_img"><img src="library/images/caifutong_ico.png" height="51" width="132" alt="财付通" /></span>
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="8"/></span>
+                <span class="py_sel_img"><img src="library/images/pufa_ico.png" height="51" width="132" alt="浦发银行" /></span>
+            </div>
+            <!--货到付款-->
+            <div class="pay_hdfk" id="hdfkbox" style="display:none;">
+            	<div><input type="radio" name="paym" id="paym" value="0" checked="checked"/>&nbsp;现金支付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paym" id="paym2" value="1" />&nbsp;刷卡付款</div>
+                <div id="cardlist" style="display:none;">
+                	<table>
+                    	<tr>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="银联卡" />&nbsp;<img src="images/pay_ylk.jpg" height="35" width="52" alt="银联卡" title="银联卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="奥斯卡" />&nbsp;<img src="images/pay_ask.jpg" height="35" width="52" alt="奥斯卡" title="奥斯卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="高通卡" />&nbsp;<img src="images/pay_ght.jpg" height="35" width="52" alt="高通卡" title="高通卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="华夏瑞祥卡" />&nbsp;<img src="images/pay_hxrx.jpg" height="35" width="52" alt="华夏瑞祥卡" title="华夏瑞祥卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="汇金卡" />&nbsp;<img src="images/pay_hjk.jpg" height="35" width="52" alt="汇金卡" title="汇金卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="日月卡" />&nbsp;<img src="images/pay_ryk.jpg" height="35" width="52" alt="日月卡" title="日月卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="润京银通卡" />&nbsp;<img src="images/pay_rjytk.jpg" height="35" width="52" alt="润京银通卡" title="润京银通卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="商联通" />&nbsp;<img src="images/pay_slk.jpg" height="35" width="52" alt="商联通" title="商联通"></td>
+                        </tr>
+                        <tr>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="世通卡" />&nbsp;<img src="images/pay_stk.jpg" height="35" width="52" alt="世通卡" title="世通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="顺通卡" />&nbsp;<img src="images/pay_sstk.jpg" height="35" width="52" alt="顺通卡" title="顺通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="万商通" />&nbsp;<img src="images/pay_wst.jpg" height="35" width="52" alt="万商通" title="万商通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="易事通" />&nbsp;<img src="images/pay_yst.jpg" height="35" width="52" alt="易事通" title="易事通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="银通卡" />&nbsp;<img src="images/pay_ytk.jpg" height="35" width="52" alt="银通卡" title="银通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="智惠卡" />&nbsp;<img src="images/pay_zhk.jpg" height="35" width="52" alt="智惠卡" title="智惠卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="中欣银宝通" />&nbsp;<img src="images/pay_zxybt.jpg" height="35" width="52" alt="中欣银宝通" title="中欣银宝通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="连心卡" />&nbsp;<img src="images/pay_lxk.jpg" height="35" width="52" alt="连心卡" title="连心卡"></td>
+                        </tr>
+                    </table>
+                </div>
+          </div>
+        </div>
+        <!--支付方式结束-->
+        <div style="text-align:center; padding:10px;">
+         	<a href="javascript:frm_submit()"><img src="library/images/py_btn_submit.jpg" alt="生产订单" height="49" width="168" /></a>
+        </div>
+     </div>
+     <div class="login_reg_ft"></div>
+  </div>
+  <!--支付方式选择--><!-- #EndLibraryItem --><!--支付方式选择-->
+  <div style="height:30px;">&nbsp;</div>
+</div>
+<!--底部内容--><!-- #BeginLibraryItem "/library/inc_footer.lbi" -->
+<!--底部内容-->
+<div id="ft">
+	<div class="h_m_1">
+    	<ul>
+        	<li class="h_tit">新手 Novice</li>
+            <li><a href="/user.php?act=register" target="_blank">用户注册</a></li>
+            <li><a href="/helpInfo.php?id=57">订购须知</a></li>
+            <li><a href="/helpInfo.php?id=50">订购流程</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">支付 Payfor</li>
+            <li><a href="/helpInfo.php?id=53">货到付款</a></li>
+            <li><a href="/helpInfo.php?id=53">在线支付</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">配送 Distribution</li>
+            <li><a href="/helpInfo.php?id=59">配送时间</a></li>
+            <li><a href="/helpInfo.php?id=55">配送方式</a></li>
+            <li><a href="/helpInfo.php?id=56">自取流程</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">优惠 Discount</li>
+            <li><a href="/zhuanti/wbi/wbi.html">W币</a></li>
+            <li><a href="/helpInfo.php?id=51">储值卡/优惠券</a></li>
+            <li><a href="/article.php?id=52">会员级别</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">自助 Self-help</li>
+            <li><a href="/helpInfo.php?id=47">有问必答</a></li>
+            <li><a href="/profile.php">个人中心</a></li>
+            <li><a href="/getpassword.php">找回密码</a></li>
+            <li><a href="/helpInfo.php?id=58">联系我们</a></li>
+        </ul>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="h_m_2">
+    	<ul>
+        	<!--<li><a href="#">关于我们</a></li>-->
+            <li><a href="/helpInfo.php?id=47" target="_blank">帮助中心</a></li>
+            <li><a href="http://app.alltosun.com/wfboy/index.php?url=user/login" target="_blank">生日管理</a></li>
+            <li><a href="/zhuanti/dingzhi/gexingdingzhi.html" target="_blank">个性定制</a></li>
+            <!--<li><a href="#">客户问题提交</a></li>-->
+            <li><a href="/zhuanti/app20130228/index.html" target="_blank">APP下载</a></li>
+        </ul>
+    </div>
+    <div class="h_m_3">
+    	<div><span style="margin-right:10px;"><a href="http://www.dianping.com/shop/511237#mr" target="_blank"><img style="border:none" src="library/themes/default/images/dianping_ico.png"></a></span> <span><a href="http://e.weibo.com/wfboy" target="_blank"><img style="border:none" src="library/themes/default/images/xinlang_ico.png"></a></span></div>
+        <div>www.wfboy.com &copy;2015 ALL right reserved
+         by waffleboy &nbsp;&nbsp;京ICP12044486</div>
+    </div>
+</div>
+<!--底部内容结束-->
+<style>
+	#rg_fd { position:fixed; right:-90px; top:180px; z-index:1000px;}
+</style>
+<!--[if IE 6]> 
+<script type="text/javascript" src="/themes/default/js/DD_belatedPNG.js"></script>
+<script type="text/javascript"> 
+DD_belatedPNG.fix('div, h1, img, li, span , a, .png_bg'); 
+</script> 
+<style>
+#rg_fd{
+_position:absolute;
+_bottom:auto;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+</style>
+<![endif]-->
+<div id="rg_fd">
+	<table id="__01"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="library/images/kefu_01.jpg" width="129" height="20" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/helpInfo.php?id=49" target="_blank"><img src="library/images/kefu_02.jpg" width="129" height="34" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://chat1.5251.net/jsp_admin/client/client_yes/client.jsp?companyId=37571&style=76930&locate=cn" target="_blank"><img src="library/images/kefu_03.jpg" width="129" height="38" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://chat1.5251.net/jsp_admin/client/client_yes/client.jsp?companyId=37571&style=76930&locate=cn" target="_blank"><img src="library/images/kefu_04.jpg" width="129" height="35" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://chat1.5251.net/jsp_admin/client/client_yes/client.jsp?companyId=37571&style=76930&locate=cn" target="_blank"><img src="library/images/kefu_05.jpg" width="129" height="19" alt=""></a></td>
+	</tr>
+</table>
+</div>
+<script>
+	var rgfd = document.getElementById("rg_fd");
+	rgfd.onmousemove = function(){rgfd.style.right = '0px'}
+	rgfd.onmouseout = function(){rgfd.style.right = '-90px'}
+</script>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4074ecfca2b6e01f86e88aa06fac5bf1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0aacee53373b82d19e6af4bc011ba8e1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+</div>
+<!-- #EndLibraryItem --><script src="http://api.map.baidu.com/api?v=1.3" type="text/javascript"></script> 
+<script src="js/GeoUtils.js" type="text/javascript"></script>
+<div id="container" style="height:650px; display:none;"></div>
+<script>
+	var cityName = '北京市';
+    var myaddress = "北京市朝阳区富华大厦F座";
+	var map = new BMap.Map("container");          // 创建地图实例
+	var point = new BMap.Point(116.404, 39.915);  // 创建点坐标
+	map.centerAndZoom(point, 9);                 // 初始化地图，设置中心点坐标和地图级别
+	var marker='';
+	function isFreeAdd()
+	{
+		if(mianyunfei==2)
+		{
+			return false;
+		}
+		if(is_defalut_add==1)
+		{
+			eobj = event.srcElement?event.srcElement:event.target;
+			myaddress = eobj.getAttribute('title');
+			cityName = (myaddress.substr(0,3)=='北京市'?'北京市':'上海市');
+		}
+		else
+		{
+			cityName = (document.getElementById("shr_nomarch").value==1?'北京市':'上海市');
+			myaddress = document.getElementById("sxxaddress").value;
+		}
+		if(myaddress == '')
+		{
+			alert('请填写收货人详细地址');
+			return false;
+		}
+		if(cityName=='北京市')
+	    {
+			var point = new BMap.Point(116.404, 39.915);  // 创建点坐标
+			map.centerAndZoom(point, 9);                 // 初始化地图，设置中心点坐标和地图级别
+	    }
+		else if( cityName=='上海市')
+		{
+			var point = new BMap.Point(121.479,31.234);
+			map.centerAndZoom(point, 9);                 // 初始化地图，设置中心点坐标和地图级别
+		}
+		
+		// 创建地址解析器实例  
+		var myGeo = new BMap.Geocoder();  
+		// 将地址解析结果显示在地图上，并调整地图视野  
+		myGeo.getPoint(myaddress, function(point){
+			get_polygon(point,myaddress);
+			map.addOverlay(new BMap.Marker(point));  
+		}, cityName);
+	}
+	//根据城市名称获得城市免费区域块
+	function get_polygon(p,maddr)
+	{
+		var point = p;
+		var aaa = '';
+		
+		if(is_defalut_add==1)
+		{
+			city = (maddr.substr(0,3)=='北京市'?'北京':'上海');
+		}
+		else
+		{
+			city = (document.getElementById("shr_nomarch").value==1?'北京':'上海');
+		}
+		//alert(city+"==="+maddr);
+		$.ajax({
+			type: "POST",
+			url: "flow_order.php",
+			dataType: 'json',
+			data: "step=get_freePlygon&city="+city,
+			success: function(msg){
+				map.clearOverlays();
+				var plygonStr = '';
+				var resTr = '';
+				for(var fr=0; fr<msg['message'].length;fr++)
+				{
+					plygonStr = plygonStr + "polygon_"+msg['message'][fr]['quyu_id']+" = new BMap.Polygon(["
+					for(var fp=0; fp<msg['message'][fr]['points'].length;fp++)
+					{	
+						plygonStr=plygonStr+"new BMap.Point("+(msg['message'])[fr]['points'][fp]+"),"
+					}
+					plygonStr=plygonStr+"new BMap.Point("+(msg['message'])[fr]['points'][0]+")"
+					plygonStr = plygonStr + "], {strokeColor:'blue', strokeWeight:6, strokeOpacity:0.5});map.addOverlay(polygon_"+msg['message'][fr]['quyu_id']+");";
+					resTr = resTr + "BMapLib.GeoUtils.isPointInPolygon(p,polygon_"+msg['message'][fr]['quyu_id']+")||";
+				}
+				resTr = "("+resTr+"false)";
+				eval(plygonStr);
+				if(eval(resTr))
+				{
+					document.getElementById("psqy_bz").style.display='none';
+					$("#wuhuan_bz").val(0);
+					$("#zongyunfeiwf").html("0元");
+					$("#Deliver_Fee").val(0)
+				}
+				else
+				{
+					$("#wuhuan_bz").val(1);
+					document.getElementById("peisongtishi").style.display="block";
+					document.getElementById("peisongshtishi").style.display="none";
+					document.getElementById("psqy_bz").style.display='block';
+					$("#zongyunfeiwf").html("15元");
+					$("#Deliver_Fee").val(15);
+				}
+			}
+		});
+	}
+	
+	var wuhuannei = document.getElementById("wuhuannei");
+	wuhuannei.onclick = function (){ 
+		$("#wuhuan_bz").val(0);
+		$("#zongyunfeiwf").html("0元");
+		$("#Deliver_Fee").val(0);
+	}
+	var wuhuanwai = document.getElementById("wuhuan");
+	wuhuanwai.onclick = function(){
+		$("#wuhuan_bz").val(1);
+		document.getElementById("peisongtishi").style.display="block";
+		document.getElementById("peisongshtishi").style.display="none";
+		document.getElementById("psqy_bz").style.display='block';
+		$("#zongyunfeiwf").html("15元");
+		$("#Deliver_Fee").val(15);
+	}
+	var shanghaisanshi = document.getElementById("shanghaisanshi");
+	shanghaisanshi.onclick = function(){
+		$("#wuhuan_bz").val(1);
+		document.getElementById("peisongtishi").style.display="block";
+		document.getElementById("peisongshtishi").style.display="none";
+		document.getElementById("psqy_bz").style.display='block';
+		$("#zongyunfeiwf").html("15元");
+		$("#Deliver_Fee").val(15);
+	}
+	var qitadiqu_w = document.getElementById("qitadiqu_w");
+	qitadiqu_w.onclick = function(){
+		$("#wuhuan_bz").val(1);
+		document.getElementById("peisongtishi").style.display="block";
+		document.getElementById("peisongshtishi").style.display="none";
+		document.getElementById("psqy_bz").style.display='block';
+		$("#zongyunfeiwf").html("15元");
+		$("#Deliver_Fee").val(15);
+	}
+</script>
+<script type="text/javascript">
+ 
+    _adwq.push([ '_setDataType',
+        'cart' 
+    ]);
+      
+    _adwq.push([ '_setCustomer',
+        '{$smarty.session.user_id}'
+    ]);
+    <!-- {foreach from=$goods_list item=goods} -->
+    _adwq.push(['_setItem',
+        '{$goods.goods_id}',    // 09890是一个例子，请填入商品编号  - 必填项
+        '{$goods.goods_name}',       // 电视是一个例子，请填入商品名称  - 必填项
+        '{$goods.format_total}',    // 12.00是一个例子，请填入商品金额  - 必填项
+        '{$goods.goods_number}',        // 1是一个例子，请填入商品数量  - 必填项
+        '{$goods.cat_id}',     // A123是一个例子，请填入商品分类编号  - 必填项
+        '{$goods.cat_id}'        // 家电是一个例子，请填入商品分类名称  - 必填项
+    ]);
+    <!-- {/foreach} -->
+    _adwq.push([ '_trackTrans' ]);
+      
+</script>
+<!--底部内容结束--> 
+<!--[if lte IE 6]> 
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript"> 
+DD_belatedPNG.fix('div, h1, img, li, span , a, .png_bg'); 
+</script> 
+<![endif]-->
+</body>
+</html>

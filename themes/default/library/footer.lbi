@@ -1,0 +1,172 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--底部内容-->
+<div id="ft">
+	<div class="h_m_1">
+    	<ul>
+        	<li class="h_tit">新手 Novice</li>
+            <li><a href="/user.php?act=register" target="_blank">用户注册</a></li>
+            <li><a href="/helpInfo.php?id=57" target="_blank">订购须知</a></li>
+            <li><a href="/helpInfo.php?id=50" target="_blank">订购流程</a></li>
+            <li><a href="/about.php" target="_blank">关于我们</a></li>
+	   
+        </ul>
+        <ul>
+        	<li class="h_tit">支付 Payfor</li>
+            <li><a href="/helpInfo.php?id=53" target="_blank">货到付款</a></li>
+            <li><a href="/helpInfo.php?id=53" target="_blank">在线支付</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">配送 Distribution</li>
+            <li><a href="/helpInfo.php?id=59" target="_blank">配送时间</a></li>
+            <li><a href="/helpInfo.php?id=55" target="_blank">配送方式</a></li>
+            <li><a href="/helpInfo.php?id=56" target="_blank">自取流程</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">优惠 Discount</li>
+            <li><a href="/zhuanti/wbi/wbi.html" target="_blank">W币</a></li>
+            <li><a href="/helpInfo.php?id=51" target="_blank">储值卡/优惠券</a></li>
+            <li><a href="/article.php?id=52" target="_blank">会员制度</a></li>
+        </ul>
+        <ul>
+        	<li class="h_tit">自助 Self-help</li>
+            <li><a href="/helpInfo.php?id=47" target="_blank">有问必答</a></li>
+            <li><a href="/profile.php" target="_blank">个人中心</a></li>
+            <li><a href="/getpassword.php" target="_blank">找回密码</a></li>
+            <li><a href="/helpInfo.php?id=58" target="_blank">联系我们</a></li>
+        </ul>
+        <div style="clear:both;"></div>
+    </div>
+    <div class="h_m_2">
+    	<ul>
+        	<!--<li><a href="#">关于我们</a></li>-->
+            <li><a href="/helpInfo.php?id=47" target="_blank">帮助中心</a></li>
+            <li><a href="http://app.alltosun.com/wfboy/index.php?url=user/login" target="_blank">生日管理</a></li>
+            <li><a href="/zhuanti/dingzhi/gexingdingzhi.html" target="_blank">个性定制</a></li>
+            <!--<li><a href="#">客户问题提交</a></li>-->
+            <li><a href="/zhuanti/app20130228/index.html" target="_blank">APP下载</a></li>
+            <li class="dzdpsll"><a href="http://www.dianping.com/shop/511237#mr" target="_blank"><img src="themes/default/images/dianping_icoo.jpg" alt="大众点评"></a></li>
+        </ul>
+    </div>
+    <div class="h_m_3">
+	<div class="weiboweixin"><img src="themes/default/images/weixinweibo.jpg" alt="微博"/></div>
+        <div class="beian">www.wfboy.com &copy;2015 ALL right reserved
+         by waffleboy<br/>北京广瑞食品有限公司 &nbsp;&nbsp;京ICP12044486&nbsp;&nbsp;&nbsp;京公网安备11010102000509号</div>
+    </div>
+</div>
+<!--底部内容结束-->
+<style>
+	#rg_fd { position:fixed; right:-90px; top:180px; z-index:1000px;}
+</style>
+<!--[if IE 6]> 
+<script type="text/javascript" src="/themes/default/js/DD_belatedPNG.js"></script>
+<script type="text/javascript"> 
+DD_belatedPNG.fix('div, h1, img, li, span , a, .png_bg'); 
+</script> 
+<style>
+#rg_fd{
+_position:absolute;
+_bottom:auto;
+_top:expression(eval(document.documentElement.scrollTop+document.documentElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0)));
+</style>
+<![endif]-->
+<div id="rg_fd">
+	<table id="__01"  border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+			<img src="images/kefu_01.jpg" width="129" height="20" alt=""></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="/helpInfo.php?id=49" target="_blank"><img src="images/kefu_02.jpg" width="129" height="34" alt=""></a></td>
+	</tr>
+	<tr>
+		<td>
+			<img src="images/xie_fg.png" width="128" height="8" alt="" style="margin-left:1px;"></td>
+	</tr>
+    <tr id="xie_show_weix" style="display:none;">
+		<td>
+			<img src="images/you_wx.png" width="128" height="133" alt="" style="margin-left:1px;"></td>
+	</tr>
+    <tr>
+		<td>
+			<a  style="cursor:pointer;"><img src="images/you_wx_wz.png" width="128" height="28" alt="" style="margin-left:1px;"></a></td>
+	</tr>
+	<tr>
+		<td>
+			<a href="http://chat1.5251.net/jsp_admin/client/client_yes/client.jsp?companyId=37571&style=76930&locate=cn" target="_blank"><img src="images/kefu_05.jpg" width="129" height="19" alt=""></a></td>
+	</tr>
+</table>
+</div>
+<script>
+	var rgfd = document.getElementById("rg_fd");
+	var x_weix = document.getElementById("xie_show_weix");
+	
+	rgfd.onmousemove = function(){
+		rgfd.style.right = '0px';
+		x_weix.style.display = 'block';
+	}
+	rgfd.onmouseout = function(){
+		rgfd.style.right = '-90px';
+		x_weix.style.display = 'none';
+	}
+</script>
+<div style="display:none;">
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4074ecfca2b6e01f86e88aa06fac5bf1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F0aacee53373b82d19e6af4bc011ba8e1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42133563-5', 'waffleboy.com.cn');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www."); document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-42133563-5");
+pageTracker._initData();
+pageTracker._trackPageview('/selecthelp.php?act=by&type=500');
+</script>
+
+<!--百度异步统计代码-->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?4074ecfca2b6e01f86e88aa06fac5bf1";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+<script type="text/javascript">
+// 接口示例2。
+var orderInfo = {
+"orderId": "{$orderid}",
+"orderTotal": '{$jh_total}',
+"item": []
+};
+<!--{foreach from=$jh_goodsinfo item=jhgi}-->
+orderInfo.item.push({
+"skuId": "{$jhgi.goods_id}",
+"skuName": "{$jhgi.goods_name}",
+"category": "",
+"Price": '{$jhgi.shop_price}',
+"Quantity": '{$jhgi.Number}'
+});
+<!--{/foreach}-->
+_hmt.push(["_trackOrder", orderInfo]);
+</script> 
+
+</div>

@@ -1,0 +1,233 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+	.o_box_1 { width:1125px; height:220px; overflow:hidden; margin:0 auto; padding-top:5px;}
+	.o_box_1 .o_b_box_outer {float:left; background:none; width:985px; height:220px; overflow:hidden; margin-left:-10px;}
+	
+	#o_b_box { position:absolute; width:985px; height:256px; overflow:hidden;}
+	.o_box_1 .o_b_inner { position:absolute; height:256px;}
+	.o_box_1 .o_b_inner .o_b_li { float:left; margin-left:5px;}
+	.o_box_1 .o_b_inner .o_b_li a.img { display:block;height:195px; width:190px; background:none; margin-top:20px;}
+	.o_box_1 .o_b_inner .o_b_li a.tit { display:block; width:190px; text-align:center; text-decoration:none; color:#656565; font-size:13px; font-weight:bold;}
+	.o_box_1 .o_b_inner .o_b_li a img {margin-top:5px; margin-left:2px;}
+</style>
+<div class="tjsp_box o_box_1">
+  	<div class="tjsp_tag_ico"><img src="/themes/default/images/jpgw_ico.png" width="81" height="81" alt="" /></div>
+  	<div class="o_b_box_outer">
+            <div id="o_b_box">
+                <div class="o_b_inner">
+                   <!--{if $total.goods_amount <= 100}-->
+                        <!-- {foreach from=$append_list item=append name=fjtj} -->
+                        <!-- {if $smarty.foreach.fjtj.iteration < 3 && $append.shop_price>10}-->
+                            <div class="o_b_li">
+                             <a class="img" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')"><img src="{$append.fj_img}" width="186" height="186"></a>
+                             <a class="tit" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')">{$append.goods_name|truncate:10}</a>
+                           </div>
+                        <!--{/if}-->
+                       <!-- {/foreach} -->	
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32626"><img src="/images/201306/goods_img/32626_G_1372305570461.jpg" alt="芝麻心饼干（铁盒）" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32626">芝麻心饼干（铁盒）</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32589"><img src="/images/201306/goods_img/32589_G_1371532523402.jpg" alt="核桃提子曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">核桃提子曲奇饼干</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32179"><img src="/images/201302/galleryurl_img/32179_U_1361964351215.jpg" alt="威斯坦丁杏仁蛋糕(40枚)" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">威斯坦丁杏仁蛋糕(40枚)</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32587"><img src="/images/201306/goods_img/32587_G_1371532682354.jpg" alt="巧克力米酥曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">巧克力米酥曲奇饼干</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32586"><img src="/images/201306/goods_img/32586_G_1371532894903.jpg" alt="咖啡杏仁曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">咖啡杏仁曲奇饼干</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32590"><img src="/images/201306/goods_img/32590_G_1371535246644.jpg" alt="香酥曲奇饼干（铁盒）" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">香酥曲奇饼干（铁盒）</a>
+                       </div>
+                       
+                   <!--金额在100到200之间-->
+                   <!--{elseif $total.goods_amount > 100 and $total.goods_amount <= 200}-->
+                   	   <!-- {foreach from=$append_list item=append name=fjtj} -->
+                        <!-- {if $smarty.foreach.fjtj.iteration < 3 && $append.shop_price>10}-->
+                            <div class="o_b_li">
+                             <a class="img" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')"><img src="{$append.fj_img}" width="186" height="186"></a>
+                             <a class="tit" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')">{$append.goods_name|truncate:10}</a>
+                           </div>
+                        <!--{/if}-->
+                       <!-- {/foreach} -->
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32591"><img src="/images/201306/goods_img/32591_G_1372232749144.jpg" alt="饼干礼盒" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">饼干礼盒</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32423"><img src="/images/201303/galleryurl_img/32423_U_1363143754019.jpg" alt="熔岩巧克力蛋糕" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=30619">熔岩巧克力蛋糕</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32590"><img src="/images/201306/goods_img/32590_G_1371535246644.jpg" alt="香酥曲奇饼干（铁盒）" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">香酥曲奇饼干（铁盒）</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32587"><img src="/images/201306/goods_img/32587_G_1371532682354.jpg" alt="巧克力米酥曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">巧克力米酥曲奇饼干</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32586"><img src="/images/201306/goods_img/32586_G_1371532894903.jpg" alt="咖啡杏仁曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">咖啡杏仁曲奇饼干</a>
+                       </div>
+                         <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32588"><img src="/images/201306/goods_img/32588_G_1371532334745.jpg" alt="核桃酥曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">核桃酥曲奇饼干</a>
+                       </div>
+                   <!--金额在200到300-->
+                   <!--{elseif $total.goods_amount > 200 and $total.goods_amount <= 300}-->
+                   		<!-- {foreach from=$append_list item=append name=fjtj} -->
+                        <!-- {if $smarty.foreach.fjtj.iteration < 3 && $append.shop_price>10}-->
+                            <div class="o_b_li">
+                             <a class="img" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')"><img src="{$append.fj_img}" width="186" height="186"></a>
+                             <a class="tit" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')">{$append.goods_name|truncate:10}</a>
+                           </div>
+                        <!--{/if}-->
+                       <!-- {/foreach} -->
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32591"><img src="/images/201306/goods_img/32591_G_1372232749144.jpg" alt="饼干礼盒（铁盒）" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32591">饼干礼盒（铁盒）</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32557"><img src="/images/201305/goods_img/32557_G_1367802991792.jpg" alt="法国彩心马卡隆12枚装(甜味)" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32557">法国彩心马卡隆12枚装(甜味)</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32626"><img src="/images/201306/goods_img/32626_G_1372305570461.jpg" alt="芝麻心饼干（铁盒）" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32626">芝麻心饼干（铁盒）</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32570"><img src="/images/201307/goods_img/32570_G_1373595371499.jpg" alt="法国圆形马卡隆12枚装(咸味)" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32570">法国圆形马卡隆12枚装(咸味)</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32175"><img src="/images/201302/goods_img/32175_G_1362044836628.jpg" alt="巧克力重油蛋糕(40枚)" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32175">巧克力重油蛋糕(40枚)</a>
+                       </div>
+                      <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32590"><img src="/images/201306/goods_img/32590_G_1371535246644.jpg" alt="香酥曲奇饼干（铁盒）" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">香酥曲奇饼干（铁盒）</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32181"><img src="/images/201302/goods_img/32181_G_1362044617884.jpg" alt="葡萄重油蛋糕" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=30619">葡萄重油蛋糕</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32423"><img src="/images/201303/galleryurl_img/32423_U_1363143754019.jpg" alt="熔岩巧克力蛋糕" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=30619">熔岩巧克力蛋糕</a>
+                       </div>
+                   <!--金额在300到500-->
+                   <!--{elseif $total.goods_amount > 300 and $total.goods_amount <= 500}-->
+                   		<!-- {foreach from=$append_list item=append name=fjtj} -->
+                        <!-- {if $smarty.foreach.fjtj.iteration < 3 && $append.shop_price>10}-->
+                            <div class="o_b_li">
+                             <a class="img" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')"><img src="{$append.fj_img}" width="186" height="186"></a>
+                             <a class="tit" style="cursor:pointer" onclick="javascript:add_fj_tj({$append.goods_id},{$append.fj_id},'{$append.shop_price}')">{$append.goods_name|truncate:10}</a>
+                           </div>
+                        <!--{/if}-->
+                       <!-- {/foreach} -->
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32557"><img src="/images/201305/goods_img/32557_G_1367802991792.jpg" alt="彩心马卡隆" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32557">彩心马卡隆</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32343"><img src="/images/201302/goods_img/32343_G_1362047153466.jpg" alt="储值卡 1000" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32343">储值卡 1000</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32591"><img src="/images/201306/goods_img/32591_G_1372232749144.jpg" alt="饼干礼盒" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">饼干礼盒</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32589"><img src="/images/201306/goods_img/32589_G_1371532523402.jpg" alt="核桃提子曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">核桃提子曲奇饼干</a>
+                       </div>
+                        <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32588"><img src="/images/201306/goods_img/32588_G_1371532334745.jpg" alt="核桃酥曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">核桃酥曲奇饼干</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32587"><img src="/images/201306/goods_img/32587_G_1371532682354.jpg" alt="巧克力米酥曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">巧克力米酥曲奇饼干</a>
+                       </div>
+                      <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32586"><img src="/images/201306/goods_img/32586_G_1371532894903.jpg" alt="咖啡杏仁曲奇饼干" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">咖啡杏仁曲奇饼干</a>
+                       </div>
+                   <!--金额在500+-->
+                   <!--{elseif $total.goods_amount > 500}-->
+                   		<div class="o_b_li">
+                         <a target="_blank" class="img" href="/cake.php?cakeid=32343"><img src="/images/201302/goods_img/32343_G_1362047153466.jpg" alt="储值卡 1000" width="186" height="186"></a>
+                         <a target="_blank" class="tit" href="/cake.php?cakeid=32343">储值卡 1000</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a target="_blank" class="img" href="/cake.php?cakeid=31829"><img src="/images/201306/goods_img/31829_G_1370741054609.jpg" alt="储值卡 2000" width="186" height="186"></a>
+                         <a target="_blank" class="tit" href="/cake.php?cakeid=31829">储值卡 2000</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a target="_blank" class="img" href="/cake.php?cakeid=32345"><img src="/images/201306/goods_img/32345_G_1370741103349.jpg" alt="储值卡 3000" width="186" height="186"></a>
+                         <a target="_blank" class="tit" href="/cake.php?cakeid=32345">储值卡 3000</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a target="_blank" class="img" href="/cake.php?cakeid=32346"><img src="/images/201306/goods_img/32346_G_1370741123875.jpg" alt="储值卡 5000" width="186" height="186"></a>
+                         <a target="_blank" class="tit" href="/cake.php?cakeid=32346">储值卡 5000</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32570"><img src="/images/201307/goods_img/32570_G_1373595371499.jpg" alt="法国圆形马卡隆12枚装(咸味)" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32570">法国圆形马卡隆12枚装(咸味)</a>
+                       </div>
+                       <div class="o_b_li">
+                         <a class="img" href="/cake.php?cakeid=32591"><img src="/images/201306/goods_img/32591_G_1372232749144.jpg" alt="饼干礼盒" width="186" height="186"></a>
+                         <a class="tit" href="/cake.php?cakeid=32423">饼干礼盒</a>
+                       </div>
+                       
+                   <!--{/if}-->
+                </div>
+            </div>
+        </div>
+  </div>
+  <div class="tjsp_ft">&nbsp;</div>
+  <script>
+  	function UpdateCart()
+	{
+		document.form3.action= "/flow.php?act=update"; 
+		document.form3.submit();
+	}
+  	function add_fj_tj(goods_id,fj_id,shop_price)
+	{
+		var obj=document.getElementById("newsList");
+		obj.style.display="block";
+		
+		var fjobj= document.getElementById("appendnumber_"+goods_id+"_"+fj_id);
+		fjobj.value = parseInt(fjobj.value)+1;
+		sumappend(fjobj,goods_id,fj_id,shop_price);
+	}
+	function addTJCart(cake_id,num)
+	{
+		$.ajax({
+			type: "POST",
+			url: "flow.php",
+			dataType: 'json',
+			data: "step=add_to_cart&cake_id="+cake_id+"&num="+num,
+			success: function(msg){
+				if(msg['error']==0)
+				{
+					alert("加入购物车失败");
+				}
+				else
+				{
+					//UpdateCart();
+				}
+			}
+		});
+	}
+  </script>

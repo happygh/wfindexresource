@@ -1,0 +1,48 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--购物车内容-->
+  <div class="cartbox">
+    <table width="842" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+      
+        <!-- {foreach from=$goods_list item=goods} -->
+        <tr>
+          <td  style="width:150px;">
+          	<dl class="cart_good_dl">
+              <dt><a href="/cake.php?cakeid={$goods.goods_id}"><img src="{$goods.goods_img}" width="79" height="77" alt="{$goods.goods_name}"></a></dt>
+              <dd style="width:150px;"><a style="line-height:30px;" href="/cake.php?cakeid={$goods.goods_id}">{$goods.e_name}</a><br /><a href="/cake.php?cakeid={$goods.goods_id}">{$goods.goods_name}</a></dd>
+                          <div style="clear:both;"></div>
+            </dl>
+          </td>
+
+          <td align="center" style="width:120px;">{$goods.Cake_Pound}{$lang.wofu_cart_num}</td>
+          <td align="center" style="width:150px;">{$goods.format_goods_price}</td>
+          <td align="center" style="width:150px;">
+          		<!--{if $goods.is_gift>0}-->
+                	<input type="text" name="goods_number_{$goods.goods_id}" id="goods_number_{$goods.goods_id}"  class="txt" value="{$goods.goods_number}"  style="width:20px; text-align:center;" disabled="disabled"/>
+                <!--{else}-->
+                	<span><img src="images/cart_jian_ico.png" alt="" width="15" height="19" onclick="jianBtn('goods_number_{$goods.goods_id}','{$goods.goods_id}',{$goods.goods_price},'{$goods.cat_id}')" style="cursor:pointer"/></span>
+                    <span>
+                  		<input type="text" name="goods_number_{$goods.goods_id}" id="goods_number_{$goods.goods_id}"  class="txt" value="{$goods.goods_number}" onkeyup="sumcake(this,'{$goods.goods_id}',{$goods.goods_price})" onfocus="this.select()" onBlur="num_change('goods_number_{$goods.goods_id}','{$goods.goods_id}',{$goods.goods_price},'{$goods.cat_id}')" style="width:20px; text-align:center;"/>
+                  	</span>
+                  	<span><img src="images/cart_puls_ico.png" alt="" width="15" height="19" onclick="pulsBtn('goods_number_{$goods.goods_id}','{$goods.goods_id}',{$goods.goods_price},'{$goods.cat_id}')" style="cursor:pointer"/></span>
+                <!--{/if}-->
+          </td>
+          <td align="center" id="goods_total_{$goods.goods_id}_s" style="width:120px;">{$goods.format_total}</td>
+          <input type="hidden" id="goods_total_{$goods.goods_id}" name="goods_price_one" value="{$goods.total}">
+          <td  align="center" style="font-size: 14px;color: #d8bac6;">
+ <a href="javascript:if (confirm('确认要删除该款蛋糕吗?')) location.href='flow.php?step=drop_goods&id={$goods.rec_id}';"  style="font-size: 14px;color: #d8bac6;">删除</a> \ 
+          <a href="user.php?act=affiliate&goodsid={$goods.goods_id}"          style="font-size: 14px;color: #d8bac6;">加入收藏</a></td>
+        </tr>
+        <!-- {/foreach} -->
+      </tbody>
+    </table>
+  </div>
+  <!--购物车内容结束--> 
+  
+  <!--自动加载附件列表--
+  <script type="text/javascript">
+        $(function(){
+            showNews();
+        })
+  </script>
+  -->

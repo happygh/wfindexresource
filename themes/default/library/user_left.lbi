@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="help_left">
+     	<div class="help_left_top"></div>
+        <div class="help_left_con">
+        	<ul class="users_l">
+            	<li class="u_wddd"><a href="/order.php">我的订单</a></li>
+                <li class="u_wdsc"><a href="/collect.php">我的收藏</a></li>
+                <li class="u_wdwb"><a href="/integral.php">我的W币</a></li>
+                <li class="u_wdyhq"><a href="/coupon.php">我的优惠券</a></li>
+                <li class="u_wdczk">我的储值卡</li>
+                <li class="subm"><a href="/accountl.php">我的储值卡</a></li>
+                <!--<li class="subm"><a href="/addaccountl.php">储值卡充值</a></li>-->
+                <li class="subm"><a href="/changePaypassword.php?act=change">修改储值卡密码</a></li>
+                <li class="subm"><a href="/user_accountl_order.php">储值卡消费记录</a></li>
+                <li class="u_wdjbzl">我的基本资料</li>
+                <li class="subm"><a href="/user.php">基本资料</a></li>
+                <li class="subm"><a href="/profile.php">完善资料</a></li>
+                <li class="subm"><a href="/changepassword.php">修改密码</a></li>
+            </ul>
+        </div>
+        <div class="help_left_ft"></div>
+     </div>

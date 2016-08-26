@@ -1,0 +1,86 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="lf_serach_box">
+              	<div class="lf_sh_tit">帮您选购</div>
+                 <div class="lf_sh_body">
+                	<form id="search_form" name="left_serach" action="/selecthelp.php" method="get">
+                    <input type="hidden" name="act" value="by">
+                    <input type="hidden" name="type" value="500">
+                  <ul>
+                      <li>
+                        <div class="tagname">蛋糕价格：</div>
+                        <div class="select">
+                          <select name="price">
+                            <option value=""> {$lang.wofu_sh_unlimit}</option>
+                            <option value="59" {if $price=='59'}selected=selected{/if}>59-199{$lang.wofu_sh_yuan}</option>
+                            <option value="299" {if $price=='299'}selected=selected{/if}>200-299 {$lang.wofu_sh_yuan}</option>
+                            <option value="399" {if $price=='399'}selected=selected{/if}>300-399{$lang.wofu_sh_yuan}</option>
+                            <option value="499" {if $price=='499'}selected=selected{/if}>400-499{$lang.wofu_sh_yuan}</option>
+                            <option value="500" {if $price=='500'}selected=selected{/if}>500{$lang.wofu_sh_upwards}</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tagname">蛋糕口味：</div>
+                        <div class="select">
+                          <select name="taste">
+                            <option value="">{$lang.wofu_sh_unlimit}</option>
+                            <option value="ACAB" {if $taste=='ACAB'}selected=selected{/if}>{$lang.wofu_sh_chocolatecake}</option>
+                            <option value="ACAC" {if $taste=='ACAC'}selected=selected{/if}>{$lang.wofu_sh_icecreamcake}</option>
+                            <option value="ACAD" {if $taste=='ACAD'}selected=selected{/if}>{$lang.wofu_sh_cheesecake}</option>
+                            <option value="ACAE" {if $taste=='ACAE'}selected=selected{/if}>{$lang.wofu_sh_Alcoholcake}</option>
+                            <option value="ACAF" {if $taste=='ACAF'}selected=selected{/if}>{$lang.wofu_sh_Matchacake}</option>
+                            <option value="ACAG" {if $taste=='ACAG'}selected=selected{/if}>{$lang.wofu_sh_Nutscake}</option>
+                            <option value="ACAH" {if $taste=='ACAH'}selected=selected{/if}>{$lang.wofu_sh_Coffeecake}</option>
+                            <option value="ACAI" {if $taste=='ACAI'}selected=selected{/if}>{$lang.wofu_sh_Sugar-freecake}</option>
+                            <option value="ACAJ" {if $taste=='ACAJ'}selected=selected{/if}>{$lang.wofu_sh_Low-fatcake}</option>
+                            <option value="ACAK" {if $taste=='ACAK'}selected=selected{/if}>{$lang.wofu_sh_Cream fruitcake}</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tagname">馈赠对象：</div>
+                        <div class="select">
+                          <select name="country">
+                            <option value="">{$lang.wofu_sh_unlimit}</option>
+                            <option value="AFAB" {if $country=='AFAB'}selected=selected{/if}>{$lang.wofu_sh_Elder}</option>
+                            <option value="AEAD" {if $country=='AEAD'}selected=selected{/if}>{$lang.wofu_sh_Client}</option>
+                            <option value="AEAC" {if $country=='AEAC'}selected=selected{/if}>{$lang.wofu_sh_Child}</option>
+                            <option value="AEAE" {if $country=='AEAE'}selected=selected{/if}>{$lang.wofu_sh_Friends}</option>
+                            <option value="AEAA" {if $country=='AEAA'}selected=selected{/if}>{$lang.wofu_sh_Lovers}</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tagname">蛋糕用途：</div>
+                        <div class="select">
+                          <select name="festival" id="dgytinput">
+                            <option value="">{$lang.wofu_sh_unlimit}</option>
+                            <option value="ABAA" {if $festival=='ABAA'}selected=selected{/if}>{$lang.wofu_sh_Meet}</option>
+                            <option value="ABAB" {if $festival=='ABAB'}selected=selected{/if}>{$lang.wofu_sh_birthday}</option>
+                            <option value="ABAC" {if $festival=='ABAC'}selected=selected{/if}>{$lang.wofu_sh_wedding}</option>
+                            <option value="ABAD" {if $festival=='ABAD'}selected=selected{/if}>{$lang.wofu_sh_Celebration}</option>
+                            <option value="ABAF" {if $festival=='ABAF'}selected=selected{/if}>{$lang.wofu_sh_Afternoon Tea}</option>
+                            <option value="ABAE" {if $festival=='ABAE'}selected=selected{/if}>{$lang.wofu_sh_gifts}</option>
+                          </select>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="tagname">关&nbsp;键&nbsp;字：</div>
+                        <div class="select">
+                          <input type="text" name="festiva" value="{$festiva}">
+                          <input type="hidden" name="page" value="1">
+                        </div>
+                      </li>
+                      <li>
+                        <div class="btnOne">
+                          <input type="reset" value="">
+                        </div>
+                        <div class="btnTwo">
+                          <input type="submit" value="">
+                        </div>
+                      </li>
+                    </ul>
+                  </form>
+                 </div>
+              <div class="lf_sh_bottom"></div>
+            </div>

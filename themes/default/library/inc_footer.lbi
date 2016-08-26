@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="box">
+<div class="index_footer">
+			<div class="footer-cont">
+				<div class="footer-cont-lr">
+					<div class="footer-cont-left-tw">
+					<a href="https://api.weibo.com/oauth2/authorize?client_id=2248222975&response_type=code&redirect_uri=http://www.wfboy.com/API/weibo/callback.php" target="_blank"><img src="themes/default/imagesnew/weibo.jpg" alt=""></a>
+					<a href=""><img src="themes/default/imagesnew/weixin.jpg" alt=""></a>
+					</div>
+					<div class="footer-cont-left-tw footerlwz">
+					<p>免费订购热线4008567567</p>
+					<p>www.wfboy.com &copy;2016 ALL right reserved by waffleboy </p>
+					<p>京ICP12044486  京公网安备11010102000509号</p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="footer-cont-lr footerright">
+					<img src="themes/default/imagesnew/erweima.jpg" alt="二维码">
+					<p>立扫二维码  活动早知道</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+</div>
+<!--百度推广管理转化跟踪-->
+	<script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4074ecfca2b6e01f86e88aa06fac5bf1' 											type='text/javascript'%3E%3C/script%3E"));
+	</script>

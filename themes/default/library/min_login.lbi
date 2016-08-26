@@ -1,0 +1,262 @@
+<!--用户登录页面结束-->
+<style>
+	#logindiv {background-color:#333; position:absolute; z-index:1998; left:0; top:0; width:100%; display:none; height:1000px;opacity:0.5;filter: alpha(opacity=50);-moz-opacity: 0.5;}
+	#loginbox { background:none; position:absolute; z-index:1999; display:none; overflow:hidden;}
+	#loginbox { width:550px; margin:0 auto; font-family:"微软雅黑"; display:none; height:522px;}
+	.ml_tit_tags { height:30px; background:#3e3e3e; padding-top:6px;}
+	.ml_tit_tags a.hydl { cursor:pointer; display:block; height:30px; width:100px; background:url(images/gerenzx/login_tit_bg.png) 0px -42px  no-repeat; float:left; margin-left:10px;}
+	.ml_tit_tags a.hyreg { cursor:pointer; display:block; height:30px; width:100px; background:url(images/gerenzx/reg_tit_bg.png) 0px -42px no-repeat; float:left;margin-left:10px;}
+	.ml_tit_tags a.hydl_on { cursor:pointer; display:block; height:30px; width:100px; background:url(images/gerenzx/login_tit_bg.png) no-repeat; float:left;margin-left:10px;}
+	.ml_tit_tags a.hyreg_on { cursor:pointer; display:block; height:30px; width:100px; background:url(images/gerenzx/reg_tit_bg.png) 0px 0px no-repeat; float:left;margin-left:10px;}
+	.login { border:1px solid #888785; border-top:none; background:#fff; padding-bottom:20px; padding-top:20px;}
+	.login h3 { margin:0px; padding:15px 12px; font-size:14px; font-weight:normal; color:#ac0f97;}
+	.login .log_line { height: 28px; line-height:28px; padding-left:30px; margin-bottom:10px;}
+	.login .log_line span { display:block; float:left; padding-right:5px;}
+	.login .log_line span.inp_t input {height:24px; line-height:24px;outline:none;}
+	.login .log_other { font-size:13px; color:#666563; padding:0px 20px;}
+	.login .getpwd { background:url(images/gerenzx/login_btn.jpg) no-repeat; border:none; width:103px; height:34px;}
+	.login .submit { background:url(images/gerenzx/get_pwd.jpg) no-repeat; border:none; width:103px; height:34px;}
+	.login .l_btn_line { text-align:center; padding:10px 0px;}
+	
+	#reg_box { padding:30px 0px 10px 0px;}
+	.reg_line { height:60px; padding-left:30px;}
+	.reg_line .reg_inp_tit { color:#42413f; float:left; font-size:14px; display:block; width:80px; text-align:right;}
+	.reg_line .reg_inp { float:left; display:block;}
+	.reg_line .reg_inp input { height:20px; width:260px;}
+	.reg_line .notice { clear:both; line-height:22px; padding-left:80px; font-size:13px; color:#979694;}
+	.reg_line .notice .error { color:#900;}
+	
+	.lg_close { float:right; padding-right:3px; background:url(../images/gerenzx/close.jpg) top center no-repeat; height:30px; width:30px; cursor:pointer;}
+	#loading { display:none; background:url(../images/gerenzx/loading_btn.png) no-repeat; padding:0px 32px; padding-right:42px;}
+	#loading2 { display:none; background:url(../images/gerenzx/loading_btn.png) no-repeat; width:100px; height:35px; margin:0 auto;}
+</style>
+<!--遮罩层-->
+<div id="logindiv"></div>
+<!--遮罩层结束-->
+<!--登陆窗口-->
+<div id="loginbox">
+	<div class="ml_tit_tags">
+    		<a onclick="onLogin(this);"  class="hydl_on" id="onLog"></a>
+        	<a onclick="onReg(this);" class="hyreg" id="onReg"></a>
+            <a onClick="onClose()" class="lg_close"></a>
+        </div>
+    	<div class="login" id="login_box">
+        	<div style="padding-left: 13px;"><div style="font-size:24px; height:60px; line-height:60px; float:left; color:#AC0F97;">您可以不登录直接订购</div>
+            
+            <div style="float:left;margin-left: 26px;"><a style="cursor:pointer;" onClick="GoToPay();"><img src="images/gerenzx/ksgm_btn2.jpg" alt="不登录直接订购" /></a></div>
+            </div>
+            <div style="clear:both;"></div>
+        	<div style="float:left; width:280px;">
+                <h3>您可以用会员卡\手机号\邮箱登录</h3>
+                <form name="formLogin" action="user.php" method="post">
+                <input type="hidden" name="act" value="act_login" />
+                <input type="hidden" name="back_act" value="{$back_act}" />
+                <div class="log_line">
+                    <span>用户名:</span>
+                    <span class="inp_t"><input type="text" id="username" name="username" style="width:154px;"/></span>
+                </div>
+                <div class="log_line">
+                    <span>密&nbsp;&nbsp;&nbsp;码:</span>
+                    <span class="inp_t"><input type="password" id="password" name="password" style="width:154px;"/></span>
+                </div>
+                <div class="l_btn_line">
+                    <span id="btn_1"><input class="getpwd" type="button" value="" style="cursor:pointer" onclick="ajaxlogin();" /></span>&nbsp;&nbsp;&nbsp;
+                    <span id="loading"><img src="../images/loading2.gif" width="32" height="32"></span>
+                    <span> <input class="submit" onClick="gogetpwd();" type="button" value="" style="cursor:pointer" /></span>
+                </div>
+                </form>
+            </div>
+            <div style="float:left; border-left:1px dashed #CCC; padding-left:20px; color:#777777;margin-top: 14px;">
+            	<p>成为窝夫小子会员,即可:</p>
+                <p>1.消费现金20元送W币1个(1W币=1元);<br/><a href="/zhuanti/wbi/wbi.html" target="_blank">(什么是W币)</a></p>
+                <p>2.享受本站更加优质,体贴的个性化服务;</p>
+                <p>3.成为贵宾会员后,可获得更优惠的价格.</p>
+            </div>
+            <div style="clear:both;"></div>
+            <!--其他信息-->
+            <div class="log_other">
+              <div style="color:#999; height:auto; line-height:30px; padding-top:20px;"> <span>使用合作网站账号登录:&nbsp;</span><br/> <span class="qqlogin"> <a href="javascript:toQzoneLogin()"><img src="images/qq_btn.jpg" alt="使用QQ登录" /></a><span class="qqlogin">
+<a href="https://api.weibo.com/oauth2/authorize?client_id=2248222975&amp;response_type=code&amp;redirect_uri=http://www.wfboy.com/API/weibo/callback.php"><img src= "http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/loginButton/loginButton_24.png"></a> </span>&nbsp;&nbsp;&nbsp;<!--<span>您可以不登录直接订购:&nbsp;</span> <span style="padding-top:8px;"><a style="cursor:pointer;" onClick="GoToPay();"><img src="images/gerenzx/ksgm_btn.jpg" alt="不登录直接订购" /></a></span>--></div>
+              <div style="color:#999; height:auto; line-height:22px; padding-top:10px;"> <span>提示：不登录直接购买将无法看到订单详细记录信息,无W币赠送和消费金额积累。</span> </div>
+            </div>
+            <!--其他信息结束--> 
+        </div>
+        <!--注册-->
+    	<div class="login" id="reg_box" style="display:none;">
+        	<form name="formUser" onsubmit="return register();">
+            <input name="agreement" id="agreement" type="hidden" value="1" />
+            <input name="act" id="act" type="hidden" value="act_register" >
+            <input name="back_act" id="back_act" type="hidden" value="{$back_act}" >
+            <div class="reg_line">
+                <span class="reg_inp_tit"><font color="#FF0000">*</font>用户名:&nbsp;</span>
+                <span class="reg_inp"><input type="text" name="user_name" id="user_name"  onblur="is_registered(this.value);" style="inptxt"/></span>
+                <br/>
+                <div class="notice" id="username_notice">由4-12个汉字、英文字母、数字和下划线组成</div>
+            </div>
+            <div class="reg_line">
+                <span class="reg_inp_tit"><font color="#FF0000">*</font>邮箱:&nbsp;</span>
+                <span class="reg_inp"><input type="text" name="email" id="email" onblur="checkEmail(this.value)" style="inptxt"/></span>
+                <br/>
+                <div class="notice" id="email_notice">请填写常用邮箱,用于找回密码和接收活动通知等服务</div>
+            </div>
+            <div class="reg_line">
+                <span class="reg_inp_tit"><font color="#FF0000">*</font>密码:&nbsp;</span>
+                <span class="reg_inp"><input type="password" name="password1" id="password1" onblur="check_password(this.value);" style="inptxt" /></span>
+                <br/>
+                <div class="notice" id="password_notice">6位以上的字母或数字</div>
+            </div>
+            <div class="reg_line">
+                <span class="reg_inp_tit"><font color="#FF0000">*</font>确认密码:&nbsp;</span>
+                <span class="reg_inp"><input type="password" name="confirm_password" onblur="check_conform_password(this.value)" id="confirm_password" style="inptxt" /></span>
+                <br/>
+                <div class="notice" id="conform_password_notice">请再次输入密码</div>
+            </div>
+            <div class="reg_line">
+                <span class="reg_inp_tit"><font color="#FF0000">*</font>手机号:&nbsp;</span>
+                <span class="reg_inp"><input type="text" name="mobile_phone" id="mobile_phone" onblur="check_mobile(this.value)" style="inptxt" /></span>
+                <br/>
+                <div class="notice" id="check_mobile_notice">请准确填写,用于找回密码和接收订单通知等服务</div>
+            </div>
+            <div class="reg_line">
+                <span class="reg_inp_tit"><font color="#FF0000">*</font>验证码:&nbsp;</span>
+                <span class="reg_inp"><input type="text" name="captcha" id="captcha" style="width:90px;" class="reg_input_two"/>&nbsp;<img src="captcha.php?{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?'+Math.random()" /></span>
+            </div>
+            <div class="reg_line">
+                <center><span id="btn_2"><input type="button" style="background:url(../images/gerenzx/sub_reg_btn.jpg) no-repeat; width:105px; height:35px; border:none;" onClick="ajaxReg();"/></span><span id="loading2"><center><img src="../images/loading2.gif" width="32" height="32"></center></span></center>
+                
+            </div>
+            </form>
+        </div>
+    	<!--注册完-->
+</div>
+<!--登陆窗口结束-->
+<script>
+	function opendiv()
+	{
+		$("#logindiv").css('height',$(document).height());
+
+		var winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+		var _left = (document.body.clientWidth-550)/2+"px";
+		var _top = (window.screen.height-parseInt($("#loginbox").height())+(winScroll*2))/2+"px";
+		
+		$("#loginbox").css('width','550px');
+		$("#loginbox").css('left',_left);
+		$("#loginbox").css('top',_top);
+		$("#loginbox").css('height',parseInt($("#loginbox").height())+"px");
+		$("#loginbox").css('display','block');
+		$("#logindiv").css('display','block');
+	}
+	function hiddendiv()
+	{
+		$("#loginbox").css('display','none');
+		$("#logindiv").css('display','none');
+	}
+	function islogin()
+	{
+		var user_id = {$smarty.session.user_id};
+		if(user_id ==0 || user_id == '')
+		{
+			opendiv();
+		}
+		else
+		{
+			GoToPay();
+		}
+	}
+	function ajaxlogin()
+	{
+		$("#btn_1").css('display','none')
+		$("#loading").css('display','inline')
+		$(".getpwd").attr("disabled","disabled")
+		var name = $("#username").val();
+		var password = $("#password").val();
+		var url = "/user.php";
+		$.getJSON(url,{'act':'signin','username':name,'password':password},function(res){
+			if(res.error==0)
+			{
+				$("#btn_1").css('display','none')
+				$("#loading").css('display','block')
+				_adwq.push(['_setAction', 
+				'1v1qe8',
+				name,
+				'10' // 事件价值 (可选)
+				 ]);
+				window.location.href='/flow_cart.php';
+			}
+			else
+			{
+				$(".getpwd").removeAttr("disabled");
+				alert(res.content);
+				$("#btn_1").css('display','inline')
+				$("#loading").css('display','none')
+			}
+		});
+	}
+	function ajaxReg()
+	{
+		$("#btn_2").css('display','none')
+		$("#loading2").css('display','block')
+		
+		var name = $("#user_name").val();
+		var password = $("#password1").val();
+		var confirm_password = $("#confirm_password").val();
+		var mobile_phone = $("#mobile_phone").val();
+		var email = $("#email").val();
+		var captcha = $("#captcha").val();
+		if(password==confirm_password)
+		{
+			//var params = {'act':'signin','username':name,'password':password,'mobile_phone':mobile_phone,'sheng':1,'qu':3,'captcha':captcha};
+			var url = "/user.php";
+			$.getJSON(url,{'act':'ajax_register','username':name,'password':password,'email':email,'mobile_phone':mobile_phone,'sheng':'1','qu':'3','captcha':captcha},function(res){
+				if(res.error==0)
+				{
+					_adwq.push(['_setAction', 
+					'1uxiwx',
+					name,       // 扩展参数, 可填 用户名 或 用户ID(可选)
+					'12' // 事件价值 (可选)
+				   ]);
+
+					setTimeout("window.location.href='/flow_cart.php'",500);
+				}
+				else
+				{
+					alert(res.content);
+					$("#btn_2").css('display','inline')
+					$("#loading2").css('display','none')
+				}
+			});
+		}
+		else
+		{
+			alert("两次密码输入不一致");
+			$("#btn_2").css('display','inline')
+			$("#loading2").css('display','none')
+		}
+	}
+	function onLogin(obj)
+	{
+		$("#onLog").attr("class","hydl_on")
+		$("#onReg").attr("class","hyreg");
+		opendiv()
+		$("#login_box").show();
+		$("#reg_box").hide();
+		$("#loginbox").css('height',parseInt($("#loginbox").height())+"px");
+	}
+	function onReg(obj)
+	{
+		$("#onLog").attr("class","hydl")
+		$("#onReg").attr("class","hyreg_on");
+		opendiv()
+		$("#reg_box").show();
+		$("#login_box").hide();
+	}
+	function onClose()
+	{
+		$("#loginbox").css('display','none');
+		$("#logindiv").css('display','none');
+	}
+	function gogetpwd()
+	{
+		window.location.href='/getpassword.php';
+	}
+</script>

@@ -1,0 +1,63 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--商品描述-->
+    <!--饼干添加全站的图片开始-->
+            <!--a href="/juhuiji.php" target="_blank"><img src="images/zhuhuiji.jpg" style="margin-top: 10px;" alt="饼干"/></a-->
+            <!--饼干添加全站的图片结束-->
+            
+            <div class="good_desc">
+            	<!--<div style="padding:5px 0px 20px 0px;">
+                	<a href="/cake.php?cakeid=32868" target="_blank">
+                    <img src="../images/xiaoxiong.jpg" width="750" alt="" />
+                    </a>
+                </div>-->
+            	<!--温馨提示-->
+                <div style="margin-bottom:10px;">
+                    <div class="wxts_tit"><img src="images/wxts_tit.jpg" height="31" width="750" alt="温馨提示" /></div>
+                    <div class="wxts_list">
+                        <div class="ydsj_b">
+                            <div class="ydsj_tit">&nbsp;</div>
+                            <div class="ydsj_box">
+                                <span>1、蛋糕需提前至少6小时订购，根据款式、型号等不同，制作时间也会不同，请查看商品详情介绍中的“制作时间”（此处为1号蛋糕制作时间），安排订购。建议提前一天订购。</span><br />
+                                <!--<span>2、1-4号蛋糕需提前6-48小时订购,蛋糕不同,所需的制作时间也会有所不同,具体请查看相应介绍</span><br />-->
+                                <span>2、订购4号以上蛋糕、或需个性定制、集团采购 请拨打客服热线:4008567567</span><br />
+                            </div>
+                        </div>
+                        <div class="ydsj_b">
+                            <div class="gyps_tit">&nbsp;</div>
+                            <div class="ydsj_box">
+                                <span>蛋糕配送范围</span><br />
+                                <span>1、北京:五环内及上地、天通苑、回龙观、亦庄免费配送;</span><br />
+                                <span>五环及以外地区需加收服务费区域<a href="/helpInfo.php?id=55" target="_blank">>>点击查看</a></span><br />
+                                <!--<a href="/helpInfo.php?id=55" target="_blank">>>点击查看</a><br />-->
+                                <span>上海:普陀区、静安区、徐汇区、长宁区、卢湾区等免费配送;</span><br />
+                                <span>需加收服务费区域<a href="/helpInfo.php?id=55" target="_blank">>>>点击查看</a></span><br />
+                                <span>2、"全国送"产品配送请查看详情介绍信息</span><br />
+                            </div>
+                        </div>
+                        <div class="ydsj_b">
+                            <div class="gyfj_tit">&nbsp;</div>
+                            <div class="ydsj_box">
+                                <span>1、蛋糕免费配件:蛋糕盒*1、餐具(不同尺寸蛋糕数量不同)</span><br />
+                                <span>2、蛋糕用途为生日,请在收货信息页面[蛋糕用途]中选择'生日'即可免费附赠:细蜡烛*10、生日帽*1、生日牌*1</span><br />
+                                <span>3、如需添加其他付费附件(如:巧克力牌、生日贺卡等)在购物车中[添加附件]可以选择</span><br />
+                            </div>
+                        </div>
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+                <!--温馨提示结束-->
+                <!--商品详情-->
+                {$cake.goods_desc}
+                <script>
+                	$(".good_desc img[src='http://wfboy.com/themes/default/images/gerenzx/xinggou.png']").css('width','700px');
+					$(".good_desc img[src='http://wfboy.com/themes/default/images/gerenzx/xinggou.png']").css('margin-left','0px');
+					$(".good_desc img[src='/themes/default/images/gerenzx/xinggou.png']").css('width','700px');
+					$(".good_desc img[src='/themes/default/images/gerenzx/xinggou.png']").css('margin-left','0px')
+                </script>
+                <div class="wxts_tit"><img src="images/spbzfj_tit.jpg" /></div>
+                <div><img src="images/dinggoutishi.jpg" alt=""></div>
+                <!--<div><img src="images/spbzfj_01.jpg" /></div>
+                <div><img src="images/spgzfj_02.jpg" /></div>-->
+                <div><img src="images/ganbing.jpg"></div>
+            </div>
+            <!--商品描述结束-->

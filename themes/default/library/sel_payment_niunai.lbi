@@ -1,0 +1,123 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="login_reg_box">
+     <div class="login_reg_top"></div>
+     <div class="login_reg_con" style="padding-top:10px;">
+     	<div class="cbh_box">
+        	<div  style="height:1px; overflow:hidden;"><input id="czkpwd1231323" name="czkpwd1231323" type="text" value=""/><input id="czkpwd123132" name="czkpwd123132" type="password" value=""/></div>
+        	<input type="hidden" name="zhekoujiage" id="zhekoujiage" value="{$format_all_total}" />
+        	<input type="hidden" name="order_shichangjia" id="order_shichangjia" value="{$shichangjia}" />
+        	<input type="hidden" name="goods_all_total" id="goods_all_total" value="{$total.all_total}" />
+     		<input type="hidden" name="zongjine" id="goods_all_total_shichang" value="{$zongjine}" />
+            <!--{if $CanUserWb == 1}-->
+        	<div class="cbh_tit">牛奶不参与任何W币活动(不能使用W币,不返W币)且暂不参加任何积分 打折的活动 <br>月结客户 国航储值卡 代金券 代金卡 月饼卡等 不参与牛奶的订购,如订购牛奶需要另外支付现金</div>
+           		<!--这里是放置储值卡的地方-->
+                <!--储值卡-->
+            <!--<div class="cbh_line" id="czkzhifu">
+            	<span>储值卡余额:<font id="chkzje">{$account}</font></span>
+                <span style="margin-right:5px;">储值卡使用金额:</span>
+                <span><input type="text" style="width:50px;" id="srchkje" name="srchkje" onblur="checkczk()" value="0"/></span>
+                <span style="margin-right:5px;">储值卡密码:</span>
+                <span id="czkpwdbox">
+                	<input id="czkpwd" name="czkpwd" type="text" value="" style="height:18px; width:160px;"/>
+                </span>
+                <script>
+					$("#czkpwd").click(
+						function(){
+							var strinp = '<input id="czkpwd" name="czkpwd" type="password" value="" style="height:18px; width:160px;"/>';
+							$("#czkpwdbox").html(strinp);
+						}
+					);
+                </script>
+                <span style="color:#900" id="czkzhifuResult"></span>
+            </div>->
+            <!--W币-->
+            <!--<div class="cbh_line" id="wbizhifu" style="display:none;">
+            	<span style="margin-right:3px;">您现在有&nbsp;:&nbsp;<font id="wbzje">{$point}</font>W币,我要使用</span>
+                <span style="margin-right:3px;"><input style="width:50px;" type="text" name="points" id="wbinum" onBlur="checkwb()" value="0"/></span>
+                <span style="margin-right:3px;">W币(每1W币要可抵1元使用)</span>
+                <span style="margin-right:3px;"><a href="/zhuanti/wbi/wbi.html" target="_blank" style="color:#970077;">如何获得W币?</a></span>
+            </div>-->
+            <!--优惠券-->
+            <!--<div class="cbh_line" id="youhuiquan" style="display:none;">
+            	<span style="margin-right:3px;">您可以输入优惠券编号</span>
+                <span><input style="width:120px;" type="text" name="input_sn" id="input_sn" value="0"/></span>
+                <span><a href="javascript:checkbonus()">验证优惠券</a>&nbsp;&nbsp;<span style="color:#900" id="checkResult"></span></span>
+                <input type="hidden" name="hi_result" id="hi_result" value="0"/>
+                <input type="hidden" name="input_sn_VoucherAmount" id="input_sn_VoucherAmount" value="0" />
+                <input type="hidden" name="input_sn_VoucherType" id="input_sn_VoucherType" value="" />
+                <input type="hidden" name="input_sn_bonus_id" id="input_sn_bonus_id" value="" />
+                <input type="hidden" name="req_oid" value="{$oid}" />
+            </div>-->
+            <!--end-->
+        </div>
+        <!--{else}-->
+        <div class="cbh_tit">订单中含活动促销产品，不能与储值卡，优惠券、W币、代金券等任何优惠同时使用。</div>
+        <!--{/if}-->
+        <!--支付方式-->
+        <div class="pay_box">
+        	<div class="pay_b_tit">请选择支付方式</div>
+            <div class="pay_b_rad">
+            	<span><input type="radio" name="fangshi" id="male3" value="3" checked="checked"/>&nbsp;网上支付</span>
+                <!--{if $pdhdfk == 12212}-->
+                <span id="huodao_11"><input type="radio" name="fangshi" id="male1" value="1" />&nbsp;货到付款</span>
+                <!--{/if}-->
+            </div>
+            <!--线上-->
+            <div class="pay_sel" id="wszfbox">
+            	<span class="py_sel_radio"><input type="radio" name="zhifu" id="male6" value="6" checked="checked"/></span>
+                <span class="py_sel_img"><img src="images/wangyinzaixian_ico.png" height="51" width="132" alt="网银在线" /></span>
+               <!-- <span class="py_sel_radio"><input type="radio" name="zhifu" id="male5" value="5"/></span>
+                <span class="py_sel_img"><img src="images/zhifubao_ico.png" height="51" width="132" alt="支付宝" /></span>
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="7"/></span>
+                <span class="py_sel_img"><img src="images/caifutong_ico.png" height="51" width="132" alt="财付通" /></span>
+                <span class="py_sel_radio"><input type="radio" name="zhifu" id="male7" value="8"/></span>
+                <span class="py_sel_img"><img src="images/pufa_ico.png" height="51" width="132" alt="浦发银行" /></span>-->
+            </div>
+            <!--货到付款-->
+            <div class="pay_hdfk" id="hdfkbox" style="display:none;">
+            	<div><input type="radio" name="paym" id="paym" value="0" checked="checked"/>&nbsp;现金支付&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="paym" id="paym2" value="1" />&nbsp;刷卡付款</div>
+                <div id="cardlist" style="display:none;">
+                	<table>
+                    	<tr>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="银联卡" />&nbsp;<img src="../images/pay_ylk.jpg" height="35" width="52" alt="银联卡" title="银联卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="奥斯卡" />&nbsp;<img src="../images/pay_ask.jpg" height="35" width="52" alt="奥斯卡" title="奥斯卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="高通卡" />&nbsp;<img src="../images/pay_ght.jpg" height="35" width="52" alt="高通卡" title="高通卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="华夏瑞祥卡" />&nbsp;<img src="../images/pay_hxrx.jpg" height="35" width="52" alt="华夏瑞祥卡" title="华夏瑞祥卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="汇金卡" />&nbsp;<img src="../images/pay_hjk.jpg" height="35" width="52" alt="汇金卡" title="汇金卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="日月卡" />&nbsp;<img src="../images/pay_ryk.jpg" height="35" width="52" alt="日月卡" title="日月卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="润京银通卡" />&nbsp;<img src="../images/pay_rjytk.jpg" height="35" width="52" alt="润京银通卡" title="润京银通卡"></td>
+                          <td valign="middle"><input type="radio" name="cardname" class="cardname" value="商联通" />&nbsp;<img src="../images/pay_slk.jpg" height="35" width="52" alt="商联通" title="商联通"></td>
+                        </tr>
+                        <tr>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="世通卡" />&nbsp;<img src="../images/pay_stk.jpg" height="35" width="52" alt="世通卡" title="世通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="顺通卡" />&nbsp;<img src="../images/pay_sstk.jpg" height="35" width="52" alt="顺通卡" title="顺通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="万商通" />&nbsp;<img src="../images/pay_wst.jpg" height="35" width="52" alt="万商通" title="万商通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="易事通" />&nbsp;<img src="../images/pay_yst.jpg" height="35" width="52" alt="易事通" title="易事通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="银通卡" />&nbsp;<img src="../images/pay_ytk.jpg" height="35" width="52" alt="银通卡" title="银通卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="智惠卡" />&nbsp;<img src="../images/pay_zhk.jpg" height="35" width="52" alt="智惠卡" title="智惠卡"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="中欣银宝通" />&nbsp;<img src="../images/pay_zxybt.jpg" height="35" width="52" alt="中欣银宝通" title="中欣银宝通"></td>
+                           <td valign="middle"><input type="radio" name="cardname" class="cardname" value="连心卡" />&nbsp;<img src="../images/pay_lxk.jpg" height="35" width="52" alt="连心卡" title="连心卡"></td>
+                        </tr>
+                    </table>
+                    <div style="margin-top:5px; color:#333;">
+                	1、为保证您的权益，交易后请务必留存购物小票和预付卡，在退货时须同时出具购物小票和储联卡，刷卡金额不得退现。<br/>
+					2、由于储联卡公司系统问题、POS机具有问题等造成储联卡无法正常受理的，请采用其他方式付款。
+                	</div>
+                </div>
+          </div>
+        </div>
+        <!--支付方式结束-->
+        <!--总价格-->
+        <div class="total">
+         	以上商品价格合计：<span id='alljine'>{$zongjia}</span>元+<span id="zongyunfeiwf">0元</span>运费
+            <input type="hidden" name="shichangjias" id="shichangjia" value="{$all_total}" />
+         </div>
+         <!--总价格结束-->
+        <div style="text-align:center; padding:10px;">
+         	<!--<a href="javascript:frm_submit()"><img src="images/py_btn_submit.jpg" alt="生产订单" height="49" width="168" /></a>-->
+            <input type="image" src="images/py_btn_submit.jpg"/>
+        </div>
+     </div>
+     <div class="login_reg_ft"></div>
+  </div>
+  <!--支付方式选择-->

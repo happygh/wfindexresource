@@ -1,0 +1,97 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="poundbox">
+    	<div class="poundTable">
+        	<table width="100%" height="180">
+            	<tr>
+                	<th>选择</th>
+                    <th>规格</th>
+                    <th>食用人数</th>
+                    <th>普通会员价</th>
+                </tr>
+                <!--{foreach from=$cake_list item=cakes}-->
+                <tr>
+                	<td>
+                    <center>
+                    <!--{if $cake_sum > 1}---> 
+                  	<!--{if $cakes.index==2}-->
+                  <input type="radio" name="rd_cake" id="rd_cake" value="{$cakes.goods_id}" onclick="jisuan('{$discount}','{$cake["cat_id"]}')" checked="checked" />
+                  <!--{else}-->
+                  <input type="radio" name="rd_cake" id="rd_cake" value="{$cakes.goods_id}" onclick="jisuan('{$discount}','{$cake["cat_id"]}')"/>
+                  <!--{/if}--> 
+                  <!--{else}--> 
+                  <!--{if $cakes.index==1}-->
+                  <input type="radio" name="rd_cake" id="rd_cake" value="{$cakes.goods_id}" onclick="jisuan('{$discount}','{$cake["cat_id"]}')" checked="checked" />
+                  <!--{else}-->
+                  <input type="radio" name="rd_cake" id="rd_cake" value="{$cakes.goods_id}" onclick="jisuan('{$discount}','{$cake["cat_id"]}')" />
+                  <!--{/if}--> 
+                  <!--{/if}--></center></td>
+                    <td><center> <!--{if $ms_id == 1}--->1号<!--{else}-->{$cakes.Cake_Pound}{$lang.wofu_cart_num}<!--{/if}--></center></td>
+                    <td><center>{$cakes.Edible}</center></td>
+                    <td><center>{$cakes.f_shop_price}
+                  <input type="hidden" name="{$cakes.goods_id}" id="{$cakes.goods_id}" value="{$cakes.shop_price}" ></center></td>
+                </tr>
+                <!--{/foreach}-->
+            </table>
+        </div>
+        <div class="cartbtnbox">
+       	  <div class="cbtn_notice"><!--{if $ms_id == 1}--->秒杀时间：<br/>每日10:00-12:00/下午15:00-17:00<!--{else}--> 订购4号以上蛋糕、个性定制及集团采购,请致电 <!--{/if}--><br /><!--{if $ms_id == 1}---><!--{else}--><a>客服热线:4008567567</a><!--{/if}--></div>
+          				<style type="text/css"> 
+								.my_love_box { height:30px; position:absolute; margin-top:-35px; padding-left:180px; z-index:1000; padding-right:22px;}
+								*html .my_love_box { height:30px; position:absolute; margin-top:0px; padding-left:80px; z-index:1000; padding-right:22px;}
+								*+html .my_love_box { height:30px; position:absolute; margin-top:0px; padding-left:80px; z-index:1000; padding-right:22px;}
+								.love_box_2 { background:url(images/love_it_2.png) no-repeat; height:30px; width:30px; float:left; position:relative; cursor:pointer;}
+								.love_num_2 { height:34px; line-height:34px; float:left; background:url(images/love_it_3.png) right 2px no-repeat; margin-left:-5px; padding-left:8px; color:#404040; font-size:12px; padding-right:3px;}
+						</style>
+          <div class="cbtn_price">价格:<font id="zongjine">...</font>
+          	<!--喜欢开始-->
+            <div class="my_love_box">
+                <div title="喜欢" class="love_box_2" id="love_box_{$cake.goods_id}" onmouseover="chloveImg({$cake.goods_id});" onmouseout="chloveImg2({$cake.goods_id});" onclick="myloveBtn2({$cake.goods_id})">
+                                        
+                </div>
+                <div class="love_num_2" id="love_num_{$cake.goods_id}"><span>{$cake.like_it}</span>人</div>
+            </div>
+            <!--喜欢结束-->
+          </div>
+          <div class="cbtn">
+          <!--{if $cakes.is_on_sale==0}-->
+          <img src="images/goCart2.jpg" width="196" height="53" alt="已下架" />
+          <!--{else}-->
+          <img onclick="buy()" src="images/goCart.jpg" width="196" height="53" alt="立即购买" />
+          <!--{/if}-->
+          &nbsp;&nbsp;&nbsp;&nbsp;<img onclick="collect_ajax({$cake_id});" src="images/shouc.jpg" alt="收藏商品" width="70" height="30" /></div>
+        </div>
+        <div style="float:right;">
+            <a href="/cakes.php?catid=ZAAD"><img src="images/ljgm_czk.png" width="197" height="194"></a>
+        </div>
+    </div>
+    <script>
+    	jisuan('{$discount}','{$cake["cat_id"]}');
+		function collect_ajax(cake_id)
+		{
+			<!--{if $current_user_name eq false}-->
+			  opendiv();
+			  return;
+			<!--{/if}-->
+			_adwq.push(['_setAction', 
+				'1vackd',
+				'{$current_user_name}',
+				'6' // 事件价值 (可选)
+			   ]);
+			$.ajax({
+				type: "POST",
+				url: "cake.php",
+				dataType: 'text',
+				data: "act=collect_ajax&cake_id="+cake_id,
+				success: function(msg){
+					if(msg)
+					{
+						alert('收藏成功！')
+					}
+					else
+					{
+						alert('收藏失败,请稍后再试！');
+					}
+				}
+			});
+		}
+    </script>

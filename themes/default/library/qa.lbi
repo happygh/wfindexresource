@@ -1,0 +1,6 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--常见问题-->
+            <div class="cjwt_desc" style="display:none;">
+            	{$qa_cont} 
+            </div>
+            <!--常见问题结束-->

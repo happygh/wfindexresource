@@ -1,7 +1,7 @@
 (function ($) {
    
         $('div, img').slideShow({
-            timeOut: 2000,
+            timeOut: 10000,
             showNavigation: true,
             pauseOnHover: true,
             swipeNavigation: true

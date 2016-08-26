@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="info_l_box">
+            	<div class="in_l_b_tit">
+                	历史浏览..
+                </div>
+                <div class="in_l_b_con">
+                <!--{foreach from =$browsed_list item=cake}-->
+                	<div class="in_l_b_ls">
+                    	<a href="/cake.php?cakeid={$cake.goods_id}"><img src="{$cake.goods_img}" height="214" width="180" /></a>
+                        <br />
+                        <a href="/cake.php?cakeid={$cake.goods_id}" style="line-height:24px;">{$cake.goods_name}</a>
+                    </div>
+                <!--{/foreach}--> 
+                </div>
+                <div class="clin_l_b_ft">&nbsp;</div>
+            </div>

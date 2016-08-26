@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="info_l_box">
+            	<div class="in_l_b_tit">
+                	可能还会喜欢..
+                </div>
+                <div class="in_l_b_con">
+                <!--{foreach from =$maybelike_list item=cake name=cakenum}-->
+      				<!--{if $smarty.foreach.cakenum.iteration<4}-->
+                	<div class="in_l_b_ls">
+                    	<a href="/cake.php?cakeid={$cake.goods_id}"><img src="{$cake.goods_img}" alt="{$cake.goods_name}" height="214" width="180" /></a>
+                        <br />
+                        <a href="/cake.php?cakeid={$cake.goods_id}" style="line-height:24px;">{$cake.goods_name}</a>
+                    </div>
+                    <!--{/if}-->
+				<!--{/foreach}--> 
+                </div>
+                <div class="clin_l_b_ft">&nbsp;</div>
+            </div>

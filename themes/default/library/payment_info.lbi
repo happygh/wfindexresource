@@ -1,0 +1,424 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--用户信息内容-->
+<script type="text/javascript" src="/js/My97DatePicker/WdatePicker.js"></script>
+<form method="post" id="form_order" name="form_order" action="flow_cart.php?step=save_order">
+  <div class="login_reg_box">
+     <div class="login_reg_top"></div>
+     <div class="login_reg_con" style="padding-top:10px;">
+     	 <div class="sh_t_line"><span class="inptags" style="display:none;">蛋糕用途:</span><span style="display:none;"><input type="radio" name="dgyt" value="生日" />&nbsp;生日</span>	<span style="display:none;"><input type="radio" name="dgyt" value="其他" checked="checked" />&nbsp;其他</span><span style="margin-left:10px; color:#999;">蛋糕内只包含餐具 如需蜡烛生日帽等请在附件中添加'新生日套装'
+&nbsp;</span></div>
+         <div id="srm" style="display:none;"><img src="../images/srm.jpg" height="80" width="80"></div>
+         <div id="srlz" style="display:none;"><img src="../images/srlz.jpg" height="80" width="80"></div>
+         <div id="srklp" style="display:none;"><img src="../images/srklp.jpg" height="80" width="80"></div>
+         <script type="text/javascript">
+		<!--
+			function getMouse(id){
+				
+				//ie的兼容性，为了用于onmousemove事件 
+				if(!event) { 
+					event = window.event; 
+				} 
+				
+				var mypos = document.getElementById(id);
+				
+				mouseX = event.clientX;
+				mouseY = document.body.scrollTop + document.documentElement.scrollTop + event.clientY;
+			
+				mypos.style.display = 'block';
+				mypos.style.position = "absolute";
+				mypos.style.top = (mouseY+15)+"px";
+				mypos.style.left = (mouseX-16)+"px";
+			}
+			function hiddenit(id)
+			{
+				var mypos = document.getElementById(id);
+				mypos.style.display = 'none';
+			}
+		//-->
+		</script> 
+     	 <!--配送方式-->
+         <div class="psfs_tags">
+         	<div class="psfs_tit">配送方式</div>
+            <div class="psft_inp_b"><span><input type="radio" name="rd_self" id="rd_self" value="1" /></span><span>到窝夫小子自取</span></div>
+            <div class="psft_inp_b"><span><input type="radio" name="rd_self" id="ps_waff" value="0" checked="checked"/></span><span>由窝夫小子配送</span></div>
+         </div>
+         <!--配送方式结束-->
+         <!--自取地址-->
+         <div class="psfs_zq" id="div_self" style="display:none;">
+         	<ul>
+                <li class="content-write7">
+                  <input type="radio" name="self_dizhi" id="male" value="010" checked="checked">
+                  北京 &nbsp;北京市东城区朝阳门北大街8号富华大厦A座B1</li>
+                <li class="content-write7">
+                  <input type="radio" name="self_dizhi" id="male0" value="021">
+                  上海 &nbsp;上海市普陀区泸定路730号（近怒江北路）</li>
+              </ul>
+         </div>
+         <!--自取地址结束-->
+         <script>
+        	    <!--{if $AddresslistCount >0}--> 
+				is_defalut_add = 1;
+				<!--{else}-->
+				is_defalut_add = 0;
+				<!--{/if}-->
+         </script>
+         <!--配送地址-->
+         <div id="waff_ps">
+            <!--已有收货人信息--> 
+              <div id="div_peisong" {if $AddresslistCount <=0}style='display:none;'{/if}> 
+              <!--{if $AddresslistCount >0}-->
+              <style>
+              	.ps_u_name,.ps_u_tel { padding-left:15px; color:#666;}
+              </style>
+
+              <ul>
+                <!--{if $is_beijingbankshow != 'isbankshow'}-->
+                <!--{foreach from=$AddressList item=address name=loop}-->
+                <li class="content-write7">
+                  <input type="radio" {if $smarty.foreach.loop.iteration==1}checked="checked"{/if} onclick="javascript:psdiv({$address.address_id})" name="ps_address" id="radio" value="{$address.address_id}" title="{$address.address}"/>
+                  {$address.address}<span class="ps_u_name" id="un_{$address.address_id}">{$address.consignee}</span><span class="ps_u_tel" id="ut_{$address.address_id}">{$address.mobile}</span></li>
+                <!--{/foreach}-->
+                <!--{/if}-->
+                <li class="content-write7">
+                  <input type="radio" name="ps_address" id="female" value="0" onclick="psdiv(0)" />
+                  <font color="#9F2B85">{$lang.wofu_cart_o_other_addr}</font> </li>
+              </ul>
+
+              <!--{else}-->
+              <input type="radio" name="ps_address" id="female" value="0" checked="checked" />
+              <!--{/if}--> 
+            </div>
+            <!--已有收货人结束-->
+            <div class="shrxx" id="add_peisong_add" {if $AddresslistCount > 0}style='display:none;'{/if}>
+                <div class="tit_sh_r">输入新信息(收货人信息)</div>
+                <div class="sh_r_line"><span class="inptags">收&nbsp;货&nbsp;人:</span><span><input type="text" name="sh_name" id="sh_name" onChange="clone_indfo()"/></span><span class="inp_notice"><font color="#FF0000">&nbsp;*</font></span></div>
+                <div class="sh_r_line"><span class="inptags">手机号码:</span><span><input type="text" name="smobile" id="smobile" onChange="clone_indfo()" /></span><span class="inp_notice"><span class="inp_notice">&nbsp;<font color="#FF0000">*</font></span>&nbsp;请填写正确的手机号码,如:13521567567</span></div>
+                <!--<div class="sh_r_line"><span class="inptags">备用电话:</span><span><input type="text" name="sfamily_dh" id="sfamily_dh" /></span><span class="inp_notice">&nbsp;请填写正确的电话号码,如:65880720</span></div>-->
+                <div class="sh_r_line">
+                    <span class="inptags">所在省市:</span>
+                    <span style="padding-top:13px;"><select name="shr_nomarch" id='shr_nomarch' class="pdmdyfatc" onChange="region_change_jq(this.value,'shr_area','{$pdhdfk}')">
+                        <option value="" selected="selected">请选择</option>
+                        <!-- {foreach from=$TopAddList item=topadd} -->
+                        <option onClick="change_province(this.value)"  value="{$topadd.region_id}">{$topadd.region_name}</option>
+                        <!-- {/foreach} -->
+                      </select></span>
+                      <span style="padding-top:13px;"><select name="shr_area" id="shr_area" onClick="region_change_qu(this.value,'jiedaomy')">
+                        <option value="" selected="selected">请选择</option>
+                        <!-- {foreach from=$NextAddList item=nextadd} -->
+                        <option value="{$nextadd.region_id}">{$nextadd.region_name}</option>
+                        <!-- {/foreach} -->
+                      </select></span>
+                      <!--{if $pdhdfk == 12212}-->
+                      <!--<span style="padding-top:13px;"><select id="jiedaomy" Onclick="dgyunfei(this.value)">
+                      		<option value="" selected="selected">请选择</option>
+                      </select></span>-->
+                      <!--{/if}-->
+                      <span class="inp_notice"><font color="#FF0000">&nbsp;*</font></span>
+                </div>
+                <!--{if $pdhdfk == 12212}-->
+                <!--<div class="sh_r_line" style="margin-left: 26px;">没有符合街道选项，即不属于配送区域。如有疑问可<a href="http://chat1.5251.net/jsp_admin/client/client_yes/client.jsp?companyId=37571&style=76930&locate=cn" target="_blank">联系客服</a></div>-->
+                <!--{/if}-->
+                <!--onchange="isFreeAdd()" onblur="isFreeAdd()"-->
+                <div id="showkd" style="margin-left: 114px; display:none;"><input type="radio" name="maxzkd" value="mdptkd" />普通快递<input type="radio" name="maxzkd" value="mdsfkd" />顺丰快递</div>
+                <div class="sh_r_line"><span class="inptags">详细地址:</span><span id="temp_sheng"></span><span id="temp_qu"></span><span id="jiedao"></span><span><input style="width:360px;" type="text"  name="sxxaddress" id="sxxaddress" onchange="isFreeAdd()" onblur="isFreeAdd()"/></span><span class="inp_notice"><font color="#FF0000">&nbsp;*</font></span></div>
+                <div class="tit_sh_r_t" style="padding-left:116px; line-height:30px; padding-bottom:0px; font-weight:normal;"><input type="checkbox" name="clone_shr_info" id="clone_shr_info" onclick="clone_indfo()">订货人与收货人信息一致</div>
+                <!--{if $showshowbjqhd == 112211}-->
+                <div style="margin-left: 116px;"><input type="checkbox" name="clone_shr_info" id="openbjqdivid" value="bjlhdvalc" onclick="open_indfo()">加39元配送费免费请你童年小伙伴吃蛋糕</div>
+                <!--{/if}-->
+                <!--冰激凌活动填写收货信息-->
+                <div id="show_bjlhddiv" style="display:none;margin-left: 116px;">
+                <div class="sh_r_line" style="margin-left:28px;">填写您好友的收货信息</div>
+                <textarea style="margin-left: 50px; width: 444px; height: 91px;" name="chuzhihd_1603"></textarea>
+                <div style="margin-left: 56px;">收货人姓名+收货人手机+地址+送货时间+蛋糕名称</div>
+                <!--冰激凌活动填写收货信息结束-->
+                </div>
+                <input type="hidden" name="Deliver_Fee" id="Deliver_Fee" value="0" />
+                <script type="text/javascript">
+					function open_indfo(){
+						if($("#openbjqdivid").prop("checked")==true)
+					{
+						$("#show_bjlhddiv").slideDown('slow');
+						
+					}
+					else
+					{
+						$("#show_bjlhddiv").slideUp('slow');
+						
+					}
+					}
+                </script>
+                <!--收费提示开始-->
+                <!--{if $qgsdz == 1234321}-->
+               <div id="psqy_bz" style="display:none; line-height:24px; padding-left:26px; padding-top:10px; border-top:1px dashed #CCC;">
+                  <p>
+                  <span class="content-write7">
+                    <input type="hidden" value="0" name="wuhuan" id="wuhuan_bz"/>
+                    </span> <span class="content-write7"><font color="#930683">请选择具体区域：</font></span> </p>
+                  <span class="content-write7">
+                  <input type="radio" value="0" name="wuhuan" id="wuhuannei" onclick="showpeisongtishi(this)" />
+                  </span> <span class="content-write7">北京五环内</span> <span class="content-write7">
+                  <input type="radio" value="1" name="wuhuan" id="wuhuan" onclick="showpeisongtishi(this)" checked="checked"/>
+                  </span> <span class="content-write7">{$lang.wofu_my_cart_wai}</span> <span class="content-write7">
+                  <input type="radio" value="2" name="wuhuan" id="shanghaisanshi" onclick="showpeisongtishi(this)"/>
+                  </span><span class="content-write7">上海浦东新区</span>
+                  <input type="radio" value="2" name="wuhuan" id="qitadiqu_w" onclick="showpeisongtishi(this)"/>
+                  </span><span class="content-write7">其它地区</span>
+                  <div id="peisongtishi" name="peisongtishi" style="display:none;"> <span><font style="font-size:12px; color:#930683;">{$lang.wofu_peisong_fuwufei}</font></span> </div>
+                  <div id="peisongshtishi" name="peisongshtishi" style="display:none;"> <span><font style="font-size:12px; color:#930683;">*中环以外至外环线以内区域订购7个或7号规格（含）以上蛋糕提供配送，加收30元配送费</font></span> </div>
+                </div>
+                <!--{/if}-->
+                <!--收费提示结束-->
+            </div> 
+         </div>
+         <!--配送地址结束-->
+         
+         <!--世界杯活动开始-->
+         <!--<style type="text/css">
+         	.show_shijiebei_xiang img{margin-left:25px;}
+			.chioce_who_qiu{text-align:center; margin-top:10px;}
+			.chioce_who_qiu input{margin-left:160px;}
+         </style>
+         <div>
+         	<div class="show_shijiebei_xiang" style="text-align:center">
+                <img style="margin-left:0px;" src="/themes/default/images/shijiebei/1.jpg" alt="" />
+                <img src="/themes/default/images/shijiebei/2.jpg" alt="" />
+                <img src="/themes/default/images/shijiebei/3.jpg" alt="" />
+                <img src="/themes/default/images/shijiebei/4.jpg" alt="" />
+                <img src="/themes/default/images/shijiebei/5.jpg" alt="" />
+             </div>
+             <div class="chioce_who_qiu">
+                <input type="radio" style="margin-left:0px;"  name="beifujian" value="33250" checked="checked"/>
+                <input type="radio" name="beifujian" value="33251"/>
+                <input type="radio" name="beifujian" value="33252"/>
+                <input type="radio" name="beifujian" value="33253"/>
+                <input type="radio" name="beifujian" value="33254"/>
+            </div>
+            <div style="margin-top: 12px;">
+            	<img src="/themes/default/images/shijiebei/jianjiebei.jpg" alt="" />
+            </div>
+         </div>-->
+         
+         <!--世界杯活动结束-->
+         
+         <div class="shrxx" id="dhr_div_box" style="margin-top: 26px;">
+         	<div class="tit_sh_r">请填写信息(订货人信息)</div>
+         	<div class="sh_r_line"><span class="inptags">订&nbsp;货&nbsp;人:</span><span><input type="text" name="dh_name" id="dh_name" value="{$current_user_info.real_name}"/></span><span class="inp_notice"><font color="#FF0000">&nbsp;*</font></span></div>
+            <div class="sh_r_line"><span class="inptags">手机号码:</span><span><input type="text"  name="dmobile" id="dmobile"value="{$current_user_info.mobile_phone}" /></span><span class="inp_notice"><font color="#FF0000">&nbsp;*</font></span><span class="inp_notice">&nbsp;请填写正确的手机格式,如:13521567567</span></div>
+            <!--<div class="sh_r_line"><span class="inptags">备用电话:</span><span><input type="text" name="dfamily_dh" id="dfamily_dh" value="{$current_user_info.phone}" /></span><span class="inp_notice">&nbsp;请填写正确的电话格式,如:65880720</span></div>-->
+         </div>
+         <!--发票-->
+         <div class="psfs_tags" style="height:auto;">
+         	<div class="fp_tit"><input type="checkbox" name="needfapiao" id="needfapiao" value="1" />需要发票</div>
+            <div id="fapiaoCon" style="display:none;clear:both; ">
+                <div style="padding-left:50px;">
+                    <span><input type="radio" name="fapiaotype" id="grtype" value="0"/></span><span>个人</span>
+                    <span><input type="radio" name="fapiaotype" id="gstype" value="1"/></span><span>单位</span>
+                </div>
+                <!--单位发票-->
+                <div style="clear:both; display:none;" id="fpxxbox">
+                    <div class="fptt" id="gs_name_box"><span>发票抬头:</span><span><input type="text" name="gs_name" id="gs_name"/></span><span>请填写准确名称</span></div>
+                    <div class="fptt" id="fp_name_box"><span>发票名称:</span><!--<span><input type="radio"  name="fp_name" id="fp_name" value="0" />&nbsp;餐费[仅限北京]</span>--><span><input type="radio" name="fp_name" id="fp_name" value="1" />&nbsp;食品</span></div>
+                </div>
+                <!--xie需要发票的得加上发票的配送地址-->
+                <div style="margin-left: 50px;">
+            		<span>发票收件人姓名<input type="text" name="postfpname" value="" style="width:262px;"/><font color="#FF0000">&nbsp;*</font></span><br/>
+                	<span>收件人地址<input type="text" name="postfpaddress" value=""  style="margin-left: 28px;  width: 410px;"/><font color="#FF0000">&nbsp;*</font></span><br/>
+                    <span>收件人电话<input type="text" name="postfptell" value="" style="margin-left: 28px;width:262px;"/><font color="#FF0000">&nbsp;*</font></span><br/>
+                    <span>邮编<input type="text" name="postfpzip" value="" style="margin-left: 70px;width:262px;"/><font color="#FF0000">&nbsp;*</font></span><br/>
+                    <span style="color:#970077">窝夫小子每月10日/20日/30日，统一给买家开具发票。发票将以挂号信的形式邮递到买家提供的收信地址，挂号信发出后约3~5天可以送到</span>
+                   
+            	</div>
+            </div>
+            
+            
+            <div style="clear:both"></div>
+         </div>
+         <script>
+		 	//配送方式切换--门店自取
+			$("#rd_self").click(
+				function(){
+					if(document.getElementById("rd_self").checked)
+					{
+						$("#div_self").css("display","block");
+						$("#waff_ps").css("display","none");
+					}
+				}
+			);
+			$("#ps_waff").click(
+				function(){
+					if(document.getElementById("ps_waff").checked)
+					{
+						$("#div_self").css("display","none");
+						$("#waff_ps").css("display","block");
+					}
+				}
+			);
+			//发票信息
+         	$("#grtype").click(
+				function(){
+					if($(this).attr("checked")=="checked")
+					{
+						$("#fpxxbox").show();
+						$("#gs_name_box").show();
+						$("#fp_name_box").show();
+						$("#gs_name").val("个人");
+						var htmlstr = "<span>发票名称:</span><span><input type='radio' name='fp_name' id='fp_name' value='5' />&nbsp;蛋糕</span><span><input type='radio' name='fp_name' id='fp_name' value='1' />&nbsp;餐费<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='2' />&nbsp;食品(蛋糕)<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='3' />&nbsp;食品<font color='#970077'>[仅限上海]</font></span>";
+						var htmlstr2 = "<span>发票抬头:</span><span><input type='text' name='gs_name' id='gs_name' value='{$fp}'/></span><span>请填写真实姓名</span>";
+						$("#gs_name_box").html(htmlstr2);
+						$("#fp_name_box").html(htmlstr);
+					}
+					else if(typeof($(this).attr("checked"))=='undefined')
+					{
+						$(this).attr("checked","checked");
+						if(typeof($("gstype").attr("checked"))=='undefined'){$("#gstype").removeAttr("checked");}
+						$("#fpxxbox").show();
+						$("#gs_name_box").show();
+						$("#fp_name_box").show();
+						$("#gs_name").val("个人");
+						var htmlstr = "<span>发票名称:</span><span><input type='radio' name='fp_name' id='fp_name' value='5' />&nbsp;蛋糕</span><span><input type='radio' name='fp_name' id='fp_name' value='1' />&nbsp;餐费<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='2' />&nbsp;食品(蛋糕)<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='3' />&nbsp;食品<font color='#970077'>[仅限上海]</font></span>";
+						var htmlstr2 = "<span>发票抬头:</span><span><input type='text' name='gs_name' id='gs_name' value='{$fp}'/></span><span>请填写真实姓名</span>";
+						$("#gs_name_box").html(htmlstr2);
+						$("#fp_name_box").html(htmlstr);
+					}
+				}
+			);
+			$("#gstype").click(
+				function(){
+					if($(this).attr("checked")=="checked")
+					{
+						$("#fpxxbox").show();
+						$("#gs_name_box").show();
+						$("#fp_name_box").show();
+						$("#gs_name").val("");
+						var htmlstr = "<span>发票名称:</span><span><input type='radio' name='fp_name' id='fp_name' value='5' />&nbsp;蛋糕</span><span><input type='radio' name='fp_name' id='fp_name' value='1' />&nbsp;餐费<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='2' />&nbsp;食品(蛋糕)<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='3' />&nbsp;食品<font color='#970077'>[仅限上海]</font></span>";
+						var htmlstr2 = "<span>发票抬头:</span><span><input type='text' name='gs_name' id='gs_name' value='{$fp}'/></span><span>请填写准确的公司名称</span>";
+						$("#gs_name_box").html(htmlstr2);
+						$("#fp_name_box").html(htmlstr);
+					}
+					else
+					{
+						$(this).attr("checked","checked");
+						if(typeof($("grtype").attr("checked"))=='undefined'){$("#grtype").removeAttr("checked");}
+						$("#fpxxbox").show();
+						$("#gs_name_box").show();
+						$("#fp_name_box").show();
+						$("#gs_name").val("");
+						var htmlstr = "<span>发票名称:</span><span><input type='radio' name='fp_name' id='fp_name' value='5' />&nbsp;蛋糕</span><span><input type='radio' name='fp_name' id='fp_name' value='1' />&nbsp;餐费<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='2' />&nbsp;食品(蛋糕)<font color='#970077'>[仅限北京]</font></span><span><input type='radio' name='fp_name' id='fp_name' value='3' />&nbsp;食品<font color='#970077'>[仅限上海]</font></span>";
+						var htmlstr2 = "<span>发票抬头:</span><span><input type='text' name='gs_name' id='gs_name' value='{$fp}'/></span><span>请填写准确的公司名称</span>";
+						$("#gs_name_box").html(htmlstr2);
+						$("#fp_name_box").html(htmlstr);
+					}
+				}
+			);
+         </script>
+         <!--发票结束-->
+         <!--配送时间-->
+         <div class="f_c_other">
+         	<div class="s_Time_b">
+            	<div class="s_time_tags">送货日期:&nbsp;</div>
+                <div class="s_time_date">
+                	<input type="text" name="sh_time" id="sh_time" onclick="WdatePicker({minDate:'{$miniDate}',onpicked:selectTim})"/>
+                	<input name="cartPsTime" id="cartPsTime" value="{$cartPsTime}" type="hidden"/>
+                    <input type="hidden" name="dqsj" id="dqsj" readonly='readonly' style="text-align:left;width:80px;" value=""/>
+                    <input type="hidden" name="phpsj" id="phpsj" readonly='readonly' style="text-align:left;width:80px;" value="{$getDateandtime}"/>
+                    <SCRIPT LANGUAGE="JavaScript">
+						var d=new Date();
+						document.getElementById('dqsj').value=d.getHours()+':'+d.getMinutes();
+				  	</SCRIPT>
+                </div>
+                <div class="s_time_times">
+                	<select id="s_time" name="sh_time_a">
+                    	<option value="00.00" selected='true'>请选择时间</option>
+                    </select>
+                    <input type="hidden" name="statimehour" id="startTimeInput" value="00:00"/>
+                    <input type="hidden" name="endtiemhour" id="endTimeInput" value="00:00"/>
+                </div>
+                <div class="s_time_tags" style="color:#999;">请先选择日期，之后即可选择时间&nbsp;日期格式:2013-09-10</div>
+            </div>
+            <div style="color:#970077;">注：北京五环外送货时间：早10点-晚7点</div>
+            <div style="color:#970077;">注：马卡龙,曲奇饼干由北京生产发货和发往北京上海以外的大面包通过第三方快递公司送到亲手中 您选择的时间是发货时间请知晓</div>
+            <script type="text/javascript" src="/themes/default/js/selectTime.js?201309111014"></script>
+            <!--客户留言三个生日信息-->
+            <!--{if $is_showsr=='isshowsr'}-->
+            <div></div>
+            <div>
+            	<div style="margin-top:10px;"><span>关系<input type="text" name="myguanxi1" value="{$gxname1}"/></span><span style="margin-left:8px;">生日<input type="text" name="guanxishengri1" onclick="WdatePicker()" value="{$gxshengri1}"/></span></div>
+                <div style="margin-top:5px;"><span>关系<input type="text" name="myguanxi2" value="{$gxname2}"/></span><span style="margin-left:8px;">生日<input type="text" name="guanxishengri2" onclick="WdatePicker()" value="{$gxshengri2}"/></span></div>
+                <div style="margin-top:5px;"><span>关系<input type="text" name="myguanxi3" value="{$gxname3}"/></span><span style="margin-left:8px;">生日<input type="text" name="guanxishengri3" onclick="WdatePicker()" value="{$gxshengri3}"/></span></div>
+            </div>
+            <!--{/if}-->
+            <!--客户留言三个生日信息结束-->
+            <!-- {foreach from=$append_list item=append} -->
+               <!--{if $append.goods_id=='33529' && $append.goods_number>=1}-->
+            <div class="hk_fy">
+               <div class="sh_r_line"><span class="inptags">贺卡附言:</span><span class="textarea"><textarea name="hk_fuyanlan" id="hk_fuyanlan" style="width:305px; height:58px; font-size:14px;"></textarea>&nbsp;<font color="#CCCCCC">赠言均为电脑打印（无人工审核，请勿备注信息）字数请控制在50字以内</font></span></div>
+            </div>
+               <!--{/if}-->
+            <!--{/foreach}-->
+           <!-- 用户附言暂时被注销 <div class="u_fy_box">
+            	<div class="u_fy_tags">用户附言:&nbsp;</div>
+                <div class="u_fy_area">
+                	<textarea name="fuyanlan" id="fuyanlan">拍下可写字的蛋糕、巧克力牌(30元)请注明，如：
+蛋糕写字：生日快乐
+巧克力牌(30元)写字：生日快乐
+                    </textarea>
+                    <style>
+                    	#fuyanlan { color:#999;}
+                    </style>
+                    <script>
+						var deftext = $("#fuyanlan").val();
+                    	$("#fuyanlan").click(
+							function(){
+								if($(this).val()==deftext)
+								{
+									$(this).val("");
+								}
+							}
+						);
+						$("#fuyanlan").blur(function(){
+							if($(this).val()=="")
+							{
+								$(this).val(deftext);
+								$(this).css("color","#999");
+							}
+						});
+						$("#fuyanlan").change(
+							function(){
+								if($(this).val()!=deftext)
+								{
+									$(this).css("color","#333");
+								}
+							}
+						);
+                    </script>
+              	</div>
+                <div style="clear:both"></div>
+            </div> -->
+            <div class="gwsm_box">
+            	<div class="gwsm_tit"></div>
+                <div class="gwsm_con">
+                	<p>购物说明:</p>
+		    <p>1、如有其他特殊需求请在提交订单后联系客服 客服热线 4008-567-567</p>
+                    <p>2、由于蛋糕造型设计,适宜写字的蛋糕只有:鲜奶水果蛋糕,其他均不能写字。</p>
+                    <p>3、免费配送:北京六环内免费配送/上海普陀区,长宁区,黄埔区,静安区,虹口区,闸北区免费配送。</p>
+                </div>
+                <div class="gwsm_ft"></div>
+            </div>
+         </div>
+         <!--配送时间结束-->
+         <!--总价格-->
+         <div class="total">
+         	<!--{if $is_no_rate==1}-->
+            以上商品价格合计：<span id='alljine'>{$shichangjia}</span>元(含{$append_money}元附件费用+<span id="zongyunfeiwf">0元</span>运费)
+            <input type="hidden" name="shichangjias" id="shichangjia" value="{$shichangjia}" />
+            <!--{else}-->
+         	以上商品价格合计：<span id='alljine'>{$format_all_total}</span>元(含{$append_money}元附件费用+<span id="zongyunfeiwf"><!--{if $pd_yunfei==12321}-->{$myyunfei}元<!--{elseif $qgsdz==1234321}-->8元<!--{elseif $pd_yunfei_yhtp==12321111}-->一盒甜品北京包邮，其他地区一盒运费25元，2盒及以上无需<!--{else}-->0元<!--{/if}--></span>运费)
+            <input type="hidden" name="shichangjias" id="shichangjia" value="{$shichangjia}" />
+            <!--{/if}-->
+            <input type="hidden" name="is_no_rate" value="{$is_no_rate}" />
+         </div>
+         <!--总价格结束-->
+     </div>
+     <div class="login_reg_ft"></div>
+  </div>
+  <!--用户信息内容结束-->

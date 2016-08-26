@@ -1,0 +1,70 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript">
+  var _adwq = _adwq || [];
+  _adwq.push(['_setAccount', 'fbda2']);
+  _adwq.push(['_setDomainName', '.wfboy.com']); 
+  _adwq.push(['_trackPageview']);
+</script>
+
+<script type="text/javascript" src="http://d.emarbox.com/js/adw.js?adwa=fbda2"></script>
+	<div class="box-head">
+				<div class="head-left">
+					<a href="/"><img src="/newmeb/images/logo.png" /></a>
+				</div>
+				
+                
+                  <div class="head-right">
+					  <!--{if $current_user_name eq false}--> 
+                      <div class="top">
+						<a href="#">HELP</a>
+						<a href="/user.php?act=login">SIGN IN</a>
+					 
+			    </div>
+                  <!--{else}--> 	
+                
+            
+     
+        	<div class="top"><a href="/user.php?act=logout"> | 退出</a><a href="/profile.php" title="{$current_user_name}">{$current_user_name|truncate:50}...,欢迎光临窝夫小子!</a></div>
+    	<!--{/if}-->
+                
+                
+                
+                
+                
+					<div class="bottom">
+					  <div class="dh">
+							<img src="/newmeb/images/dianhua.png" />
+						</div>
+						<div class="gwc">
+							<img src="/newmeb/images/che.png" />
+							<div class="shuz">
+								<div class="lf">
+								</div>
+								
+								<div class="ri">
+								</div>
+							</div>
+						</div>
+						<div class="hou">
+							<a href="/" class="cur">北京</a>
+							<span>/</span>
+							<a href="http://shanghai.wfboy.com">上海</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="box-bnner" style="height:29px;">
+				<div class="nav">
+					<ul>
+				                        
+                         <li><a href="/" class="cur">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+						<li ><a href="/#srdg" target="_blank">全部产品</a></li>
+						<li><a href="/cakes.php?catid=AX" target="_blank">主厨推荐</a></li>
+                        <li><a href="/profile.php" target="_blank">个人中心</a></li>
+						<li><a href="/enterprise.php" target="_blank">企业专区</a></li>
+						<li><a href="/helpInfo.php?id=55" target="_blank">配送范围</a></li>
+
+					</ul>
+				</div>
+			</div>
+            

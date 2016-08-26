@@ -1,0 +1,133 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script type="text/javascript">
+  var _adwq = _adwq || [];
+  _adwq.push(['_setAccount', 'fbda2']);
+  _adwq.push(['_setDomainName', '.wfboy.com']); 
+  _adwq.push(['_trackPageview']);
+</script>
+
+<script type="text/javascript" src="http://d.emarbox.com/js/adw.js?adwa=fbda2"></script>
+<!--头部内容-->
+<!--{if $smarty.cookies.QQ_headshow && $smarty.session.caibeilogin==1} -->
+<div style="background:#26091D;">
+    <div style="height:22px; line-height:22px; width:985px; color:#666; margin:0 auto;text-align:right;">
+       	<span style="float:left;"><a href="http://cb.qq.com/my/my_jifen_source.html
+" target="_blank">我的彩贝积分</a></span><span style="float:right;">{$qq_hdshow}</span>
+    </div>
+</div>
+<!--{/if}-->
+<div id="i_hd">
+	<div class="tbox"
+	<div class="tbox">
+        <div class="w985">
+        <!--{if $current_user_name eq false}--> 
+            <div class="welcome"><span>欢迎光临窝夫小子!</span><span>【<a href="/user.php?act=register" target="_blank">注册</a>】</span><span>【<a href="/user.php?act=login" target="_blank">登录</a>】</span>
+            <!--<span><a href="/company_user_active.php?act=login" target="_blank">企业用户登录</a></span>--></div>
+        <!--{else}--> 
+        	<div class="welcome"><a href="/profile.php" style="color:#B02393" title="{$current_user_name}">{$current_user_name|truncate:50}...</a>,欢迎光临窝夫小子！ | <a href="/user.php?act=logout">退出</a></div>
+        <!--{/if}-->
+         <div class="toptags xie_bg"><a href="/user.php">查询订单</a><span>|</span><a style="cursor:pointer" onClick="addCookie();">收藏网站</a><span>|</span><a href="/helpInfo.php?id=47" id="bzzx_bg" style="margin-left:8px;">帮助中心</a><!--{if $smarty.cookies.user_city=='021' }--><a class="on_city">上海站</a><a class="off_city">北京站</a><a href="http://www.wfboy.com">【切换】</a><!--{else}--><a class="on_city">北京站</a><a class="off_city">上海站</a><a href="http://shanghai.wfboy.com">【切换】</a><!--{/if}--><div class="xie_bg_img"><a href="/helpInfo.php?id=47" style="cursor:pointer" target="_blank"><img src="../images/123123.jpg"/><div class="xie_wenzi">帮助中心</div></a></div></div>
+        </div>
+    </div>
+    <div class="navbox" style="height: 133px;">
+    	<div class="w985">
+        	<h1><a href="/">窝夫小子蛋糕</a></h1>
+            <div class="s_n_box">
+            	<!--搜索框-->
+            	<div class="searchBox">
+                    <div class="search">
+                    	<form id="top_search_form" name="top_serach" action="/selecthelp.php?act=by&type=50" method="get">
+                        <input type="hidden" name="act" value="by">
+                        <input type="hidden" name="type" value="500">
+                        <input type="hidden" name="page" value="1">
+                        <input type="hidden" name="festival" id="top_festival" />
+                        <input type="hidden" name="country" id="top_country" />
+                        <input type="hidden" name="taste" id="top_taste" />
+                        <input type="hidden" name="price" id="top_price" />
+                    	<div class="sinp_lf"></div>
+                        <div class="sinp_m">
+                        	<span class="s_s_tags" id="s_l_price"></span>
+                            <span class="s_s_tags" id="s_l_kw"></span>
+                            <span class="s_s_tags" id="s_l_dx"></span>
+                            <span class="s_s_tags" id="s_l_yt"></span>
+                            <input type="text" name="festiva" id="keyword" autocomplete="off"/>
+                        </div>
+                        <div class="sinp_rg"></div>
+                         </form>
+                        <div id="selectbox" style="display:none;">
+                        	<!--搜索历史-->
+                        	<div class="s_l_h">
+                                <span><a>生日蛋糕</a><a>马卡龙</a><a>冰激凌蛋糕</a><a>儿童蛋糕</a><a>无糖蛋糕</a></span>
+                            </div>
+                            <!--筛选条件-->
+                        	<div class="s_l">
+                            	<span class="s_l_tit">价格:</span>
+                                <span><a name="s_l_price" value='59'>59-199</a><a name="s_l_price" value='299'>200-299</a><a name="s_l_price" value='399'>300-399</a><a name="s_l_price" value='499'>400-499</a><a name="s_l_price" value='500'>500以上</a></span>
+                            </div>
+                            <div class="s_l">
+                            	<span class="s_l_tit">口味:</span>
+                                <span><a name="s_l_kw" value='ACAB'>巧克力</a><a name="s_l_kw" value="ACAC">冰激凌</a><a name="s_l_kw" value='ACAD'>芝士奶酪</a><a name="s_l_kw" value='ACAE'>酒味</a><a name="s_l_kw" value='ACAG'>坚果</a><a name="s_l_kw" value='ACAH'>咖啡</a><a name="s_l_kw" value='ACAI'>无糖</a><a name="s_l_kw" value='ACAK'>奶油水果</a></span>
+                            </div>
+                            <div class="s_l">
+                            	<span class="s_l_tit">对象:</span>
+                                <span><a name="s_l_dx" value='AEAB'>长辈</a><a name="s_l_dx" value='AEAD'>客户</a><a name="s_l_dx" value='AEAC'>儿童</a><a name="s_l_dx" value='AEAE'>亲友</a><a name="s_l_dx" value='AEAA'>恋人</a></span>
+                            </div>
+                            <div class="s_l">
+                            	<span class="s_l_tit">用途:</span>
+                                <span><a name="s_l_yt" value='ABAA'>聚会</a><a name="s_l_yt" value='ABAB'>生日</a><a name="s_l_yt" value='ABAC'>婚礼</a><a name="s_l_yt" value='ABAD'>庆典</a><a name="s_l_yt" value='ABAE'>下午茶</a><a name="s_l_yt" value='ABAF'>送礼</a></span>
+                            </div>
+                            <div class="s_l_close">
+                                <span id="sqingkong">清空条件</span><span id="sclose">关闭</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hottags">
+                    	<div class="box2" id="marqueebox1">
+                            <ul>
+                            	
+                                <li><a href="/cakes.php?catid=ZAAD">储值1000送100 储值2000送260 储值5000送700</a></li>
+                                <!--<li><a href="/user.php?act=register">新会员注册 即获10元优惠券</a></li>-->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--搜索结束-->
+                <!--导航栏-->
+                <div class="nav">
+                	<ul>
+                    	<li class="navtag_lf"><span class="navtag_lf"></span><a href="/">首页 Home</a><span class="navtag_rg"></span></li>
+                        <li {if $catid=='ZD'}class="nav_on"{/if}><span class="navtag_lf"></span><a href="/cakes.php?catid=ZD">产品名录 Product list</a><span class="navtag_rg"></span></li>
+                       
+                        <li><span class="navtag_lf"></span><a href="/shengridangao/index.html" target="_blank">生日蛋糕 Birthday</a><span class="navtag_rg"></span></li>
+                       
+                        <li <!--{if $catid=='AEAC'}-->class="nav_on"<!--{/if}-->><span class="navtag_lf"></span><a href="wutang_index.php" target="_blank">无糖蛋糕  Xylitol</a><span class="navtag_rg"></span></li>
+                        <li><span class="navtag_lf"></span><a href="http://waffleboysp.tmall.com" target="_blank">天猫商城 Tmall</a><span class="navtag_rg"></span></li>
+                    </ul>
+                </div>
+                <!--导航结束-->
+                <!--商品分类-->
+                <div class="catebox" style="margin-left:630px; width:100px;">
+                    <div class="cart">
+                    	<!--{if $cart_goods_num >0}-->
+                            <div class="cart_num_bj">{$cart_goods_num}</div>
+                        <!--{/if}-->
+                    	<a class="cate-a" href="/flow.php">购物车</a>
+			<div class="x_cate_b"><a href="/flow.php" style="color:#F2F2F2;">购物车</a></div>
+                    </div>
+                </div>
+                <!--商品分类结束-->
+            </div>
+        </div>
+    </div>
+</div>
+<!--头部内容结束-->
+<!--头部内容结束-->
+<style>
+.box2 {overflow:hidden; height:22px;line-height:22px; margin-top:10px}
+.box2 ul{margin:0px; padding:0px;} 
+.box2 li{height:22px; line-height:22px;list-style-type:none;} 
+.box2 li a { color:#036; font-weight:normal;}
+</style>
+<script>
+startmarquee(22,30,3000,1);  
+</script>

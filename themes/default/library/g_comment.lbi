@@ -1,0 +1,20 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--商品评论-->
+            <div class="sppl_desc" style="display:none;">
+            	<!--{foreach from =$comment_list item=comment}-->
+            	<!--{if $comment.user_name neq ''}-->
+            	<div class="userComment">
+                	<div class="userinfo">
+                    	<span>{$comment.user_name}***</span><br />
+                        <span>{$comment.add_time}</span>
+                    </div>
+                    <div class="user_qiao">&nbsp;</div>
+                    <div class="CommentInfo">
+                    	{$comment.content}
+                    </div>
+                    <div style="clear:both;"></div>
+                </div>
+                <!--{/if}-->
+            	<!--{/foreach}--> 
+            </div>
+            <!--商品品类结束-->

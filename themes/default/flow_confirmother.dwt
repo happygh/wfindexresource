@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>窝夫小子-WAFFLEBOY唯一官方网站，最好的生日礼物，生日蛋糕，聚会礼品</title>
+<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕，窝夫小子月饼">
+<meta name="description" content="窝夫小子蛋糕官网,北京窝夫小子蛋糕预定配送-法国德国英国意大利西班牙等欧式蛋糕和冰激凌蛋糕无糖生日蛋糕窝夫小子月饼,不含植脂奶油,24小时热线4008567567">
+<script type="text/javascript" src="js/ucheck.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="/themes/default/js/wf-dev.js"></script>
+</head>
+
+<body>
+<!--头部内容-->
+<!-- #BeginLibraryItem "/library/inc_header2.lbi" --><!-- #EndLibraryItem -->
+<!--头部内容结束-->
+<div id="flowcartbox">
+  <div class="f_t_hot">
+
+  </div>
+  <div class="f_t_lc"><img src="images/flow_ok_titi.jpg" /></div>
+  <!--用户信息内容-->
+  <div class="login_reg_box">
+     <div class="login_reg_top"></div>
+     <div class="login_reg_con" style="padding-top:10px;">
+     	 <div class="notice_box">
+         	<div class="n_t_1">恭喜您,订单提交成功!</div>
+            <div class="n_t_2">
+            	<span>订单号:<font>{$orderid}</font></span>
+                <span>应付金额:<font>{$Amount}</font>元</span>
+                <span>支付方式:货到付款</span>
+            </div>
+            <div class="n_t_3">提示:该订单号为您此次交易的唯一凭证,请您牢记订单号,以便核对订单信息。</div>
+            <div class="n_t_4">
+                <a href="/order.php"><img src="images/flow_ok_btn_2.jpg" alt="查看订单" height="34" width="96" /></a>
+            </div>
+         </div>
+     </div>
+	 <!--添加微信的地方-->
+     <div class="login_reg_con" style="height:60px;">&nbsp;</div>
+     <div class="login_reg_con" style="overflow:hidden;zoom:1;">
+     	<!--文字描述-->
+     	<div style="float:left; margin-left: 250px;"><p style="color:#970077; font-size:16px;">手机扫二维码 加微信</p> 
+									<p></p>
+									<p>更多活动惊喜等着您~</p>
+									<p></p></div>
+        
+        <!--二维码图片-->
+        <div style="float:left; margin-left: 38px;""><img src="images/erweima.jpg" alt="二维码" height="160"/></div>
+     </div><!--添加微信的地方结束-->
+     <div class="login_reg_ft"></div>
+  </div>
+  <div style="height:30px;">&nbsp;</div>
+</div>
+<!--底部内容-->
+<!-- #BeginLibraryItem "/library/inc_footer.lbi" --><!-- #EndLibraryItem -->
+<!--底部内容结束--> 
+<!--[if lte IE 6]> 
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript"> 
+DD_belatedPNG.fix('div, h1, img, li, span , a, .png_bg'); 
+</script> 
+<![endif]-->
+<!--{if $cps_url neq ''}-->
+<script type="text/javascript" src="{$cps_url}"></script>
+<!--{/if}-->
+<!--{if $smarty.session.qqlogin==1}-->
+<script type="text/javascript" src="{$qq_url}"></script>
+<!--{/if}-->
+<script type="text/javascript">
+    _adwq.push([ '_setDataType',
+        'order' 
+    ]);
+      
+    _adwq.push([ '_setCustomer',
+        '{$smarty.session.user_id}'
+    ]);
+  
+    _adwq.push(['_setOrder',
+        '{$orderid}',
+        '{$zongjine}',
+        '{$odate}'
+    ]);
+	<!-- {foreach from=$goods_list item=goods} -->
+    _adwq.push(['_setItem',
+        '{$goods.goods_id}',
+        '{$goods.goods_name}',
+        '{$goods.format_goods_price}',
+        '{$goods.goods_number}',
+        '{$goods.cat_id}',
+        '{$goods.cat_id}' 
+    ]);
+	<!-- {/foreach} -->
+    _adwq.push([ '_trackTrans' ]);
+      
+</script>
+
+<!--聚合统计基础代码-->
+<script type="text/javascript">
+var _mvq = _mvq || [];
+_mvq.push(['$setAccount', 'm-27974-0']);
+
+_mvq.push(['$logConversion']);
+(function() {
+	var mvl = document.createElement('script');
+	mvl.type = 'text/javascript'; mvl.async = true;
+	mvl.src = ('https:' == document.location.protocol ? 'https://static-ssl.mediav.com/mvl.js' : 'http://static.mediav.com/mvl.js');
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(mvl, s); 
+})();	
+
+</script>
+
+</body>
+</html>

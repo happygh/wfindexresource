@@ -1,0 +1,27 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css"> 
+.box{overflow:hidden;width:710px; height:22px;line-height:22px;} 
+.box ul{margin:0px; padding:0px;} 
+.box li{height:22px; line-height:22px;list-style-type:none;} 
+.box li a { color:#036; font-weight:normal;}
+
+.box2 {overflow:hidden; height:22px;line-height:22px; margin-top:10px}
+.box2 ul{margin:0px; padding:0px;} 
+.box2 li{height:22px; line-height:22px;list-style-type:none;} 
+.box2 li a { color:#036; font-weight:normal;}
+.notice{margin-left: 18px;}
+</style>
+<div class="notice">
+	<div class="box" id="marqueebox0">
+          <ul>
+		
+             <li><span><b>公告:</b></span><a href="/zhuanti/ganbing/ganbing.html" target="_blank">为保证冰激凌蛋糕运送质量和新鲜度，我们都装有一定数量的干冰，点击查看干冰小贴士。
+</a></li>
+             <li><span><b>声明:</b></span><a>窝夫小子不对任何形式抄袭、盗用信息的店铺经营与服务等行为负责，请谨慎对待。</a></li>
+             <li><span><b>公告:</b></span><a>窝夫小子蛋糕均为手工制作，不可确保实物颜色,细节与照片100%一致。敬请知悉，谢谢理解。</a></li>
+          </ul>
+   </div>
+</div>
+<script type="text/javascript"> 
+	startmarquee(22,30,3000,0);
+</script>

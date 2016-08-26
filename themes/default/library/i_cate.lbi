@@ -1,0 +1,56 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<div class="i_cate">
+	<div class="i_cate_line">
+    	<div class="i_cate_hd">蛋糕口味</div>
+        <div class="i_cate_bd">
+        	<ul>
+            	<li><a href="/cakes.php?catid=ACAB" target="_blank">巧克力蛋糕</a></li>
+
+                <li><a href="/cakes.php?catid=ACAC" target="_blank">冰激凌蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ACAH" target="_blank">咖啡蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ACAG" target="_blank">坚果蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ACAI" target="_blank">无糖蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ACAK" target="_blank">奶油水果</a></li>
+                <li><a href="/cakes.php?catid=ACAD" target="_blank">芝士奶酪</a></li>
+                <li><a href="/cakes.php?catid=ACAJ" target="_blank">马卡隆</a><span class="i_cate_hot makalong">&nbsp;</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="i_cate_line">
+    	<div class="i_cate_hd">蛋糕用途</div>
+        <div class="i_cate_bd">
+        	<ul>
+            	<li><a href="/cakes.php?catid=ABAB" target="_blank">生日蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ABAA" target="_blank">聚会蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ABAF" target="_blank">下午茶</a><span class="i_cate_new">&nbsp;</span></li>
+                <li><a href="/cakes.php?catid=ABAC" target="_blank">婚礼蛋糕</a></li>
+                <li><a href="/cakes.php?catid=ABAD" target="_blank">宴会庆典蛋糕</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="i_cate_line">
+    	<div class="i_cate_hd">馈赠对象</div>
+        <div class="i_cate_bd">
+        	<ul>
+            	<li><a href="/cakes.php?catid=AEAD" target="_blank">送客户</a></li>
+                <li><a href="/cakes.php?catid=AEAA" target="_blank">送恋人</a></li>
+                <li><a href="/cakes.php?catid=AEAE" target="_blank">送亲友</a></li>
+                <li><a href="/cakes.php?catid=AEAC" target="_blank">送儿童</a></li>
+                <li><a href="/cakes.php?catid=AB" target="_blank">送长辈</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="i_cate_line">
+    	<div class="i_cate_hd">新品上架</div>
+        <div class="i_cate_bd">
+        	<ul>
+            	<!--li><a href="/cakes.php?catid=ZAAG" target="_blank">中秋月饼礼盒</a><span class="i_cate_new_yueb">&nbsp;</span></li-->
+            	<li><a href="/cake.php?cakeid=33105" target="_blank">巧心玫瑰杯</a><span class="i_cate_hot">&nbsp;</span></li>
+                <li><a href="/cake.php?cakeid=32591" target="_blank">饼干礼盒</a></li>
+                <li><a href="/cake.php?cakeid=32919" target="_blank">香酥曲奇饼干</a></li>
+                <li><a href="/cake.php?cakeid=32917" target="_blank">咖啡杏仁曲奇饼干</a></li>
+                <li><a href="/cake.php?cakeid=32918" target="_blank">巧克力米酥曲奇饼干</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

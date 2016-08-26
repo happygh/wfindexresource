@@ -1,0 +1,321 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div class="fujianbox" id="newsList" style="display:none;">
+  	<div class="fjcon">
+    	<table width="100%" cellpadding="0" cellspacing="0">
+                <tbody><tr>
+                  <th width="13%">序列号</th>
+                  <th width="13%">图片</th>
+                  <th width="28%">附件名称</th>
+                  <th width="10%">单位</th>
+                  <th width="5%">单价</th>
+                  <th width="16%">购买数量</th>
+                  <th width="15%">小计</th>
+                </tr>
+                <!-- {foreach from=$append_list item=append} -->
+                 <!--{foreach from=$goods_list item=mygoodslist}-->
+                <!--{if $mygoodslist.goods_id eq 33178 || $mygoodslist.goods_id eq 29366 || $mygoodslist.goods_id eq 29486 || $mygoodslist.goods_id eq 30656}-->
+                <tr>
+                  <td align="center">{$append.fj_id}</td>
+                  <td align="center">
+                  <span class="fj_img_box"><img src="{$append.fj_img}" alt="{$append.goods_name}" width="55" height="55" {if $append.fj_id=='32208'} onMouseOver="getMouse('fj_more_info')" onMouseOut="hiddenit('fj_more_info')" {/if}/></span>
+                  {if $append.fj_id=='32208'}<div id="fj_more_info" style="display:none;"><img src="../images/fj_srdgly.jpg" alt=""></div>
+                  <script type="text/javascript">
+					<!--
+						function getMouse(id){
+							
+							//ie的兼容性，为了用于onmousemove事件 
+							if(!event) { 
+								event = window.event; 
+							} 
+							
+							var mypos = document.getElementById(id);
+							
+							mouseX = event.clientX;
+							mouseY = document.body.scrollTop + document.documentElement.scrollTop + event.clientY;
+						
+							mypos.style.display = 'block';
+							mypos.style.position = "absolute";
+							mypos.style.top = (mouseY+15)+"px";
+							mypos.style.left = (mouseX-16)+"px";
+						}
+						function hiddenit(id)
+						{
+							var mypos = document.getElementById(id);
+							mypos.style.display = 'none';
+						}
+					//-->
+					</script> 
+                  {/if}
+                  </td>
+                  <td><a href="#" >{$append.goods_name}</a><div class="fj_img_box" id="fj_img_box_10829"></div></td>
+                  <td align="center">{$append.unit}</td>
+                  <!--{if $append.fj_id neq 33212}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="{$append.cart_app_num}">
+                  <!--{else}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="1">
+                  <!--{/if}-->
+                  <td align="center">{$append.f_shop_price}</td>
+                  <td align="center">
+                 <!--{if $append.fj_id != 33212}--> 
+                  <img src="images/cart_jian_ico_1.png" alt="" width="15" height="19" onclick="jianBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  <!--{if $append.fj_id != 33212}-->
+                  <input name="appendnumber_{$append.goods_id}_{$append.fj_id}" type="text" class="txt" id="appendnumber_{$append.goods_id}_{$append.fj_id}" onfocus="this.select()" onkeyup="sumappend(this,'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" value="{$append.cart_app_num}" size="1"  />
+                 
+                 <!--{else}-->
+                  <input type="text" name="appendnumber_{$append.goods_id}_{$append.fj_id}" id="appendnumber_{$append.goods_id}_{$append.fj_id}" class="txt"  value="1" size="1" disabled="disabled"/>
+                  <!--{/if}-->
+                 
+                  <!--{if $append.fj_id != 33212}-->
+                  <img src="images/cart_puls_ico_2.png" alt="" width="15" height="19" onclick="pulsBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  </td>
+                  <td align="center" id="append_total_{$append.goods_id}_{$append.fj_id}_s">¥{$append.cart_price}</td> 
+                  <input type="hidden" id="append_total_{$append.goods_id}_{$append.fj_id}" name="pound_price_one" value="{$append.cart_price}">
+                </tr>
+                <!--{elseif $mygoodslist.goods_id eq 33179 || $mygoodslist.goods_id eq 15218 || $mygoodslist.goods_id eq 8667 || $mygoodslist.goods_id eq 33219 || $mygoodslist.goods_id eq 33216 || $mygoodslist.goods_id eq 30657 || $mygoodslist.goods_id eq 30648 || $mygoodslist.goods_id eq 29708}-->
+                <tr>
+                  <td align="center">{$append.fj_id}</td>
+                  <td align="center">
+                  <span class="fj_img_box"><img src="{$append.fj_img}" alt="{$append.goods_name}" width="55" height="55" {if $append.fj_id=='32208'} onMouseOver="getMouse('fj_more_info')" onMouseOut="hiddenit('fj_more_info')" {/if}/></span>
+                  {if $append.fj_id=='32208'}<div id="fj_more_info" style="display:none;"><img src="../images/fj_srdgly.jpg" alt=""></div>
+                  <script type="text/javascript">
+					<!--
+						function getMouse(id){
+							
+							//ie的兼容性，为了用于onmousemove事件 
+							if(!event) { 
+								event = window.event; 
+							} 
+							
+							var mypos = document.getElementById(id);
+							
+							mouseX = event.clientX;
+							mouseY = document.body.scrollTop + document.documentElement.scrollTop + event.clientY;
+						
+							mypos.style.display = 'block';
+							mypos.style.position = "absolute";
+							mypos.style.top = (mouseY+15)+"px";
+							mypos.style.left = (mouseX-16)+"px";
+						}
+						function hiddenit(id)
+						{
+							var mypos = document.getElementById(id);
+							mypos.style.display = 'none';
+						}
+					//-->
+					</script> 
+                  {/if}
+                  </td>
+                  <td><a href="#" >{$append.goods_name}</a><div class="fj_img_box" id="fj_img_box_10829"></div></td>
+                  <td align="center">{$append.unit}</td>
+                  <!--{if $append.fj_id neq 33212}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="{$append.cart_app_num}">
+                  <!--{else}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="2">
+                  <!--{/if}-->
+                  <td align="center">{$append.f_shop_price}</td>
+                  <td align="center">
+                 <!--{if $append.fj_id != 33212}--> 
+                  <img src="images/cart_jian_ico_1.png" alt="" width="15" height="19" onclick="jianBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  <!--{if $append.fj_id != 33212}-->
+                  <input name="appendnumber_{$append.goods_id}_{$append.fj_id}" type="text" class="txt" id="appendnumber_{$append.goods_id}_{$append.fj_id}" onfocus="this.select()" onkeyup="sumappend(this,'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" value="{$append.cart_app_num}" size="1"  />
+                 
+                 <!--{else}-->
+                  <input type="text" name="appendnumber_{$append.goods_id}_{$append.fj_id}" id="appendnumber_{$append.goods_id}_{$append.fj_id}" class="txt"  value="2" size="1" disabled="disabled"/>
+                  <!--{/if}-->
+                 
+                  <!--{if $append.fj_id != 33212}-->
+                  <img src="images/cart_puls_ico_2.png" alt="" width="15" height="19" onclick="pulsBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  </td>
+                  <td align="center" id="append_total_{$append.goods_id}_{$append.fj_id}_s">¥{$append.cart_price}</td> 
+                  <input type="hidden" id="append_total_{$append.goods_id}_{$append.fj_id}" name="pound_price_one" value="{$append.cart_price}">
+                </tr>
+                <!--{elseif $mygoodslist.goods_id eq 33180 || $mygoodslist.goods_id eq 15219 || $mygoodslist.goods_id eq 8666 || $mygoodslist.goods_id eq 33220 || $mygoodslist.goods_id eq 33217 || $mygoodslist.goods_id eq 30658 || $mygoodslist.goods_id eq 7680}-->
+                <tr>
+                  <td align="center">{$append.fj_id}</td>
+                  <td align="center">
+                  <span class="fj_img_box"><img src="{$append.fj_img}" alt="{$append.goods_name}" width="55" height="55" {if $append.fj_id=='32208'} onMouseOver="getMouse('fj_more_info')" onMouseOut="hiddenit('fj_more_info')" {/if}/></span>
+                  {if $append.fj_id=='32208'}<div id="fj_more_info" style="display:none;"><img src="../images/fj_srdgly.jpg" alt=""></div>
+                  <script type="text/javascript">
+					<!--
+						function getMouse(id){
+							
+							//ie的兼容性，为了用于onmousemove事件 
+							if(!event) { 
+								event = window.event; 
+							} 
+							
+							var mypos = document.getElementById(id);
+							
+							mouseX = event.clientX;
+							mouseY = document.body.scrollTop + document.documentElement.scrollTop + event.clientY;
+						
+							mypos.style.display = 'block';
+							mypos.style.position = "absolute";
+							mypos.style.top = (mouseY+15)+"px";
+							mypos.style.left = (mouseX-16)+"px";
+						}
+						function hiddenit(id)
+						{
+							var mypos = document.getElementById(id);
+							mypos.style.display = 'none';
+						}
+					//-->
+					</script> 
+                  {/if}
+                  </td>
+                  <td><a href="#" >{$append.goods_name}</a><div class="fj_img_box" id="fj_img_box_10829"></div></td>
+                  <td align="center">{$append.unit}</td>
+                  <!--{if $append.fj_id neq 33212}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="{$append.cart_app_num}">
+                  <!--{else}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="3">
+                  <!--{/if}-->
+                  <td align="center">{$append.f_shop_price}</td>
+                  <td align="center">
+                 <!--{if $append.fj_id != 33212}--> 
+                  <img src="images/cart_jian_ico_1.png" alt="" width="15" height="19" onclick="jianBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  <!--{if $append.fj_id != 33212}-->
+                  <input name="appendnumber_{$append.goods_id}_{$append.fj_id}" type="text" class="txt" id="appendnumber_{$append.goods_id}_{$append.fj_id}" onfocus="this.select()" onkeyup="sumappend(this,'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" value="{$append.cart_app_num}" size="1"  />
+                 
+                 <!--{else}-->
+                  <input type="text" name="appendnumber_{$append.goods_id}_{$append.fj_id}" id="appendnumber_{$append.goods_id}_{$append.fj_id}" class="txt"  value="3" size="1" disabled="disabled"/>
+                  <!--{/if}-->
+                 
+                  <!--{if $append.fj_id != 33212}-->
+                  <img src="images/cart_puls_ico_2.png" alt="" width="15" height="19" onclick="pulsBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  </td>
+                  <td align="center" id="append_total_{$append.goods_id}_{$append.fj_id}_s">¥{$append.cart_price}</td> 
+                  <input type="hidden" id="append_total_{$append.goods_id}_{$append.fj_id}" name="pound_price_one" value="{$append.cart_price}">
+                </tr>
+                <!--{elseif $mygoodslist.goods_id eq 33181 || $mygoodslist.goods_id eq 15220 || $mygoodslist.goods_id eq 8665 || $mygoodslist.goods_id eq 33221 || $mygoodslist.goods_id eq 33218 || $mygoodslist.goods_id eq 30659 || $mygoodslist.goods_id eq 7681}-->
+                 <tr>
+                  <td align="center">{$append.fj_id}</td>
+                  <td align="center">
+                  <span class="fj_img_box"><img src="{$append.fj_img}" alt="{$append.goods_name}" width="55" height="55" {if $append.fj_id=='32208'} onMouseOver="getMouse('fj_more_info')" onMouseOut="hiddenit('fj_more_info')" {/if}/></span>
+                  {if $append.fj_id=='32208'}<div id="fj_more_info" style="display:none;"><img src="../images/fj_srdgly.jpg" alt=""></div>
+                  <script type="text/javascript">
+					<!--
+						function getMouse(id){
+							
+							//ie的兼容性，为了用于onmousemove事件 
+							if(!event) { 
+								event = window.event; 
+							} 
+							
+							var mypos = document.getElementById(id);
+							
+							mouseX = event.clientX;
+							mouseY = document.body.scrollTop + document.documentElement.scrollTop + event.clientY;
+						
+							mypos.style.display = 'block';
+							mypos.style.position = "absolute";
+							mypos.style.top = (mouseY+15)+"px";
+							mypos.style.left = (mouseX-16)+"px";
+						}
+						function hiddenit(id)
+						{
+							var mypos = document.getElementById(id);
+							mypos.style.display = 'none';
+						}
+					//-->
+					</script> 
+                  {/if}
+                  </td>
+                  <td><a href="#" >{$append.goods_name}</a><div class="fj_img_box" id="fj_img_box_10829"></div></td>
+                  <td align="center">{$append.unit}</td>
+                  <!--{if $append.fj_id neq 33212}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="{$append.cart_app_num}">
+                  <!--{else}-->
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="4">
+                  <!--{/if}-->
+                  <td align="center">{$append.f_shop_price}</td>
+                  <td align="center">
+                 <!--{if $append.fj_id != 33212}--> 
+                  <img src="images/cart_jian_ico_1.png" alt="" width="15" height="19" onclick="jianBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  <!--{if $append.fj_id != 33212}-->
+                  <input name="appendnumber_{$append.goods_id}_{$append.fj_id}" type="text" class="txt" id="appendnumber_{$append.goods_id}_{$append.fj_id}" onfocus="this.select()" onkeyup="sumappend(this,'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" value="{$append.cart_app_num}" size="1"  />
+                 
+                 <!--{else}-->
+                  <input type="text" name="appendnumber_{$append.goods_id}_{$append.fj_id}" id="appendnumber_{$append.goods_id}_{$append.fj_id}" class="txt"  value="4" size="1" disabled="disabled"/>
+                  <!--{/if}-->
+                 
+                  <!--{if $append.fj_id != 33212}-->
+                  <img src="images/cart_puls_ico_2.png" alt="" width="15" height="19" onclick="pulsBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  </td>
+                  <td align="center" id="append_total_{$append.goods_id}_{$append.fj_id}_s">¥{$append.cart_price}</td> 
+                  <input type="hidden" id="append_total_{$append.goods_id}_{$append.fj_id}" name="pound_price_one" value="{$append.cart_price}">
+                </tr>
+                <!--{else}-->
+                <!--{if $append.fj_id != 33212}-->
+                <tr>
+                  <td align="center">{$append.fj_id}</td>
+                  <td align="center">
+                  <span class="fj_img_box"><img src="{$append.fj_img}" alt="{$append.goods_name}" width="55" height="55" {if $append.fj_id=='32208'} onMouseOver="getMouse('fj_more_info')" onMouseOut="hiddenit('fj_more_info')" {/if}/></span>
+                  {if $append.fj_id=='32208'}<div id="fj_more_info" style="display:none;"><img src="../images/fj_srdgly.jpg" alt=""></div>
+                  <script type="text/javascript">
+					<!--
+						function getMouse(id){
+							
+							//ie的兼容性，为了用于onmousemove事件 
+							if(!event) { 
+								event = window.event; 
+							} 
+							
+							var mypos = document.getElementById(id);
+							
+							mouseX = event.clientX;
+							mouseY = document.body.scrollTop + document.documentElement.scrollTop + event.clientY;
+						
+							mypos.style.display = 'block';
+							mypos.style.position = "absolute";
+							mypos.style.top = (mouseY+15)+"px";
+							mypos.style.left = (mouseX-16)+"px";
+						}
+						function hiddenit(id)
+						{
+							var mypos = document.getElementById(id);
+							mypos.style.display = 'none';
+						}
+					//-->
+					</script> 
+                  {/if}
+                  </td>
+                  <td><a href="#" >{$append.goods_name}</a><div class="fj_img_box" id="fj_img_box_10829"></div></td>
+                  <td align="center">{$append.unit}</td>
+                  <input type="hidden" name="hiddennumber_{$append.goods_id}_{$append.fj_id}" id="hiddennumber_{$append.goods_id}_{$append.fj_id}" value="{$append.cart_app_num}">
+                  <td align="center">{$append.f_shop_price}</td>
+                  <td align="center">
+                 <!--{if $append.fj_id != 33212}--> 
+                  <img src="images/cart_jian_ico_1.png" alt="" width="15" height="19" onclick="jianBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  <!--{if $append.fj_id != 33212}-->
+                  <input name="appendnumber_{$append.goods_id}_{$append.fj_id}" type="text" class="txt" id="appendnumber_{$append.goods_id}_{$append.fj_id}" onfocus="this.select()" onkeyup="sumappend(this,'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" value="{$append.cart_app_num}" size="1"  />
+                 
+                 <!--{else}-->
+                  <input type="text" name="appendnumber_{$append.goods_id}_{$append.fj_id}" id="appendnumber_{$append.goods_id}_{$append.fj_id}" class="txt"  value="0" size="1" disabled="disabled"/>
+                  <!--{/if}-->
+                 
+                  <!--{if $append.fj_id != 33212}-->
+                  <img src="images/cart_puls_ico_2.png" alt="" width="15" height="19" onclick="pulsBtn_fj(document.getElementById('appendnumber_{$append.goods_id}_{$append.fj_id}'),'{$append.goods_id}','{$append.fj_id}',{$append.shop_price})" style="cursor:pointer"/>
+                 <!--{/if}-->
+                  </td>
+                  <td align="center" id="append_total_{$append.goods_id}_{$append.fj_id}_s">¥{$append.cart_price}</td> 
+                  <input type="hidden" id="append_total_{$append.goods_id}_{$append.fj_id}" name="pound_price_one" value="{$append.cart_price}">
+                </tr>
+                <!--{/if}-->
+                <!--{/if}-->
+                 <!--{/foreach}-->
+                <!-- {/foreach} -->
+           </tbody>
+       </table>
+    </div>
+    <div class="fjboxft"></div>
+  </div>

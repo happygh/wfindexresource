@@ -1,0 +1,24 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+	<div class="foot">
+				<a href="/helpInfo.php?id=55" target="_blank">配送地图</a>
+				<span>|</span>
+				<a  href="/helpInfo.php?id=50" target="_blank">自助问答</a>
+				<span>|</span>
+				<a href="javascript:void(0);">企业试吃</a>
+				
+			</div>
+			<div class="footer">
+				<div class="wx">
+					<a href="#"><img src="/newmeb/images/weib.png" width="25" height="20" /></a>
+					<a href="#"><img src="/newmeb/images/wx.png" width="25" height="21" /></a>
+				</div>
+				<span>www.wfboy.com @ 2015 ALL right reserved by waffleboy&nbsp;&nbsp;&nbsp;京ICP12044486&nbsp;&nbsp;京公网安备11010102000509号</span>
+				
+			</div>
+            
+            
+            <script type="text/javascript">
+		var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+		document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4074ecfca2b6e01f86e88aa06fac5bf1' 											type='text/javascript'%3E%3C/script%3E"));
+</script>

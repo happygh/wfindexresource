@@ -1,0 +1,55 @@
+﻿<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="lf_cate_box">
+            	<ul class="big_cate_l">
+                	<li name="ZA"><a href="/cakes.php?catid=ZA">超热卖</a></li>
+                    <li name="AJ"><a href="/cakes.php?catid=AJ">全国送</a></li>
+                    <li name="AC"><a href="/cakes.php?catid=AC">蛋糕口味</a></li>
+                    <li name="AB"><a href="/cakes.php?catid=AB">蛋糕用途</a></li>
+                    <li name="AE"><a href="/cakes.php?catid=AE">馈赠对象</a></li>
+                </ul>
+                <ul class="min_cate_l" id="ZA"><!--超热卖-->
+                	<li><a href="/cakes.php?catid=ZA">超热卖</a></li>
+                </ul>
+                <ul class="min_cate_l" id="AJ" style="display:none"><!--全国送-->
+                	<li name="sub_AJ"><a href="/cakes.php?catid=AJ">全国送</a></li>
+                </ul>
+                <ul class="min_cate_l" id="AC" style="display:none"><!--蛋糕口味-->
+                	<li name="sub_ACAB"><a href="/cakes.php?catid=ACAB">巧克力</a></li>
+                    <!--<li name="sub_ACAA"><a href="/cakes.php?catid=ACAA">草莓</a></li>-->
+                    <li name="sub_ACAC"><a href="/cakes.php?catid=ACAC">冰激凌</a></li>
+                    <li name="sub_ACAH"><a href="/cakes.php?catid=ACAH">咖啡</a></li>
+                    <li name="sub_ACAG"><a href="/cakes.php?catid=ACAG">坚果</a></li>
+                    <li name="sub_ACAI"><a href="/cakes.php?catid=ACAI">无糖</a></li>
+                    <li name="sub_ACAK"><a href="/cakes.php?catid=ACAK">奶油水果</a></li>
+                    <li name="sub_ACAD"><a href="/cakes.php?catid=ACAD">芝士奶酪</a></li>
+                    <li name="sub_ACAJ"><a href="/cakes.php?catid=ACAJ">马卡龙</a></li>
+                </ul>
+                <ul class="min_cate_l" id="AB" style="display:none"><!--蛋糕用途-->
+                	<li name="sub_ABAB"><a href="/cakes.php?catid=ABAB">生日</a></li>
+                    <li name="sub_ABAA"><a href="/cakes.php?catid=ABAA">聚会</a></li>
+                    <li name="sub_ABAF"><a href="/cakes.php?catid=ABAF">下午茶</a></li>
+                    <li name="sub_ABAC"><a href="/cakes.php?catid=ABAC">婚礼</a></li>
+                    <li name="sub_ABAD"><a href="/cakes.php?catid=ABAD">宴会庆典</a></li>
+                </ul>
+                <ul class="min_cate_l" id="AE" style="display:none"><!--馈赠对象-->
+                	<li name="sub_AEAD"><a href="/cakes.php?catid=AEAD">客户</a></li>
+                    <li name="sub_AEAA"><a href="/cakes.php?catid=AEAA">恋人</a></li>
+                    <li name="sub_AEAE"><a href="/cakes.php?catid=AEAE">亲友</a></li>
+                    <li name="sub_AEAC"><a href="/cakes.php?catid=AEAC">儿童</a></li>
+                    <li name="sub_AEAB"><a href="/cakes.php?catid=AEAB">长辈</a></li>
+                </ul>
+            </div>
+            <script>
+            	var _catid = '{$catid}';
+				catid = _catid.substr(0,2);
+				if(catid == 'ZA' || catid == 'AJ' || catid == 'AC' || catid =='AB' || catid == 'AE')
+				{
+					var sub_id = "[name='sub_"+_catid+"'] a";
+					var mid = "#"+catid;
+					var mname = "[name='"+catid+"'] a"
+					$(mname).css("color","#df9ed1");
+					$(sub_id).css("color","#df9ed1");
+					$(".min_cate_l").css('display','none');
+					$(mid).css('display','block');
+				}
+            </script>

@@ -1,0 +1,116 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--购物车内容-->
+  <div class="cartbox">
+    <table width="983" border="0" cellpadding="0" cellspacing="0">
+      <tbody>
+        <tr style="height:36px; color:#FFF; border-radius:5px;">
+          <th style="border-left:1px solid #CCC;" width="70">商品编号</th>
+          <th width="192" >商品名称</th>
+          <th width="137">商品图片</th>
+          <th width="146">规格</th>
+          <th width="146">会员价格</th>
+          <th width="146">数量</th>
+          <th style="border-right:1px solid #CCC;" width="146">小计</th>
+        </tr>
+ 	<!--商品信息-->
+        <script>
+          	var mianyunfei = 0;
+        </script>
+        <!-- {foreach from=$goods_list item=goods} --> 
+         <!--{if $goods}-->
+         <!--{if $goods.goods_id=='32423' || $goods.goods_id=='32528'}-->
+         <script>
+          	var mianyunfei = 1;
+         </script>
+        <!--{/if}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>{$goods.goods_id}</span></td>
+          <td align="center"><a href="/cake.php?cakeid={$goods.goods_id}" target="_blank">{$goods.goods_name}</a></td>
+          <td align="center">
+          	<img src="{$goods.goods_img}" width="79" height="77" alt="{$goods.goods_name}">
+          </td>
+          <td align="center"><!--{if $goods.Unitname == '个'}-->{$goods.Cake_Pound}{$lang.wofu_cart_num}<!--{else}-->{$goods.Unitname}<!--{/if}--></td>
+          <td align="center">{$goods.format_goods_price}</td>
+          <td align="center"><span>{$goods.goods_number}</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">{$goods.format_total}</td>
+        </tr>
+        <!--{/if}--> 
+        <!-- {/foreach} --> 
+        <!-- {foreach from=$append_list item=append} --> 
+        <!--{if $append.goods_number>0}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>{$append.parent_id}</span></td>
+          <td align="center"><span>{$append.goods_name}</span></td>
+          <td align="center">
+          	<img src="{$append.goods_img}" width="79" height="77" alt="{$append.goods_name}">
+          </td>
+          <td align="center">{$append.Unit}</td>
+          <td align="center">{$append.goods_price}</td>
+          <td align="center"><span>{$append.goods_number}</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">{$append.format_total}</td>
+        </tr>     
+        <!--{/if}--> 
+        <!-- {/foreach} --> 
+        <!--{if $zp.goods_number>0}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>{$append.parent_id}</span></td>
+          <td align="center"><span>{$append.goods_name}</span></td>
+          <td align="center">
+          	<img src="{$append.goods_thumb}" width="79" height="77" alt="{$goods.goods_name}">
+          </td>
+          <td align="center">{$append.Unit}</td>
+          <td align="center">{$append.goods_price}</td>
+          <td align="center"><span>{$append.goods_number}</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">{$append.format_total}</td>
+        </tr>
+        <!--{/if}-->
+        
+        <!--如果送牛奶-->
+        <!--{if $pd_makal == 123321}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>33255</span></td>
+          <td align="center"><span>万得妙牛奶</span></td>
+          <td align="center">
+          	<img src="/themes/default/imagesxie/songniunai.jpg" width="79" height="77" alt="">
+          </td>
+          <td align="center"></td>
+          <td align="center">0</td>
+          <td align="center"><span>1</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">0</td>
+        </tr>
+        <!--{/if}-->
+        
+        <!--如果送牛轧糖1-->
+        <!--{if $pd_sniu1 == 1233}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>33625</span></td>
+          <td align="center"><span>牛轧糖(6枚)</span></td>
+          <td align="center">
+          	<img src="/themes/default/imagesxie/songniuzatang.jpg" width="79" height="77" alt="">
+          </td>
+          <td align="center"></td>
+          <td align="center">0</td>
+          <td align="center"><span>1</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">0</td>
+        </tr>
+        <!--{/if}-->
+        
+        <!--如果送牛轧糖1-->
+        <!--{if $pd_sniu2 == 12331}-->
+        <tr>
+          <td align="center" style="border-left:1px solid #CCC;"><span>33255</span></td>
+          <td align="center"><span>牛轧糖</span></td>
+          <td align="center">
+          	<img src="/themes/default/imagesxie/songniuzatang.jpg" width="79" height="77" alt="">
+          </td>
+          <td align="center"></td>
+          <td align="center">0</td>
+          <td align="center"><span>1</span></td>
+          <td style="border-right:1px solid #CCC;" align="center" id="goods_total_7375_s">0</td>
+        </tr>
+        <!--{/if}-->
+      </tbody>
+    </table>
+    <div style="text-align:right; line-height:28px;"><a style="color:#333; background:url(../images/go_back.jpg) 0px 2px no-repeat; padding-left:18px;" href="/flow.php">返回修改购物车</a></div>
+  </div>
+<!--购物车内容结束-->

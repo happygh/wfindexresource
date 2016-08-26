@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>窝夫小子-WAFFLEBOY唯一官方网站，最好的生日礼物，生日蛋糕，聚会礼品</title>
+<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕，窝夫小子月饼">
+<meta name="description" content="窝夫小子蛋糕官网,北京窝夫小子蛋糕预定配送-法国德国英国意大利西班牙等欧式蛋糕和冰激凌蛋糕无糖生日蛋糕窝夫小子月饼,不含植脂奶油,24小时热线4008567567">
+<script type="text/javascript" src="js/ucheck.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="/themes/default/js/wf-dev.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<link href="css2/style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js2/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('*');
+</script>
+<![endif]-->
+</head>
+<body style="background: none;">
+<!--头部内容-->
+<!-- #BeginLibraryItem "/library/inc_header.lbi" --><!-- #EndLibraryItem -->
+<!--头部内容结束-->
+<!--用户登录页面-->
+<div id="login_reg" style="margin-top: 0px;">
+   
+	<div class="login_wrapper">
+        <div class="login_tit">
+            <img src="images/reg_login_tit_1.jpg" alt="会员登录" height="42" width="180"/><a href="/user.php?act=register"><img src="images/reg_login_tit_2.jpg" alt="会员注册" height="42" width="180"/></a>
+        </div>
+        <div class="login_reg_box">
+            <div class="login_reg_top"></div>
+            <div class="login_reg_con">
+            	<div class="log_con_left">
+                	<!--登录内容-->
+                    <div class="login_w">
+                    <form name="formLogin" action="user.php" method="post">
+                    	<div style="height:1px; overflow:hidden;">
+                    	<input type="text" name="temp_u" />
+                        <input type="password" name="temp_up" />
+                        </div>
+                        <input type="hidden" name="act" value="act_login" />
+                        <input type="hidden" name="back_act" value="{$back_act}" />
+                        <div class="log_w_tit">您可以用会员卡\手机号\邮箱登录</div>
+                        <div class="log_w_line"><span>用户名:</span><span><input type="text" id="username" name="username" /></span></div>
+                        <div class="log_w_line"><span>密&nbsp;&nbsp;&nbsp;码:</span><span><input type="password" name="password"/></span></div>
+                        <!-- 判断是否启用验证码{if $enabled_captcha} -->
+                          <div style="height:50px;"><span>验证码：</span><span>
+                          <input type="text" size="8" name="captcha" class="txt" onkeydown="huiche()" /><img src="captcha.php?is_login=1&{$rand}" alt="captcha" style="vertical-align: middle;cursor: pointer;" onClick="this.src='captcha.php?is_login=1&'+Math.random()" />
+                          </span></div>
+                         <!--{/if}-->
+                        <div class="log_w_btn">
+                        <span><input style="cursor:pointer" onclick="loginSubmit();" class="getpwd" type="button" value="找回密码" /></span>
+                        <span><input style="cursor:pointer" class="submit" onclick="window.location.href='/getpassword.php'" type="button" value="登录" /></span>
+                       	</div>
+                        <script type="text/javascript">
+                        	function loginSubmit()
+							{
+								document.formLogin.submit();
+							}
+                        </script>
+                    </form>
+                    </div>
+                    <!--登录内容结束-->
+                    <!--其他信息-->
+                    <div class="log_other">
+                        <div>
+                            <span>使用合作网站账号登录:&nbsp;</span>
+                            <span class="qqlogin">
+                            <a href="javascript:toQzoneLogin()"><img src="images/qq_btn.jpg" alt="使用QQ登录" height="25" width="64" /></a>
+                            </span>
+                            <span class="qqlogin">
+                            <a href="https://api.weibo.com/oauth2/authorize?client_id=2248222975&amp;response_type=code&amp;redirect_uri=http://www.wfboy.com/API/weibo/callback.php"><img src= "http://timg.sjs.sinajs.cn/t4/appstyle/widget/images/loginButton/loginButton_24.png"></a>
+                            </span>
+                        </div>
+                        <!--<div>
+                            <span>您可以不登陆直接订购:&nbsp;</span>
+                            <span style="padding-top:8px;"><img src="images/no_login_btn.jpg" alt="不登陆直接登录" height="28" width="76" /></span>
+                        </div>-->
+                        <div style="color:#999; height:auto; line-height:30px; padding-top:30px;">
+                            <!--<span>提示：不登录直接购买将无法看到订单详细记录信息,无W币赠送和消费金额积累。</span>-->
+                        </div>
+                    </div>
+                    <!--其他信息结束-->
+                </div>
+                <div class="log_con_right">
+                	<div class="reg_notice_tit">成为窝夫小子会员,即可:</div>
+                    <ul>
+                    	<li>1.消费现金20元送W币1个(1W币=1元);(<a href="/zhuanti/wbi/wbi.html" target="_blank">什么是W币</a>)</li>
+                        <li>2.享受本站更加优质,体贴的个性化服务;</li>
+                        <li>3.成为贵宾会员后,可获得更优惠的价格。</li>
+                    </ul>
+                    <div class="reg_notice_btn"><a href="/user.php?act=register"><img src="images/goreg_btn.jpg" alt="立即注册" height="35" width="98" /></a></div>
+                </div>
+                <div style="clear:both;"></div>
+            </div>
+            <div class="login_reg_ft"></div>
+        </div>
+        <div class="login_reg_box_left"></div>
+        <div style="clear:both;"></div>
+    </div>
+</div>
+<!--用户登录页面结束-->
+<!--底部内容-->
+<!-- #BeginLibraryItem "/library/inc_footer.lbi" --><!-- #EndLibraryItem -->
+<script>
+var currencyFormat='{$currency_format}';
+</script>
+<script src="../../js/counter.js" type="text/javascript"></script>
+</body>
+</html>

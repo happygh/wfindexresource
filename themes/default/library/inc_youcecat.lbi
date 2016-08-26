@@ -28,10 +28,10 @@
 				<td>
 					<a href="/cakes.php?catid=ZDAD" target="_blank"><img src="images/youcecatjianguodangao.jpg" width="151" height="26" alt=""></a></td>
 			</tr>
-			<!--<tr>-->
-				<!--<td>-->
-					<!--<a href="/helpInfo.php?id=49" target="_blank"><img src="images/youcecatmutangchun.jpg" width="151" height="26" alt=""></a></td>-->
-			<!--</tr>-->
+			<tr>
+				<td>
+					<a href="/cakes.php?catid=ACAI" target="_blank"><img src="images/youcecatmutangchun.jpg" width="151" height="26" alt=""></a></td>
+			</tr>
 			<tr>
 				<td>
 					<a href="/cakes.php?catid=ZDAG" target="_blank"><img src="images/youcecatertongdangao.jpg" width="151" height="26" alt=""></a></td>
@@ -47,5 +47,5 @@
 		</table>
 	</div>
 	<style>
-		#rg_fd { position:fixed; right:0px; top:260px; z-index:1000px;}
+		#rg_fd { position:fixed; right:0px; top:260px; z-index:2;}
 	</style>

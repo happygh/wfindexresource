@@ -702,9 +702,7 @@ jQuery('.sd_dew span').bind('click', function(){
       <div><img src="/themes/default/imagesxie/caizhixiangqing.jpg" alt="窝夫小子蛋糕材质图" /></div>
       <div class="erjs"><img src="images2/xiae.png" /></div> 
       
-      <div><img src="images2/baozhuang3.jpg" alt="新包装"/></div>
       
-        	
        
        </div>
        <style type="text/css">
