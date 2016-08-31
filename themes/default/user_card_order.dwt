@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>窝夫小子-WAFFLEBOY唯一官方网站，最好的生日礼物，生日蛋糕，聚会礼品</title>
+<meta name="keywords" content="窝夫小子,不含植脂奶油,窝夫小子蛋糕,窝夫小子官网,生日蛋糕，窝夫小子月饼">
+<meta name="description" content="窝夫小子蛋糕官网,北京窝夫小子蛋糕预定配送-法国德国英国意大利西班牙等欧式蛋糕和冰激凌蛋糕无糖生日蛋糕窝夫小子月饼,不含植脂奶油,24小时热线4008567567">
+<script type="text/javascript" src="js/ucheck.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.lazyload.js"></script>
+<script type="text/javascript" src="/themes/default/js/wf-dev.js"></script>
+</head>
+
+<body>
+<!--头部内容-->
+<!-- #BeginLibraryItem "/library/inc_header.lbi" --><!-- #EndLibraryItem -->
+<!--头部内容结束-->
+<div id="flowcartbox">
+  <!--<div class="f_t_hot">-->
+    <!--<div class="f_t_left"><span>热卖:</span><a href="#" target="_blank">巧克力熔岩蛋糕</a><a href="#" target="_blank">白巧克力松露蛋糕</a><a href="#" target="_blank">抹茶乳酪蛋糕</a></div>-->
+    <!--<div class="f_t_right"><span>热门搜索:</span><a href="#" target="_blank">生日蛋糕</a><a href="#" target="_blank">下午茶</a><a href="#" target="_blank">马卡龙</a></div>-->
+  <!--</div>-->
+  <!--用户信息内容-->
+  <div class="help_box">
+     <!-- #BeginLibraryItem "/library/user_left.lbi" --><!-- #EndLibraryItem -->
+     <div class="help_right">
+     	<div class="help_right_top"></div>
+        <div class="help_right_con">
+        	<div class="user_tit_h1">我的储值卡</div>
+           	<div class="help_bd_box">
+            	<div class="user_line"><span>未完成的订单使用的储值卡金额将暂时冻结，当订单完成后将扣除或退单后返回给您</span></div>
+                <div class="czk_history">
+                	<!--{if $orderInfo}-->
+                      <table border="0px" cellpadding="1" cellspacing="1" bgcolor="#ccc" width="90%" align="center">
+                        <tr>
+                            <th bgcolor="#661c57" style="color:#FFF">订单号</th>
+                            <th bgcolor="#661c57" style="color:#FFF">订单金额</th>
+                            <th bgcolor="#661c57" style="color:#FFF">储值卡金额</th>
+                            <!--<th bgcolor="#661c57" style="color:#FFF">订单状态</th>-->
+                            <th bgcolor="#661c57" style="color:#FFF">下单时间</th>
+                        </tr>
+                        <!--{foreach from =$orderInfo item=orderinfo}-->
+                        <tr>
+                            <td bgcolor="#FFFFFF"><center>{$orderinfo.orderId}</center></td>
+                            <td bgcolor="#FFFFFF"><center>{$orderinfo.totalPrice}</center></td>
+                            <td bgcolor="#FFFFFF"><center>{$orderinfo.caPrice}</center></td>
+                            <!--<td bgcolor="#FFFFFF"><center>{$orderinfo.orderStatus}</center></td>-->
+                            <td bgcolor="#FFFFFF"><center>{$orderinfo.orderTime}</center></td>
+                        </tr>
+                        <!--{/foreach}--> 
+                      </table>
+                      <!--{/if}-->
+                      <div class="user_line"><span>总计消费储值卡金额：{$allczk}</span></div>
+                      <div id="fpages" style="margin-top:10px;">
+                          <div class="jogger">
+                             {$page_foot}
+                          </div>
+                      </div> 
+                </div>
+            </div>
+        </div>
+        <div class="help_right_ft"></div>
+     </div>
+     <div style="clear:both;"></div>
+  </div>
+  <div style="height:30px;">&nbsp;</div>
+</div>
+<!--底部内容-->
+<!-- #BeginLibraryItem "/library/inc_footer.lbi" --><!-- #EndLibraryItem -->
+<!--底部内容结束--> 
+<!--[if lte IE 6]> 
+<script type="text/javascript" src="js/DD_belatedPNG.js"></script>
+<script type="text/javascript"> 
+DD_belatedPNG.fix('div, h1, img, li, span , a, .png_bg'); 
+</script> 
+<![endif]-->
+</body>
+</html>

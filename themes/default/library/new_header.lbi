@@ -62,7 +62,7 @@
 						<li><a href="/cakes.php?catid=AX" target="_blank">主厨推荐</a></li>
                         <li><a href="/profile.php" target="_blank">个人中心</a></li>
 						<li><a href="/enterprise.php" target="_blank">企业专区</a></li>
-						<li><a href="/helpInfo.php?id=55" target="_blank">配送范围</a></li>
+						<li><a href="/helpInfo.php?id=50" target="_blank">订购帮助</a></li>
 
 					</ul>
 				</div>

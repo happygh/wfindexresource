@@ -699,110 +699,85 @@ jQuery('.sd_dew span').bind('click', function(){
       
       <div class="erjs1"><img src="images2/xiae.png" /></div>   
         
-      <div><img src="/themes/default/imagesxie/caizhixiangqing.jpg" alt="窝夫小子蛋糕材质图" /></div>
-      <div class="erjs"><img src="images2/xiae.png" /></div> 
+      <!--<div><img src="/themes/default/imagesxie/caizhixiangqing.jpg" alt="窝夫小子蛋糕材质图" /></div>-->
+      <!--<div class="erjs"><img src="images2/xiae.png" /></div>-->
       
-      
+
        
        </div>
-       <style type="text/css">
-	   			.changjianwt {width:928px;text-align:left; font-family:"微软雅黑"; height:276px; overflow:hidden;}
-				.all_show_css{height:578px;}
-       			.changjianwt p{margin:10px 0 0 48px; color:#7e495f;}
-				.wtbt{font-weight:bold; font-size:14px;}
-				.show_all_content,.hidden_all_content_xie{width:100px; float:right; cursor:pointer; color:#808080}
-       </style>
-       <script type="text/javascript">
-       		$(function(){
-				$(".show_all_content").click(function(){
-					$(".changjianwt").addClass("all_show_css");
-					$(".show_all_content").css("display", "none");
-				});
-				$(".hidden_all_content_xie").click(function(){
-					$(".changjianwt").removeClass("all_show_css");
-					$(".show_all_content").css("display", "block");	
-				})
-			})
-       </script>
-      <div class="changjianwt">
-      	<p class="wtbt" style="text-align:center;"><span><img src="/themes/default/imagesxie/hawu.png" alt="常见问题"/></span>&nbsp;&nbsp;温馨提示/常见问题&nbsp;&nbsp;<span><img src="/themes/default/imagesxie/hawu.png" alt="常见问题"/></span></p>
-        <p class="wtbt">
-        	Q、蛋糕是否需要提前预定？
-        </p>
-        <p>
-        	是的，我们所有蛋糕都是新鲜制作，最快蛋糕需要4个小时送到您指定的地址，根据款式、型号等不同，制作时间也会不同，请查看商品详情介绍中的" 制作时间"（此处为1号蛋糕制作时间），安排订购。建议提前一天订购。订购4号以上蛋糕、或需个性定制、集团采购请拨打客服热 线：4008-567-567,马卡龙和曲奇饼干由北京生产发货，通过第三方快递公司送到亲手中 。
-        </p>
-        <p class="wtbt">
-        	Q、是否下单成功？
-        </p>
-        <p>
-        	1、蛋糕拍下选择在线支付但是未付款时，蛋糕不会正常发货 <br/>
-			2、下单时如遇只填写配送日期无填写时间时，蛋糕不能正常发货，需联系客服协助处理。
-        </p>
-        <p class="wtbt">
-        	Q、关于配送时间
-        </p>
-        <p>
-        	1、蛋糕最早上午9点至最晚10点送达顾客手中（依距离远近的情况而定），如需特殊要求请您联系在线客服协助处理或拨打客服热线：4008-567-567<br/>
-			2、下单时如遇只填写配送日期无填写时间时，蛋糕不能正常发货，需联系客服协助处理。
-            <span class="show_all_content">&lt;&nbsp;展开全部内容&nbsp;&gt;</span>
-        </p>
-        <p class="wtbt">
-        	Q、关于签收
-        </p>
-        <p>
-        	1、收货人可当场要求送货员当面打开包装盒，进行验收！验收没有问题后再签收。
-2、如遇到蛋糕有破损或歪边现象可拒收，我们可 以再安排制作一次再配送，或拒收退款处理。
-3、收货人如果当场没有进行验收而签收，我们视之为进行验货签收。
-4、我们原则上是要求本人签收，如果收货人要求我们交付其他人代收，那我们也会尊重收货人的意思。
-5、赠品：赠品属于额外附赠，由于系统原因或其它原因，可能会造成漏发或发错，这不在赔款范围内。
-        </p>
-        <p class="wtbt">
-        	Q、图片差异问题
-        </p>
-        <p>
-        	1、由于蛋糕是纯手工制作，是由不同的裱花师制作，因每一位裱花师的制作水平以及当时外部环境不同，造成制作出来的实物与图片稍有差异，还请各位亲们理解！ 
-2、蛋糕上水果装饰会随着季节变化而有所更替，所以也会有一些差异！
-3、蛋糕大小不同，也会与图片有所差异！（以实物为准）
-4、蛋糕颜色大部分由纯天然食材调制而成，所以实际颜色与图片稍有差异，不会像添加色素那般鲜 艳，并非质量问题，请亲们了解。
-5、实物拍摄的产品，受自然光、相机像素及显示器色彩的影响，出现正常范围的色差和光线明暗 ，属于正常现象，色差减至最小，请以实物为准，在意的客户请慎拍！
-        </p>
-        <p class="wtbt">
-        	Q、发票问题
-        </p>
-        <p>
-        	亲，如果您要求发票抬头为个人，请填写以下信息，以便为您准确开具发票：
-1、发票信息：姓名；发票内容只能是食品、蛋糕；数量；金额（请参照您的实际付款金额填写）
-亲，如果您要求发票抬头为单位，请填写以下信息，以便为您准确开具发票：
-本店默认开具普通发票，如需增值税专用发票请明示。 
-2、发票种类：普通发票（默认）或者增值说专用发票
-3、发票信息：单位名称（最好写 全称）发票内容只能是食品、蛋糕；数量；金额（请参照您的实际付款金额填写）
-4、邮寄信息：窝夫小子每月10日/20日/30日，统一给买家开具发票。发票将以挂号信的形式邮递到买家提供的收信地址，挂号信发出后约3-5天可以送到。
-		<span class="hidden_all_content_xie">&lt;&nbsp;收起&nbsp;&gt;</span>
-        </p>
-      </div>
-      
-      
-      <div class="sd_df" style="margin-left:30px;">
-          <div style="width:934px;" class="wxz_ser">Browse History<br />浏览记录</div>
-          <div class="wxz_sse">
-              
-                <ul class="wxz_sda">
-                
-                <!--{foreach name=historys from =$browsed_list key=k item=cakes}-->
-                    <!--{foreach from=$cakes item=cake}-->
-                    <li class="wxz_sde" style="margin-left:13px;"><a href="/cake.php?cakeid={$cake.goods_id}" target="_blank"><img src="{$cake.goods_img}" width="110" height="114" alt="{$cake.goods_name}" /></a></li>
-                    <!-- {if !$smarty.foreach.historys.last} --><li  class="wxz_sdf" style="margin-left:13px;"><img src="images2/jhe_ds.png" /></li><!-- {/if} -->
-                    <!--{/foreach}-->
-                <!--{/foreach}--> 
-                </ul>
-          </div>
-      
-      
-      </div>
+
+       <!--<script type="text/javascript">-->
+       		<!--$(function(){-->
+				<!--$(".show_all_content").click(function(){-->
+					<!--$(".changjianwt").addClass("all_show_css");-->
+					<!--$(".show_all_content").css("display", "none");-->
+				<!--});-->
+				<!--$(".hidden_all_content_xie").click(function(){-->
+					<!--$(".changjianwt").removeClass("all_show_css");-->
+					<!--$(".show_all_content").css("display", "block");	-->
+				<!--})-->
+			<!--})-->
+       <!--</script>-->
+      <!--<div class="changjianwt">-->
+      	<!--<p class="wtbt" style="text-align:center;"><span><img src="/themes/default/imagesxie/hawu.png" alt="常见问题"/></span>&nbsp;&nbsp;温馨提示/常见问题&nbsp;&nbsp;<span><img src="/themes/default/imagesxie/hawu.png" alt="常见问题"/></span></p>-->
+        <!--<p class="wtbt">-->
+        	<!--Q、蛋糕是否需要提前预定？-->
+        <!--</p>-->
+        <!--<p>-->
+        	<!--是的，我们所有蛋糕都是新鲜制作，最快蛋糕需要4个小时送到您指定的地址，根据款式、型号等不同，制作时间也会不同，请查看商品详情介绍中的" 制作时间"（此处为1号蛋糕制作时间），安排订购。建议提前一天订购。订购4号以上蛋糕、或需个性定制、集团采购请拨打客服热 线：4008-567-567,马卡龙和曲奇饼干由北京生产发货，通过第三方快递公司送到亲手中 。-->
+        <!--</p>-->
+        <!--<p class="wtbt">-->
+        	<!--Q、是否下单成功？-->
+        <!--</p>-->
+        <!--<p>-->
+        	<!--1、蛋糕拍下选择在线支付但是未付款时，蛋糕不会正常发货 <br/>-->
+			<!--2、下单时如遇只填写配送日期无填写时间时，蛋糕不能正常发货，需联系客服协助处理。-->
+        <!--</p>-->
+        <!--<p class="wtbt">-->
+        	<!--Q、关于配送时间-->
+        <!--</p>-->
+        <!--<p>-->
+        	<!--1、蛋糕最早上午9点至最晚10点送达顾客手中（依距离远近的情况而定），如需特殊要求请您联系在线客服协助处理或拨打客服热线：4008-567-567<br/>-->
+			<!--2、下单时如遇只填写配送日期无填写时间时，蛋糕不能正常发货，需联系客服协助处理。-->
+            <!--<span class="show_all_content">&lt;&nbsp;展开全部内容&nbsp;&gt;</span>-->
+        <!--</p>-->
+        <!--<p class="wtbt">-->
+        	<!--Q、关于签收-->
+        <!--</p>-->
+        <!--<p>-->
+        	<!--1、收货人可当场要求送货员当面打开包装盒，进行验收！验收没有问题后再签收。-->
+<!--2、如遇到蛋糕有破损或歪边现象可拒收，我们可 以再安排制作一次再配送，或拒收退款处理。-->
+<!--3、收货人如果当场没有进行验收而签收，我们视之为进行验货签收。-->
+<!--4、我们原则上是要求本人签收，如果收货人要求我们交付其他人代收，那我们也会尊重收货人的意思。-->
+<!--5、赠品：赠品属于额外附赠，由于系统原因或其它原因，可能会造成漏发或发错，这不在赔款范围内。-->
+        <!--</p>-->
+        <!--<p class="wtbt">-->
+        	<!--Q、图片差异问题-->
+        <!--</p>-->
+        <!--<p>-->
+        	<!--1、由于蛋糕是纯手工制作，是由不同的裱花师制作，因每一位裱花师的制作水平以及当时外部环境不同，造成制作出来的实物与图片稍有差异，还请各位亲们理解！ -->
+<!--2、蛋糕上水果装饰会随着季节变化而有所更替，所以也会有一些差异！-->
+<!--3、蛋糕大小不同，也会与图片有所差异！（以实物为准）-->
+<!--4、蛋糕颜色大部分由纯天然食材调制而成，所以实际颜色与图片稍有差异，不会像添加色素那般鲜 艳，并非质量问题，请亲们了解。-->
+<!--5、实物拍摄的产品，受自然光、相机像素及显示器色彩的影响，出现正常范围的色差和光线明暗 ，属于正常现象，色差减至最小，请以实物为准，在意的客户请慎拍！-->
+        <!--</p>-->
+        <!--<p class="wtbt">-->
+        	<!--Q、发票问题-->
+        <!--</p>-->
+        <!--<p>-->
+        	<!--亲，如果您要求发票抬头为个人，请填写以下信息，以便为您准确开具发票：-->
+<!--1、发票信息：姓名；发票内容只能是食品、蛋糕；数量；金额（请参照您的实际付款金额填写）-->
+<!--亲，如果您要求发票抬头为单位，请填写以下信息，以便为您准确开具发票：-->
+<!--本店默认开具普通发票，如需增值税专用发票请明示。 -->
+<!--2、发票种类：普通发票（默认）或者增值说专用发票-->
+<!--3、发票信息：单位名称（最好写 全称）发票内容只能是食品、蛋糕；数量；金额（请参照您的实际付款金额填写）-->
+<!--4、邮寄信息：窝夫小子每月10日/20日/30日，统一给买家开具发票。发票将以挂号信的形式邮递到买家提供的收信地址，挂号信发出后约3-5天可以送到。-->
+		<!--<span class="hidden_all_content_xie">&lt;&nbsp;收起&nbsp;&gt;</span>-->
+        <!--</p>-->
+      <!--</div>-->
 
      <div class="erjs"><img src="images2/xiae.png" /></div>
-     
+     <div style="text-align: center;"><img src="images2/xqxts.jpg" alt="" /></div>
 <style type="text/css">
 .tempWrap{margin:0 auto;}
 .wxz_sjd .prev{position:absolute;left:0;top:50px;cursor:pointer;}
@@ -847,13 +822,8 @@ jQuery('.sd_dew span').bind('click', function(){
      </div>
 <script type="text/javascript">
 jQuery(".wxz_sjd").slide({mainCell:".bd ul",autoPage:true,effect:"left",autoPlay:true,vis:4,trigger:"click"});
-</script> 
-     
-     
+</script>
      <div class="xiak_sd"><img src="images2/xiae.png" /></div>
-     
-    <div style="text-align:center;"><img src="images2/xiaopeisongs.jpg" alt="窝夫小子配送地图"/></div>
-     <div class="map-pic"><img src="images2/peisong2.jpg" /></div>
   </div>
      <div style="width:990px; margin:0 auto;">
       <div class="erjs" style="text-align:center;"><img src="images2/xiae.png" /></div> 

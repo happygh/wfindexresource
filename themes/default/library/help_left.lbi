@@ -5,17 +5,20 @@
         	<ul>
             	<li class="help_gwzn">购物指南</li>
                 <li {if $article_id==50}class='help_on_it'{/if}><a href="/helpInfo.php?id=50">订购流程</a></li>
+                <li {if $article_id==53}class='help_on_it'{/if}><a href="/helpInfo.php?id=53">支付方式</a></li>
                 <li {if $article_id==51}class='help_on_it'{/if}><a href="/helpInfo.php?id=51">储值卡/优惠券</a></li>
-                <li class="help_zffs">支付方式</li>
+                <!--<li class="help_zffs">支付方式</li>
                 <li {if $article_id==53}class='help_on_it'{/if}><a href="/helpInfo.php?id=53">货到付款</a></li>
-                <li {if $article_id==52}class='help_on_it'{/if}><a href="/helpInfo.php?id=53">在线支付</a></li>
+                <li {if $article_id==52}class='help_on_it'{/if}><a href="/helpInfo.php?id=53">在线支付</a></li>-->
                 <li class="help_psfw">配送服务</li>
-                <li {if $article_id==54}class='help_on_it'{/if}><a href="/helpInfo.php?id=54">服务承诺</a></li>
-                <li {if $article_id==55}class='help_on_it'{/if}><a href="/helpInfo.php?id=55">配送方式</a></li>
-                <li {if $article_id==59}class='help_on_it'{/if}><a href="/helpInfo.php?id=56">自取流程</a></li>
+                <li {if $article_id==55}class='help_on_it'{/if}><a href="/helpInfo.php?id=55">配送范围说明</a></li>
+                <!--<li {if $article_id==54}class='help_on_it'{/if}><a href="/helpInfo.php?id=54">服务承诺</a></li>-->
+                <li {if $article_id==59}class='help_on_it'{/if}><a href="/helpInfo.php?id=56">自取点自取</a></li>
                 <li class="help_cjwt">常见问题</li>
-                <li {if $article_id==57}class='help_on_it'{/if}><a href="/helpInfo.php?id=57">订购须知</a></li>
-                <li {if $article_id==47}class='help_on_it'{/if}><a href="/helpInfo.php?id=47">有问必答</a></li>
+                <!--<li {if $article_id==57}class='help_on_it'{/if}><a href="/helpInfo.php?id=57">订购须知</a></li>-->
+                <li {if $article_id==47}class='help_on_it'{/if}><a href="/helpInfo.php?id=47">常见问题Q&A</a></li>
+                <li class="help_cjwt">关于我们</li>
+                <li {if $article_id==54}class='help_on_it'{/if}><a href="/helpInfo.php?id=54">产品理念</a></li>
                 <li {if $article_id==58}class='help_on_it'{/if}><a href="/helpInfo.php?id=58">联系我们</a></li>
             </ul>
         </div>

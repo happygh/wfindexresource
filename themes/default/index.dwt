@@ -92,7 +92,7 @@
 				<li><a href="/cakes.php?catid=AX" target="_blank">主&nbsp;厨&nbsp;推&nbsp;荐</a></li>
 				<li><a href="/profile.php" target="_blank">个&nbsp;人&nbsp;中&nbsp;心</a></li>
 				<li><a href="/enterprise.php" target="_blank">企&nbsp;业&nbsp;专&nbsp;区</a></li>
-				<li><a href="/helpInfo.php?id=55" target="_blank">配&nbsp;送&nbsp;范&nbsp;围</a></li>
+				<li><a href="/helpInfo.php?id=50" target="_blank">订&nbsp;购&nbsp;帮&nbsp;助</a></li>
 			</ul>
 		</div>
 	</div>
@@ -101,22 +101,22 @@
 	<div class="slide_container">
 		<ul class="rslides" id="slider">
 			<li>
-				<a href="/cake.php?cakeid=34051&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608mctlms.jpg" alt=""></a>
+				<a href="/cake.php?cakeid=34051&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608mctlms2.jpg" alt=""></a>
 			</li>
 			<li>
-				<a href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newxhz.jpg" alt=""></a>
+				<a href="/cake.php?cakeid=33944&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newxhz2.jpg" alt=""></a>
 			</li>
 			<li>
-				<a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newlmtb.jpg" alt=""></a>
+				<a href="/cake.php?cakeid=33928&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newlmtb2.jpg" alt=""></a>
 			</li>
 			<li>
-				<a href="/cake.php?cakeid=33873&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newbxdg.jpg" alt=""></a>
+				<a href="/cake.php?cakeid=33873&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newbxdg2.jpg" alt=""></a>
 			</li>
 			<li>
-				<a href="/cake.php?cakeid=33835&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newymya.jpg" alt=""></a>
+				<a href="/cake.php?cakeid=33835&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newymya2.jpg" alt=""></a>
 			</li>
 			<li>
-				<a href="/cake.php?cakeid=33819&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newxxhm.jpg" alt=""></a>
+				<a href="/cake.php?cakeid=33819&catid=ZD" target="_blank"><img src="themes/default/imagesnew/201608newxxhm2.jpg" alt=""></a>
 			</li>
 		</ul>
 	</div>
@@ -218,7 +218,7 @@
 		</div>
 
 		<div class="goodspre first">
-			<a class="goodspicmouse" href="/cake.php?cakeid=33688&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607dbl.jpg" alt="大白裸蛋糕"/></a>
+			<a class="goodspicmouse" href="/cake.php?cakeid=33688&catid=ZD" target="_blank"><img src="themes/default/imagesnew/16/1607dbl2.jpg" alt="大白裸蛋糕"/></a>
 			<div class="goods_pridiv"><span>199</span></div>
 		</div>
 		<div class="goodspre">

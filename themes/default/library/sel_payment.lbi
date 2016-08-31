@@ -127,7 +127,7 @@
                            <td valign="middle"><input type="radio" name="cardname" class="cardname" value="中欣银宝通" />&nbsp;<img src="../images/pay_zxybt.jpg" height="35" width="52" alt="中欣银宝通" title="中欣银宝通"></td>
                            <td valign="middle"><input type="radio" name="cardname" class="cardname" value="连心卡" />&nbsp;<img src="../images/pay_lxk.jpg" height="35" width="52" alt="连心卡" title="连心卡"></td>-->
                         </tr>
-                        <tr>
+                        <!--<tr>
                         	<td valign="middle"><input type="radio" name="cardname" class="cardname" value="资和信商通卡" /></td><td><img src="../images/zihexin.jpg" height="35" width="52" alt="资和信商通卡" title="资和信商通卡"></td>
                             <td>&nbsp;</td>
                               <td>&nbsp;</td>
@@ -135,7 +135,7 @@
                               <td>&nbsp;</td>
                               <td style="font-size:14px;">1、为保证您的权益，交易后请留存购物凭证，在退货时须出具，刷卡金额不得退现。<br/>
                         2、如由于资和信公司系统问题、POS机具问题等造成无法正常受理的，请采用其他方式付款。</td>
-                        </tr>
+                        </tr>-->
                         <tr>
                         	<td valign="middle"><input type="radio" name="cardname" class="cardname" value="北京银行卡" /></td><td><img src="../images/bjbankjpg.jpg" height="35" width="52" alt="北京银行卡" title="北京银行卡"></td>
                             <td>&nbsp;</td>
