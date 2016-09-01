@@ -47,5 +47,5 @@
 		</table>
 	</div>
 	<style>
-		#rg_fd { position:fixed; right:0px; top:260px; z-index:2;}
+		#rg_fd { position:fixed; right:0px; bottom:40px; z-index:2;}
 	</style>

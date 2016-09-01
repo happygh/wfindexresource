@@ -13,7 +13,7 @@
                 <li class="help_psfw">配送服务</li>
                 <li {if $article_id==55}class='help_on_it'{/if}><a href="/helpInfo.php?id=55">配送范围说明</a></li>
                 <!--<li {if $article_id==54}class='help_on_it'{/if}><a href="/helpInfo.php?id=54">服务承诺</a></li>-->
-                <li {if $article_id==59}class='help_on_it'{/if}><a href="/helpInfo.php?id=56">自取点自取</a></li>
+                <li {if $article_id==56}class='help_on_it'{/if}><a href="/helpInfo.php?id=56">自取点自取</a></li>
                 <li class="help_cjwt">常见问题</li>
                 <!--<li {if $article_id==57}class='help_on_it'{/if}><a href="/helpInfo.php?id=57">订购须知</a></li>-->
                 <li {if $article_id==47}class='help_on_it'{/if}><a href="/helpInfo.php?id=47">常见问题Q&A</a></li>
