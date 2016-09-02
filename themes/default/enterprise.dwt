@@ -86,12 +86,12 @@
     </div>
     <div class="box-bannerli">
       <ul>
-        <li class="boxbhover" ><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="/">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
         <li><a href="/#srdg" target="_blank">全&nbsp;部&nbsp;产&nbsp;品</a></li>
         <li><a href="/cakes.php?catid=AX" target="_blank">主&nbsp;厨&nbsp;推&nbsp;荐</a></li>
         <li><a href="/profile.php" target="_blank">个&nbsp;人&nbsp;中&nbsp;心</a></li>
         <li><a href="/enterprise.php" target="_blank">企&nbsp;业&nbsp;专&nbsp;区</a></li>
-        <li><a href="/helpInfo.php?id=55" target="_blank">配&nbsp;送&nbsp;范&nbsp;围</a></li>
+        <li><a href="/helpInfo.php?id=55" target="_blank">订&nbsp;购&nbsp;帮&nbsp;助</a></li>
       </ul>
     </div>
   </div>
