@@ -697,7 +697,7 @@ jQuery('.sd_dew span').bind('click', function(){
 	<!--<div class="gg-div"><a href="/cake.php?cakeid=33657&catid=ZD" target="_blank"><img width="928" src="images2/napolcake123121.jpg"></a></div>-->
 	  <div style="padding:8px 0;">{$cake.goods_desc}</div>
       
-      <div class="erjs1"><img src="images2/xiae.png" /></div>   
+
         
       <!--<div><img src="/themes/default/imagesxie/caizhixiangqing.jpg" alt="窝夫小子蛋糕材质图" /></div>-->
       <!--<div class="erjs"><img src="images2/xiae.png" /></div>-->
@@ -776,7 +776,6 @@ jQuery('.sd_dew span').bind('click', function(){
         <!--</p>-->
       <!--</div>-->
 
-     <div class="erjs"><img src="images2/xiae.png" /></div>
      <div style="text-align: center;"><img src="images2/xqxts.jpg" alt="" /></div>
 <style type="text/css">
 .tempWrap{margin:0 auto;}

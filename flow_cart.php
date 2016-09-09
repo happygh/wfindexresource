@@ -1107,7 +1107,7 @@ elseif ($_REQUEST['step'] == 'select_region')
 	/**
 	 * 中秋活动蛋糕跟月饼同时购买立减100元
 	 */
-	$cart_goods = get_cart_goods();
+	/*$cart_goods = get_cart_goods();
 	$goods_list=$cart_goods['goods_list'];
 	$yuebing = array('34067', '34070', '33771', '33772');
 	static $aa = 0;
@@ -1132,7 +1132,7 @@ elseif ($_REQUEST['step'] == 'select_region')
 	if ($zyuecont == 3)
 	{
 		$total_fee = $total_fee - 100;
-	}
+	}*/
 
     /**
      * 牛轧糖活动买一盒原价，2盒第2盒半价，3盒，第2盒半价，第3盒，半价的半价，超过3盒的部分不享受优惠
@@ -2735,19 +2735,7 @@ elseif ($_REQUEST['step'] == 'select_region')
     	}		
     }
 
-	//新品送手帕套装
-	$cart_goods = get_cart_goods();
-	$goods_list=$cart_goods['goods_list'];
-	$allow_bjs = array('34051','34052','34053','34054');
-	foreach ( $goods_list as $vva )
-	{
-		if ( in_array($vva['goods_id'], $allow_bjs) )
-		{
-			$sql123 = "insert into ".$GLOBALS['ecs']->table('AppendInfo')." (City_ID,PA_No,Indent_No,Append_No,Number,Cash) "
-				."values('$sd',$PAInfo_ID,$order_id,'34066',1,0)";
-			$GLOBALS['db']->query($sql123);
-		}
-	}
+	
     //新用户送礼附件随机
     /*if ( ! empty($dmobile))
 	{	
@@ -3697,7 +3685,7 @@ elseif ($_REQUEST['step'] == 'select_region')
 	/**
 	 * 中秋活动蛋糕跟月饼同时购买立减100元
 	 */
-	$cart_goods = get_cart_goods();
+	/*$cart_goods = get_cart_goods();
 	$goods_list=$cart_goods['goods_list'];
 	$yuebing = array('34067', '34070', '33771', '33772');
 	static $aa = 0;
@@ -3722,7 +3710,7 @@ elseif ($_REQUEST['step'] == 'select_region')
 	if ($zyuecont == 3)
 	{
 		$all_total = $all_total - 100;
-	}
+	}*/
 
 	/**
 	 * 如果是北京银行用户购买的指定款商品则打7折
